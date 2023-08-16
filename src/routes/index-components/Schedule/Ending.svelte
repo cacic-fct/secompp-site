@@ -1,10 +1,10 @@
 <script lang="ts">
   import { Button } from 'sveltestrap';
-  import '$lib/styles/global.scss';
+  import '$lib/styles/global.pcss';
 </script>
 
 <div class="container">
-  <div class="text-center intro-text">
+  <div class="intro-text text-center">
     <hr class="my-5" />
     <br />
     O evento chegou ao fim. Agradecemos a todos que participaram!<br />

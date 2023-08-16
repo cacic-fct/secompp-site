@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import logoCacic from '$lib/img/cacic.svg';
   import logoEjcomp from '$lib/img/ejcomp.svg';
   import logoUnesp from '$lib/img/unesp.svg';
@@ -10,7 +10,7 @@
   import ImgLink from './ImgLink.svelte';
 </script>
 
-<footer class="text-white bg-dark" id="footer">
+<footer class="bg-dark text-white" id="footer">
   <div class="container">
     <div class="row footer-row">
       <div class="col-md-4">
@@ -23,7 +23,7 @@
         <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
       </div>
       <div class="col-md-4">
-        <h3 class="fs-6 text-white mb-3">Realização</h3>
+        <h3 class="fs-6 mb-3 text-white">Realização</h3>
         <div>
           <ImgLink
             href="https://cacic-fct.web.app/"
@@ -47,7 +47,7 @@
             alt="Departamento de Matemática e Computação"
             marginX
             marginBottom />
-          <p class="text-start fs-light small">
+          <p class="fs-light small text-start">
             <b>Fundacte</b> - Fundação de Ciência, Tecnologia e Ensino<br />
           </p>
         </div>
@@ -86,7 +86,7 @@
   </div>
 </footer>
 
-<style lang="scss">
+<style lang="postcss">
   @mixin transition {
     transition: 0.3s;
   }

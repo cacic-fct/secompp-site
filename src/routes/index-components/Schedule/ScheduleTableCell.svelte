@@ -18,7 +18,7 @@
   </div>
 </td>
 
-<style lang="scss">
+<style lang="postcss">
   @use './styles' as *;
 
   td {

@@ -5,7 +5,7 @@
   export let minister: EventMinister;
 </script>
 
-<div class="minister-info d-grid py-2 px-3 shadow mx-1 rounded">
+<div class="minister-info d-grid mx-1 rounded px-3 py-2 shadow">
   <h6 class="fw-bold">{minister.name}</h6>
   {#if ministerHasDetailInfo(minister)}
     {#if minister.description}
@@ -24,7 +24,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   @use './styles' as *;
 
   .minister-url,

@@ -33,7 +33,7 @@
   </Collapse>
 </Navbar>
 
-<style lang="scss">
+<style lang="postcss">
   :global(.nav-subscribe-btn) {
     @media (min-width: 768px) {
       margin-left: 8px;

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import logoSquare from '$lib/img/secomp22-logo-square.svg';
   import unespLogo from '$lib/img/unesp-square.svg';
 </script>
@@ -9,7 +9,7 @@
     <div class="col-md-8 col-xl-6 mx-auto p-4">
       <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
         <div class="row">
-          <div class="col-auto col-md-2" aria-hidden="true">
+          <div class="col-md-2 col-auto" aria-hidden="true">
             <img src={logoSquare} class="logo-about" loading="lazy" alt="Miniatura da logo da SECOMPP" />
           </div>
           <div class="col-md-10">
@@ -27,7 +27,7 @@
       </div>
       <div class="d-flex align-items-center align-items-md-start align-items-xl-center pt-4">
         <div class="row">
-          <div class="col-auto col-md-2" aria-hidden="true">
+          <div class="col-md-2 col-auto" aria-hidden="true">
             <img src={unespLogo} class="logo-about" loading="lazy" alt="Logo da Unesp" />
           </div>
           <div class="col-md-10">
@@ -49,7 +49,7 @@
   <hr />
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   .logo-about {
     width: 48px;
     padding-bottom: 10px;

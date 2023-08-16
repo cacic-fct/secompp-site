@@ -1,10 +1,7 @@
 <script lang="ts">
   import ScheduleData from '$lib/shared/ScheduleData5B';
 
-  import type {
-    ScheduleEvent,
-    ScheduleEventClickHandler,
-  } from '$lib/shared/ScheduleEvent';
+  import type { ScheduleEvent, ScheduleEventClickHandler } from '$lib/shared/ScheduleEvent';
   import { createScheduleGrid } from '$lib/shared/ScheduleEventUtils';
 
   const ScheduleGrid = createScheduleGrid(ScheduleData);
@@ -22,7 +19,7 @@
   };
 </script>
 
-<div class="container schedule-container">
+<div class="schedule-container container">
   <h1>Programação do Laboratório 5B</h1>
   <span>Recomenda-se trazer o seu próprio computador</span>
   <div class="table-responsive" style="--bs-secondary-rgb: 255, 255, 255">
@@ -50,7 +47,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   @use './styles' as *;
 
   .schedule-container {
@@ -71,12 +68,7 @@
   th {
     &:first-child {
       @include cell-first-child();
-      background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.6),
-        45%,
-        rgba(0, 0, 0, 0)
-      );
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), 45%, rgba(0, 0, 0, 0));
     }
     border: 0;
   }

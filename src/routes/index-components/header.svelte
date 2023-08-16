@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import logo from '$lib/img/secompp22-logo.svg';
   import logoRubcube from '$lib/img/rubcube.svg';
   import logoRocketseat from '$lib/img/rocketseat.svg';
@@ -9,7 +9,7 @@
 
 <header class="header-bg">
   <div class="container">
-    <div class="text-center intro-text">
+    <div class="intro-text text-center">
       <div class="intro-lead-in intro-lead-in-padding">
         <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2022" />
       </div>
@@ -37,7 +37,7 @@
   </div>
 </header>
 
-<style lang="scss">
+<style lang="postcss">
   .intro-lead-in-padding {
     padding: 10px;
     padding-bottom: 24px;
