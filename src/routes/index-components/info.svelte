@@ -27,7 +27,7 @@
           <tbody>
             <tr>
               <td>Valor da inscrição</td>
-              <td aria-label="35 reais">R$ 35,00</td>
+              <td aria-label="35 reais">R$ 30,00</td>
             </tr>
           </tbody>
         </table>
