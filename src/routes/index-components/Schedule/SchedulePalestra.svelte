@@ -20,7 +20,7 @@
   };
 </script>
 
-<div class="container schedule-container">
+<div class="schedule-container container">
   <h1>Palestras</h1>
   <div class="table-responsive" style="--bs-secondary-rgb: 255, 255, 255">
     <table class="table">
@@ -47,7 +47,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   @use './styles' as *;
 
   .schedule-container {

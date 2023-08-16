@@ -1,15 +1,8 @@
 <script lang="ts">
   import minicursosIcon from '$lib/img/minicursos.svg';
   import palestrasIcon from '$lib/img/palestras.svg';
-  import type {
-    ScheduleEventClickHandler,
-    ScheduleEventRow,
-  } from '$lib/shared/ScheduleEvent';
-  import {
-    findEvent,
-    getEventStart,
-    getEventType,
-  } from '$lib/shared/ScheduleEventUtils';
+  import type { ScheduleEventClickHandler, ScheduleEventRow } from '$lib/shared/ScheduleEvent';
+  import { findEvent, getEventStart, getEventType } from '$lib/shared/ScheduleEventUtils';
   import ScheduleTableCell from './ScheduleTableCell.svelte';
 
   export let schedule: ScheduleEventRow;
@@ -22,18 +15,14 @@
 
   const icon = {
     minicurso: { desc: 'Minicursos', src: minicursosIcon },
-    palestra: { desc: 'Palestras', src: palestrasIcon },
+    palestra: { desc: 'Palestras', src: palestrasIcon }
   };
 </script>
 
 <tr>
   <td>
     <div>
-      <img
-        src={icon[type].src}
-        alt={icon[type].desc}
-        loading="lazy"
-        class="table-icon" />
+      <img src={icon[type].src} alt={icon[type].desc} loading="lazy" class="table-icon" />
       {startTime}
     </div>
   </td>
@@ -46,12 +35,11 @@
   {/each}
 </tr>
 
-<style lang="scss">
+<style lang="postcss">
   @use './styles';
 
   .table-icon {
-    filter: invert(100%) sepia(64%) saturate(532%) hue-rotate(353deg)
-      brightness(109%) contrast(99%);
+    filter: invert(100%) sepia(64%) saturate(532%) hue-rotate(353deg) brightness(109%) contrast(99%);
     float: right;
     width: 24px;
   }

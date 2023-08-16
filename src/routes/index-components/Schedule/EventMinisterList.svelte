@@ -14,7 +14,7 @@
   </div>
 {/if}
 
-<style lang="scss">
+<style lang="postcss">
   #ministers {
     width: 100%;
     @media (min-width: 574px) {

@@ -16,7 +16,7 @@
   <img loading="lazy" {src} {alt} class="d-inline-block" class:img_xl class:img_md class:img_large class:img_small />
 </a>
 
-<style lang="scss">
+<style lang="postcss">
   .img_large {
     width: 150px;
   }

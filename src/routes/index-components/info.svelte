@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   .map-container {
     overflow: hidden;
     padding-bottom: 56.25%;

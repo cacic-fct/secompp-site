@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import minicursosIcon from '$lib/img/minicursos.svg';
   import palestrasIcon from '$lib/img/palestras.svg';
 </script>
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style lang="postcss">
   @mixin typo-gray {
     color: var(--bs-gray-500);
   }
