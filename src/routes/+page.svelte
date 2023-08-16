@@ -1,5 +1,5 @@
-<script>
-  import '$lib/styles/global.scss';
+<script lang="ts">
+  import '$lib/styles/global.pcss';
   import About from './index-components/about.svelte';
   import Faq from './index-components/faq.svelte';
   import Footer from './index-components/Footer/Footer.svelte';
@@ -17,7 +17,7 @@
 <Nav />
 <Header />
 <section>
-  <Ending/> 
+  <Ending />
 </section>
 
 <section id="sobre">
@@ -25,10 +25,10 @@
 </section>
 <section id="programacao">
   <Schedule5B />
-  <Schedule6B/>
-  <Schedule8B/>
-  <Schedule10/>
-  <SchedulePalestra/>
+  <Schedule6B />
+  <Schedule8B />
+  <Schedule10 />
+  <SchedulePalestra />
 </section>
 <section id="informacoes">
   <Info />
