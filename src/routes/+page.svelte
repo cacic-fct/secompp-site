@@ -7,11 +7,9 @@
   import Info from './index-components/info.svelte';
   import Nav from './index-components/nav.svelte';
   import Schedule10 from './index-components/Schedule/Schedule10.svelte';
-  import Schedule5B from './index-components/Schedule/Schedule5B.svelte';
-  import Schedule6B from './index-components/Schedule/Schedule6B.svelte';
-  import Schedule8B from './index-components/Schedule/Schedule8B.svelte';
   import SchedulePalestra from './index-components/Schedule/SchedulePalestra.svelte';
   import Ending from './index-components/Schedule/Ending.svelte';
+  import Schedule6 from './index-components/Schedule/Schedule6.svelte';
 </script>
 
 <Nav />
@@ -24,9 +22,7 @@
   <About />
 </section>
 <section id="programacao">
-  <Schedule5B />
-  <Schedule6B/>
-  <Schedule8B/>
+  <Schedule6/>
   <Schedule10/>
   <SchedulePalestra/>
 </section>
