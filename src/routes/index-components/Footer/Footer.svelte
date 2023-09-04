@@ -87,6 +87,7 @@
 </footer>
 
 <style lang="scss">
+
   @mixin transition {
     transition: 0.3s;
   }

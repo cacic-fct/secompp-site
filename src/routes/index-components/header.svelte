@@ -14,10 +14,10 @@
         <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2022" />
       </div>
       <div class="text-center intro-heading">
-        <span class="fs-3 fw-semibold"> 19ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
+        <span class="fs-3 fw-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
       </div>
       <div class="text-center intro-heading">
-        <span class="fs-4 fw-light">Junte-se a nós de 17 a 21 de outubro de 2022</span>
+        <span class="fs-4 fw-light">Junte-se a nós de 25 a 29 de setembro de 2023</span>
       </div>
       <br />
       <br />
@@ -49,7 +49,8 @@
   }
 
   .header-bg {
-    background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
+    //background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
+    background: linear-gradient(0deg, #12033b 0%, #3a179d 100%);
     padding-top: 50px;
   }
 </style>
