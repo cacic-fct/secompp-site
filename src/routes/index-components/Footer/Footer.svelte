@@ -1,12 +1,8 @@
 <script>
   import logoCacic from '$lib/img/cacic.svg';
-  import logoEjcomp from '$lib/img/ejcomp.svg';
   import logoUnesp from '$lib/img/unesp.svg';
   import logoDmc from '$lib/img/dmc.webp';
-  import logoRubcube from '$lib/img/rubcube.svg';
-  import logoRocketseat from '$lib/img/rocketseat.svg';
   import logoVunesp from '$lib/img/vunesp.svg';
-  import { Envelope, Telephone } from 'svelte-bootstrap-icons';
   import ImgLink from './ImgLink.svelte';
 </script>
 
@@ -14,11 +10,7 @@
   <div class="container">
     <div class="row footer-row">
       <div class="col-md-4">
-        <h3 class="fs-6 text-white">Patrocínio</h3>
-        <ImgLink href="https://www.rubcube.com/" src={logoRubcube} size="xl" alt="Rubcube" marginBottom />
-
         <h3 class="fs-6 text-white" style="margin-top: 15px">Apoio</h3>
-        <ImgLink marginX href="https://www.rocketseat.com.br/" size="xl" src={logoRocketseat} alt="Rocketseat" />
         <br />
         <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
       </div>
@@ -30,14 +22,7 @@
             src={logoCacic}
             size="md"
             alt="Centro Acadêmico de Ciência da Computação"
-            marginBottom />
-          <ImgLink
-            marginX
-            href="https://www.ejcomp.com.br/"
-            src={logoEjcomp}
-            size="md"
-            alt="Empresa Júnior da Computação" />
-
+            marginBottom /> 
           <br />
           <ImgLink href="https://www.fct.unesp.br" size="md" src={logoUnesp} alt="Unesp" />
           <ImgLink
@@ -70,14 +55,14 @@
               id="contact-mail"
               aria-label="Entrar em contato por e-mail"
               href="mailto:cacic.fct@gmail.com?subject=Contato SECOMPP22">
-              <Envelope color="white" width="24" height="24" />
+              <!-- <Envelope color="white" width="24" height="24" /> -->
             </a>
             <a
               class="contact-button"
               id="contact-phone"
               href="tel:1832295600"
               aria-label="Entrar em contato por telefone">
-              <Telephone color="white" width="24" height="24" />
+              <!-- <Telephone color="white" width="24" height="24" /> -->
             </a>
           </div>
         </address>

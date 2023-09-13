@@ -1,7 +1,5 @@
 <script>
   import logo from '$lib/img/secompp22-logo.svg';
-  import logoRubcube from '$lib/img/rubcube.svg';
-  import logoRocketseat from '$lib/img/rocketseat.svg';
   import logoVunesp from '$lib/img/vunesp.svg';
   import { Button } from 'sveltestrap';
   import ImgLink from './Footer/ImgLink.svelte';
@@ -14,23 +12,14 @@
         <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2022" />
       </div>
       <div class="text-center intro-heading">
-        <span class="fs-3 fw-semibold"> 19ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
+        <span class="fs-3 fw-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
       </div>
       <div class="text-center intro-heading">
-        <span class="fs-4 fw-light">Junte-se a nós de 17 a 21 de outubro de 2022</span>
+        <span class="fs-4 fw-light">Junte-se a nós de 25 a 29 de setembro de 2023</span>
       </div>
-      <br />
-      <br />
-      Patrocínio:
-      <br />
-      <ImgLink href="https://www.rubcube.com/" src={logoRubcube} size="lg" alt="Rubcube" marginBottom />
       <br />
       <br />
       Apoio:
-      <br />
-
-      <ImgLink marginX href="https://www.rocketseat.com.br/" size="lg" src={logoRocketseat} alt="Rocketseat" />
-      <br />
       <br />
       <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
     </div>

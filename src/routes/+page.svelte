@@ -14,17 +14,13 @@
 
 <Nav />
 <Header />
-<section>
-  <Ending/> 
-</section>
-
 <section id="sobre">
   <About />
 </section>
 <section id="programacao">
-  <Schedule6/>
-  <Schedule10/>
-  <SchedulePalestra/>
+  <Schedule6 />
+  <Schedule10 />
+  <SchedulePalestra />
 </section>
 <section id="informacoes">
   <Info />
