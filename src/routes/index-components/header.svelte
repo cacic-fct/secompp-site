@@ -21,7 +21,7 @@
       <br />
       Apoio:
       <br />
-      <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
+      <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
     </div>
   </div>
 </header>
