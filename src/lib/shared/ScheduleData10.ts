@@ -2,44 +2,87 @@ import type { ScheduleEventList } from './ScheduleEvent';
 import { createEvent } from './ScheduleEventUtils';
 
 const ScheduleData: ScheduleEventList = [
-  createEvent(
-    'Introdução ao LaTeX - parte 1',
-    'Laboratório 10',
-    0,
-    new Date('2022-10-18T10:00'),
-    120,
-    'Introdução à linguagem LaTeX para desenvolvimento de trabalhos e pesquisas científicas. \n\nPré-requisitos: nenhum. \n\nMateriais necessários: possuir o MiKTEX, GhostScript e GhostView instalados \n\nOpcional: um editor, se desejar.',
-    'Introdução ao processador de texto LaTeX',
-    [
-      {
-        name: 'Prof. Dr. Rogério Eduardo Garcia',
-        email: 'rogerio.garcia@unesp.br',
-      },
-      {
-        name: 'Willian Yoshio Murayama',
-        email: 'willian.murayama@unesp.br',
-      },
-    ]
-  ),
-  createEvent(
-    'Introdução ao LaTeX - parte 2',
-    'Laboratório 10',
-    0,
-    new Date('2022-10-19T10:00'),
-    120,
-    'Introdução à linguagem LaTeX para desenvolvimento de trabalhos e pesquisas científicas. \n\nPré-requisitos: nenhum. \n\nMateriais necessários: possuir o MiKTEX, GhostScript e GhostView instalados \n\nOpcional: um editor, se desejar.',
-    'Introdução ao processador de texto LaTeX',
-    [
-      {
-        name: 'Prof. Dr. Rogério Eduardo Garcia',
-        email: 'rogerio.garcia@unesp.br',
-      },
-      {
-        name: 'Willian Yoshio Murayama',
-        email: 'willian.murayama@unesp.br',
-      },
-    ]
-  ),
+  createEvent('Docker',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-25T08:00'),
+  240,
+  'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
+  'Ambiente para desenvolvimento - Teoria e Prática',
+  [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
+
+  createEvent('Docker',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-26T08:00'),
+  240,
+  'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
+  'Ambiente para desenvolvimento - Teoria e Prática',
+  [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
+
+  createEvent('Introdução à Linguagem Python para Análise de Dados',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-27T08:00'),
+  240,
+  'Requisitos: conexão à internet, pois o material será disponibilizado e apresentado em formato de notebooks no Google Colab, sem a necessidade de instalação.',
+  '',
+  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},{name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
+   	
+  createEvent('Introdução à Linguagem Python para Análise de Dados',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-28T08:00'),
+  240,
+  'Requisitos: conexão à internet, pois o material será disponibilizado e apresentado em formato de notebooks no Google Colab, sem a necessidade de instalação.',
+  '',
+  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},{name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
+   	
+  createEvent('Sistema de Controle de Versão com uso de Git e GitHub',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-25T14:00'),
+  240,
+  'Requisitos: softwares (Visual Studio Code, CodeBlocks, Git); Indicar aos participantes criarem previamente uma conta no GitHub.',
+  '',
+  [{name:'Bruno Santos de Lima',email:'bruno.s.lima@unesp.br'},]),
+
+  createEvent('Introdução ao Svelte',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-26T14:00'),
+  240,
+  'Requisitos: NodeJS, será utilizado o SvelteKit para a geração do projeto.',
+  'Uma nova forma de escrever para web',
+  [{name:'Guilherme Cesar Tomiasi',email:'gc.tomiasi@unesp.br'},{name:'Carlos Eduardo Fernandes de Santana',email:'carlos.ef.santana@unesp.br'},]),
+
+  createEvent('Introdução à React.js',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-27T14:00'),
+  240,
+  'Requisitos: computadores com vsCode e com npm e node.js funcionando.',
+  '',
+  [{name:'Karolyne Domiciano Marques',email:'karolyne.d.marques@unesp.br'},{name:'Vinícius Polachini Mayer Freitas de Jesus',email:'vinicius.polachini@unesp.br'},]),
+
+	createEvent('Do zero ao Backend, com Javascript',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-28T14:00'),
+  240,
+  'Requisitos: computador, Node.js, Mysql e Insomnia ou Postman instalados.',
+  '',
+  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},{name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
+  
+  createEvent('Do zero ao Backend, com Javascript',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-29T14:00'),
+  240,
+  'Requisitos: computador, Node.js, Mysql e Insomnia ou Postman instalados.',
+  '',
+  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},{name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
+	
 ];
 
 export default ScheduleData;

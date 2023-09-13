@@ -18,7 +18,7 @@
     {/if}
     {#if minister.email}
       <a class="minister-email smaller" href="mailto:{minister.email}" target="_blank">
-        <!-- <Envelope color="white" />{minister.email ?? minister.email} -->
+        {minister.email ?? minister.email}
       </a>
     {/if}
   {/if}
