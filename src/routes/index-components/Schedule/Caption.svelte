@@ -30,21 +30,23 @@
 </div>
 
 <style lang="postcss">
-  @mixin typo-gray {
+  @define-mixin typo-gray {
     color: var(--bs-gray-500);
+
+    @mixin-content;
   }
 
   .caption-gray {
-    @include typo-gray;
+    @mixin typo-gray;
   }
 
   #icon-desc {
     padding-left: 0;
     @media (min-width: 575px) {
       max-width: 150px;
-      div:first-child {
+      /* div:first-child {
         margin-bottom: 1rem;
-      }
+      } */
     }
 
     @media (max-width: 574px) {
@@ -68,13 +70,13 @@
 
   @media (max-width: 1199px) {
     #caption-large-screen {
-      @include typo-gray;
+      @mixin typo-gray;
       display: none;
     }
   }
 
   .caption-container {
-    @include typo-gray;
+    @mixin typo-gray;
     @media (min-width: 575px) {
       max-width: 767px;
     }

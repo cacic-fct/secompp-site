@@ -3,6 +3,7 @@
   export let src: string;
   export let alt: string;
   export let marginX: boolean = false;
+  export let marginHorizontalAuto: boolean = false;
   export let marginBottom: boolean = false;
   export let size: 'xl' | 'lg' | 'md' | 'sm' = 'md';
 
@@ -13,7 +14,16 @@
 </script>
 
 <a {href} target="_blank" class:margin-left={marginX} class:mb-1={marginBottom}>
-  <img loading="lazy" {src} {alt} class="d-inline-block" class:img_xl class:img_md class:img_large class:img_small />
+  <img
+    loading="lazy"
+    {src}
+    {alt}
+    class="d-inline-block"
+    class:img_xl
+    class:img_md
+    class:img_large
+    class:img_small
+    class:mx-auto={marginHorizontalAuto} />
 </a>
 
 <style lang="postcss">

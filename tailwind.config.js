@@ -8,5 +8,8 @@ export default {
       mono: ['ui-monospace', '"Courier New"', 'monospace']
     }
   },
-  plugins: [require('daisyui')]
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['dark']
+  }
 };

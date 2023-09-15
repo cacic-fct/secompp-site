@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ministerHasDetailInfo, type EventMinister } from '$lib/shared/EventMinister';
-  import { Envelope, Link45deg } from 'svelte-bootstrap-icons';
+  import { Mail, Link } from 'lucide-svelte';
 
   export let minister: EventMinister;
 </script>
@@ -13,19 +13,19 @@
     {/if}
     {#if minister.link}
       <a class="minister-url smaller" href={minister.link.path} target="_blank">
-        <Link45deg width="22" height="22" color="white" />{minister.link.label ?? minister.link.path}
+        <Link width="22" height="22" color="white" />{minister.link.label ?? minister.link.path}
       </a>
     {/if}
     {#if minister.email}
       <a class="minister-email smaller" href="mailto:{minister.email}" target="_blank">
-        <Envelope color="white" />{minister.email ?? minister.email}
+        <Mail color="white" />{minister.email ?? minister.email}
       </a>
     {/if}
   {/if}
 </div>
 
 <style lang="postcss">
-  @use './styles' as *;
+  @import './_styles.pcss';
 
   .minister-url,
   .minister-email {
@@ -33,7 +33,7 @@
     color: $body-color;
     margin-top: $sp-2;
     width: fit-content;
-    @include transition();
+    @mixin transition;
 
     &:hover,
     &:active,
@@ -59,7 +59,7 @@
   h6 {
     height: fit-content;
     margin: 0;
-    @include transition();
+    @mixin transition;
   }
 
   .minister-info {
@@ -73,7 +73,7 @@
 
     span {
       margin: $sp-1 0;
-      @include transition();
+      @mixin transition;
     }
 
     &:hover,
@@ -90,6 +90,6 @@
 
     background: rgb(38, 39, 41);
     border: 1px solid transparent;
-    @include transition();
+    @mixin transition;
   }
 </style>
