@@ -1,5 +1,8 @@
 <script lang="ts">
+  import '$lib/styles/global.pcss';
   import { dev } from '$app/environment';
+  import Nav from './index-components/nav.svelte';
+  import Footer from './index-components/Footer/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -16,3 +19,9 @@
     </script>
   {/if}
 </svelte:head>
+
+<Nav />
+
+<slot />
+
+<Footer />

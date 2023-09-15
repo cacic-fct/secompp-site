@@ -3,16 +3,16 @@
   import unespLogo from '$lib/img/unesp-square.svg';
 </script>
 
-<div class="container">
+<div class="container mx-auto sm:px-4">
   <hr class="my-5" />
-  <div class="row">
-    <div class="col-md-8 col-xl-6 mx-auto p-4">
-      <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-        <div class="row">
-          <div class="col-md-2 col-auto" aria-hidden="true">
+  <div class="flex flex-wrap">
+    <div class="mx-auto p-6 pl-4 pl-4 pr-4 pr-4 md:w-2/3 xl:w-1/2">
+      <div class="flex items-center md:items-start xl:items-center">
+        <div class="flex flex-wrap">
+          <div class="col-auto pl-4 pr-4 md:w-1/5" aria-hidden="true">
             <img src={logoSquare} class="logo-about" loading="lazy" alt="Miniatura da logo da SECOMPP" />
           </div>
-          <div class="col-md-10">
+          <div class="pl-4 pr-4 md:w-4/5">
             <div>
               <h4>O evento</h4>
               <p class="text-justify">
@@ -25,12 +25,12 @@
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center align-items-md-start align-items-xl-center pt-4">
-        <div class="row">
-          <div class="col-md-2 col-auto" aria-hidden="true">
+      <div class="flex items-center pt-4 md:items-start xl:items-center">
+        <div class="flex flex-wrap">
+          <div class="col-auto pl-4 pr-4 md:w-1/5" aria-hidden="true">
             <img src={unespLogo} class="logo-about" loading="lazy" alt="Logo da Unesp" />
           </div>
-          <div class="col-md-10">
+          <div class="pl-4 pr-4 md:w-4/5">
             <div>
               <h4>A universidade</h4>
               <p class="text-justify">
