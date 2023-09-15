@@ -38,7 +38,8 @@
   }
 
   .header-bg {
-    background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
+    //background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
+    background: linear-gradient(0deg, #12033b 0%, #3a179d 100%);
     padding-top: 50px;
   }
 </style>
