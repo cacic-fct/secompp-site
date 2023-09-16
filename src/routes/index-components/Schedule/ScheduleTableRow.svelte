@@ -63,8 +63,8 @@
 
     &:first-child {
       @include styles.cell-first-child();
-      background-color: #12033b;
-      outline: 5px solid #12033b;
+      background-color: #000;
+      outline: 5px solid #000;
 
       div {
         @media (min-width: 574px) {

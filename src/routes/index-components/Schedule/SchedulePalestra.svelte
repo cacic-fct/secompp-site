@@ -68,7 +68,7 @@
   th {
     &:first-child {
       @include cell-first-child();
-      background: linear-gradient(45deg, #12033b, 45%, #12033b);
+      background: linear-gradient(45deg, #000, 45%, #000);
     }
     border: 0;
   }
