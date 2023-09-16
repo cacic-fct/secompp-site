@@ -62,7 +62,7 @@
               class="contact-button"
               id="contact-mail"
               aria-label="Entrar em contato por e-mail"
-              href="mailto:cacic.fct@gmail.com?subject=Contato SECOMPP22">
+              href="mailto:cacic.fct@gmail.com?subject=Contato SECOMPP23">
               <Envelope color="white" width="24" height="24" />
             </a>
             <a
