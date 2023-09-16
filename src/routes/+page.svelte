@@ -10,7 +10,7 @@
   import SchedulePalestra from './index-components/Schedule/SchedulePalestra.svelte';
   import Ending from './index-components/Schedule/Ending.svelte';
   import Schedule6 from './index-components/Schedule/Schedule6.svelte';
-    import ScheduleLEM from './index-components/Schedule/ScheduleLEM.svelte';
+  import ScheduleLEM from './index-components/Schedule/ScheduleLEM.svelte';
 </script>
 
 <Nav />
