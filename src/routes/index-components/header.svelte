@@ -1,5 +1,5 @@
 <script>
-  import logo23 from '$lib/img/secompp23.svg';
+  import logo from '$lib/img/secompp23.svg';
   import logoVunesp from '$lib/img/vunesp.svg';
   import { Button } from 'sveltestrap';
   import ImgLink from './Footer/ImgLink.svelte';
@@ -9,7 +9,7 @@
   <div class="container">
     <div class="text-center intro-text">
       <div class="intro-lead-in intro-lead-in-padding">
-        <img src={logo23} width="100%" class="secompp-logo" alt="Logo SECOMPP 2023" />
+        <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2023" />
       </div>
       <div class="text-center intro-heading">
         <span class="fs-3 fw-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
