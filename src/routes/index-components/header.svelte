@@ -38,7 +38,6 @@
   }
 
   .header-bg {
-    background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
     padding-top: 50px;
   }
 </style>
