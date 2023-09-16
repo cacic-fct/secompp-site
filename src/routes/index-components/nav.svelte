@@ -1,6 +1,5 @@
 <script lang="ts">
-  import logo from '$lib/img/secompp22-logo.svg';
-
+  import logo from '$lib/img/secompp23.svg'
   import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'sveltestrap';
 
   let isOpen = false;
@@ -8,7 +7,7 @@
 
 <Navbar color="dark" container dark expand="md" class="sticky-top">
   <NavbarBrand href="#">
-    <img src={logo} class="py-1" width="150" alt="Logo da SECOMPP 2022" />
+    <img src={logo} class="py-1" width="150" alt="Logo da SECOMPP 2023" />
   </NavbarBrand>
   <NavbarToggler aria-label="Botão do menu" class="border border-0" on:click={() => (isOpen = !isOpen)} />
 

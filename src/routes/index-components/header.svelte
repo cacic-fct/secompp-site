@@ -1,7 +1,5 @@
 <script>
-  import logo from '$lib/img/secompp22-logo.svg';
-  import logoRubcube from '$lib/img/rubcube.svg';
-  import logoRocketseat from '$lib/img/rocketseat.svg';
+  import logo from '$lib/img/secompp23.svg';
   import logoVunesp from '$lib/img/vunesp.svg';
   import { Button } from 'sveltestrap';
   import ImgLink from './Footer/ImgLink.svelte';
@@ -11,7 +9,7 @@
   <div class="container">
     <div class="text-center intro-text">
       <div class="intro-lead-in intro-lead-in-padding">
-        <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2022" />
+        <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2023" />
       </div>
       <div class="text-center intro-heading">
         <span class="fs-3 fw-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
@@ -21,18 +19,9 @@
       </div>
       <br />
       <br />
-      Patrocínio:
-      <br />
-      <ImgLink href="https://www.rubcube.com/" src={logoRubcube} size="lg" alt="Rubcube" marginBottom />
-      <br />
-      <br />
       Apoio:
       <br />
-
-      <ImgLink marginX href="https://www.rocketseat.com.br/" size="lg" src={logoRocketseat} alt="Rocketseat" />
-      <br />
-      <br />
-      <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
+      <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
     </div>
   </div>
 </header>
@@ -49,8 +38,6 @@
   }
 
   .header-bg {
-    //background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
-    background: linear-gradient(0deg, #12033b 0%, #3a179d 100%);
     padding-top: 50px;
   }
 </style>

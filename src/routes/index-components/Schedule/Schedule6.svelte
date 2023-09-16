@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ScheduleData from '$lib/shared/ScheduleData8B';
+  import ScheduleData from '$lib/shared/ScheduleData6';
 
   import type { ScheduleEvent, ScheduleEventClickHandler } from '$lib/shared/ScheduleEvent';
   import { createScheduleGrid } from '$lib/shared/ScheduleEventUtils';
@@ -20,7 +20,7 @@
 </script>
 
 <div class="container schedule-container">
-  <h1>Programação do Laboratório 8B</h1>
+  <h1>Programação do Laboratório 6</h1>
   <span>Recomenda-se trazer o seu próprio computador</span>
   <div class="table-responsive" style="--bs-secondary-rgb: 255, 255, 255">
     <table class="table">
