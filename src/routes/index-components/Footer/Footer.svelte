@@ -4,6 +4,8 @@
   import logoDmc from '$lib/img/dmc.webp';
   import logoVunesp from '$lib/img/vunesp.svg';
   import ImgLink from './ImgLink.svelte';
+
+  import { Envelope, Telephone } from 'svelte-bootstrap-icons';
 </script>
 
 <footer class="text-white bg-dark" id="footer">
