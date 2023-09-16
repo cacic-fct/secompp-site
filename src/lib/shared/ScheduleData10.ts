@@ -2,23 +2,7 @@ import type { ScheduleEventList } from './ScheduleEvent';
 import { createEvent } from './ScheduleEventUtils';
 
 const ScheduleData: ScheduleEventList = [
-  createEvent('Docker',
-  'Laboratório 10',
-  0,
-  new Date('2023-09-25T08:00'),
-  240,
-  'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
-  'Ambiente para desenvolvimento - Teoria e Prática',
-  [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
-
-  createEvent('Docker',
-  'Laboratório 10',
-  0,
-  new Date('2023-09-26T08:00'),
-  240,
-  'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
-  'Ambiente para desenvolvimento - Teoria e Prática',
-  [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
+  
 
   createEvent('Introdução à Linguagem Python para Análise de Dados',
   'Laboratório 10',
@@ -37,7 +21,16 @@ const ScheduleData: ScheduleEventList = [
   'Requisitos: conexão à internet, pois o material será disponibilizado e apresentado em formato de notebooks no Google Colab, sem a necessidade de instalação.',
   '',
   [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},{name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
-   	
+  
+  createEvent('Introdução à modelagem e impressão tridimensional',
+  'Laboratório 10',
+  0,
+  new Date('2023-09-25T08:00'),
+  240,
+  'Requisitos: Computadores com o software Ultimaker Cura instalado e criação de uma conta no Tinkercad',
+  '',
+  [{name:'Willian Yoshio Murayama',email:'willian.murayama@unesp.br'}]),
+
   createEvent('Sistema de Controle de Versão com uso de Git e GitHub',
   'Laboratório 10',
   0,
