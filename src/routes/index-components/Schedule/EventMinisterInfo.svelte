@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ministerHasDetailInfo, type EventMinister } from '$lib/shared/EventMinister';
-  // import { Envelope } from 'svelte-bootstrap-icons';
+  import { Envelope, Link45deg } from 'svelte-bootstrap-icons';
 
   export let minister: EventMinister;
 </script>
@@ -13,12 +13,12 @@
     {/if}
     {#if minister.link}
       <a class="minister-url smaller" href={minister.link.path} target="_blank">
-        {minister.link.label ?? minister.link.path}
+        <Link45deg width="22" height="22" color="white" />{minister.link.label ?? minister.link.path}
       </a>
     {/if}
     {#if minister.email}
       <a class="minister-email smaller" href="mailto:{minister.email}" target="_blank">
-        {minister.email ?? minister.email}
+        <Envelope color="white" />{minister.email ?? minister.email}
       </a>
     {/if}
   {/if}

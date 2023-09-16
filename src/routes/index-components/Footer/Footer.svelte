@@ -12,7 +12,7 @@
       <div class="col-md-4">
         <h3 class="fs-6 text-white" style="margin-top: 15px">Apoio</h3>
         <br />
-        <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Rocketseat" />
+        <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
       </div>
       <div class="col-md-4">
         <h3 class="fs-6 text-white mb-3">Realização</h3>
@@ -55,14 +55,14 @@
               id="contact-mail"
               aria-label="Entrar em contato por e-mail"
               href="mailto:cacic.fct@gmail.com?subject=Contato SECOMPP22">
-              <!-- <Envelope color="white" width="24" height="24" /> -->
+              <Envelope color="white" width="24" height="24" />
             </a>
             <a
               class="contact-button"
               id="contact-phone"
               href="tel:1832295600"
               aria-label="Entrar em contato por telefone">
-              <!-- <Telephone color="white" width="24" height="24" /> -->
+              <Telephone color="white" width="24" height="24" />
             </a>
           </div>
         </address>

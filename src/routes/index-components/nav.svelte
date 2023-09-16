@@ -1,5 +1,4 @@
 <script lang="ts">
-  import logo from '$lib/img/secompp22-logo.svg';
   import logo23 from '$lib/img/secompp23.svg'
   import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'sveltestrap';
 

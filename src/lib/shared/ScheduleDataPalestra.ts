@@ -1,4 +1,3 @@
-// import EventMinisterInfo from 'src/routes/index-components/Schedule/EventMinisterInfo.svelte';
 import type { ScheduleEventList } from './ScheduleEvent';
 import { createEvent } from './ScheduleEventUtils';
 

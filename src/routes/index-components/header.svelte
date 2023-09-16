@@ -1,5 +1,4 @@
 <script>
-  import logo from '$lib/img/secompp22-logo.svg';
   import logo23 from '$lib/img/secompp23.svg';
   import logoVunesp from '$lib/img/vunesp.svg';
   import { Button } from 'sveltestrap';
