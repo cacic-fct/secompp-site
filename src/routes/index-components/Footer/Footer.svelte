@@ -1,10 +1,10 @@
 <script>
   import logoCacic from '$lib/img/cacic.svg';
+  import logoEjcomp from '$lib/img/ejcomp.svg';
   import logoUnesp from '$lib/img/unesp.svg';
   import logoDmc from '$lib/img/dmc.webp';
   import logoVunesp from '$lib/img/vunesp.svg';
   import ImgLink from './ImgLink.svelte';
-
   import { Envelope, Telephone } from 'svelte-bootstrap-icons';
 </script>
 
@@ -25,6 +25,12 @@
             size="md"
             alt="Centro Acadêmico de Ciência da Computação"
             marginBottom /> 
+            <ImgLink
+            marginX
+            href="https://www.ejcomp.com.br/"
+            src={logoEjcomp}
+            size="md"
+            alt="Empresa Júnior da Computação" />
           <br />
           <ImgLink href="https://www.fct.unesp.br" size="md" src={logoUnesp} alt="Unesp" />
           <ImgLink
