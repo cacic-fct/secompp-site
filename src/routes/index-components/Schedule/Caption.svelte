@@ -3,9 +3,9 @@
   import palestrasIcon from '$lib/img/palestras.svg';
 </script>
 
-<div class="caption-container small" aria-label="legenda da tabela de horários">
-  <div class="row" style="max-width: 574px;">
-    <div id="icon-desc" class="col-sm">
+<div class="caption-container text-xs" aria-label="legenda da tabela de horários">
+  <div class="flex flex-wrap" style="max-width: 574px;">
+    <div id="icon-desc" class="relative sm:flex-1 sm:flex-grow">
       <div>
         <img src={minicursosIcon} loading="lazy" alt="Ícone minicurso" class="caption-icon" />
         Minicurso
@@ -15,7 +15,7 @@
         Palestra
       </div> -->
     </div>
-    <div class="col-sm">
+    <div class="relative sm:flex-1 sm:flex-grow">
       <p class="caption-gray" id="caption-large-screen">
         Clique no evento para visualizar mais informações.<br />
       </p>

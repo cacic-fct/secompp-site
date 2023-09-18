@@ -7,16 +7,16 @@
 </script>
 
 <header class="header-bg">
-  <div class="container mx-auto">
+  <div class="container mx-auto sm:px-4">
     <div class="intro-text text-center">
       <div class="intro-lead-in intro-lead-in-padding">
-        <img src={logo} width="100%" class="secompp-logo mx-auto p-3" alt="Logo SECOMPP 2022" />
+        <img src={logo} width="100%" class="secompp-logo mx-auto p-6" alt="Logo SECOMPP 2022" />
+      </div>
+      <div class="intro-heading text-center font-semibold">
+        <span class="text-3xl font-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
       </div>
       <div class="intro-heading text-center">
-        <span class="fs-3 fw-semibold"> 20ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
-      </div>
-      <div class="intro-heading text-center">
-        <span class="fs-4 fw-light">Junte-se a nós de 25 a 29 de setembro de 2023</span>
+        <span class="text-2xl font-light">Junte-se a nós de 25 a 29 de setembro de 2023</span>
       </div>
       <br />
       <br />

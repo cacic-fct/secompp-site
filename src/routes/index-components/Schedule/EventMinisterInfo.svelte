@@ -6,7 +6,7 @@
 </script>
 
 <div class="minister-info d-grid mx-1 rounded px-3 py-2 shadow">
-  <h6 class="fw-bold">{minister.name}</h6>
+  <h6 class="font-bold">{minister.name}</h6>
   {#if ministerHasDetailInfo(minister)}
     {#if minister.description}
       <span class="small pre-wrap">{minister.description}</span>

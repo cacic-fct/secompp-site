@@ -3,7 +3,7 @@
   import { Menu } from 'lucide-svelte';
 </script>
 
-<div class="navbar bg-base-100 pl-5 pr-5">
+<div class="navbar sticky top-0 z-50 bg-base-100 pl-5 pr-5">
   <div class="navbar-start">
     <img src={logo} class="py-1" width="150" alt="Logo da SECOMPP 2022" />
   </div>

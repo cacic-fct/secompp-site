@@ -10,6 +10,16 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['dark']
+    themes: [
+      {
+        darkTheme: {
+          ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
+          'base-100': '#000000',
+          'base-200': '#1d1e1f',
+          'base-300': '#2f3133',
+          'base-content': '#fefedf'
+        }
+      }
+    ]
   }
 };
