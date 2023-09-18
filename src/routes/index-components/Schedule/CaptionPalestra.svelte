@@ -1,5 +1,4 @@
 <script lang="ts">
-  import minicursosIcon from '$lib/img/minicursos.svg';
   import palestrasIcon from '$lib/img/palestras.svg';
 </script>
 
@@ -26,12 +25,12 @@
 </div>
 
 <style lang="postcss">
-  @mixin typo-gray {
+  @define-mixin typo-gray {
     color: var(--bs-gray-500);
   }
 
   .caption-gray {
-    @include typo-gray;
+    @mixin typo-gray;
   }
 
   #icon-desc {
@@ -64,13 +63,13 @@
 
   @media (max-width: 1199px) {
     #caption-large-screen {
-      @include typo-gray;
+      @mixin typo-gray;
       display: none;
     }
   }
 
   .caption-container {
-    @include typo-gray;
+    @mixin typo-gray;
     @media (min-width: 575px) {
       max-width: 767px;
     }

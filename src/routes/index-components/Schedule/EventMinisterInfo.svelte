@@ -26,7 +26,7 @@
 
 <style lang="postcss">
   @import './_styles.pcss';
-
+  @import '$lib/styles/_variables.pcss';
   .minister-url,
   .minister-email {
     text-decoration: none;

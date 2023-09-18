@@ -6,7 +6,6 @@
 
   const ScheduleGrid = createScheduleGrid(ScheduleData);
 
-  import Caption from './Caption.svelte';
   import CaptionPalestra from './CaptionPalestra.svelte';
   import EventModal from './EventModal.svelte';
   import ScheduleTableRow from './ScheduleTableRow.svelte';

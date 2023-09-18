@@ -36,7 +36,8 @@
 </tr>
 
 <style lang="postcss">
-  @use './styles';
+  @import './_styles.pcss';
+  @import '$lib/styles/_variables.pcss';
 
   .table-icon {
     filter: invert(100%) sepia(64%) saturate(532%) hue-rotate(353deg) brightness(109%) contrast(99%);
@@ -50,7 +51,7 @@
     outline: 0 solid transparent;
 
     &:first-child {
-      @include styles.cell-first-child();
+      @mixin cell-first-child;
       background-color: #000;
       outline: 5px solid #000;
 
@@ -74,7 +75,7 @@
 
     &:not(:first-child) {
       min-width: 200px;
-      color: styles.$body-color;
+      color: $body-color;
     }
 
     &[aria-disabled] {
