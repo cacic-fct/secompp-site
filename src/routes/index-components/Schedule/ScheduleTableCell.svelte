@@ -19,7 +19,8 @@
 </td>
 
 <style lang="postcss">
-  @use './styles' as *;
+  @import '$lib/styles/_variables.pcss';
+  @import './_styles.pcss';
 
   td {
     padding: 8px;
