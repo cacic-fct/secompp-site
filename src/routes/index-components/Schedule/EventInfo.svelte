@@ -5,7 +5,7 @@
   export let event: ScheduleEvent;
 </script>
 
-<div id="event-info" class="container mx-auto sm:px-4">
+<div id="event-info" class="container mx-auto px-4">
   <div class="flex flex-wrap">
     <div class="relative max-w-full flex-1 flex-grow px-4 pl-4 pr-4 md:w-1/5">
       <span class="font-bold">Data:</span>

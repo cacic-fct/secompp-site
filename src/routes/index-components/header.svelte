@@ -7,7 +7,7 @@
 </script>
 
 <header class="header-bg">
-  <div class="container mx-auto sm:px-4">
+  <div class="container mx-auto px-4">
     <div class="intro-text text-center">
       <div class="intro-lead-in intro-lead-in-padding">
         <img src={logo} width="100%" class="secompp-logo mx-auto p-6" alt="Logo SECOMPP 2022" />
