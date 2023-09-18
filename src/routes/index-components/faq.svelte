@@ -1,4 +1,4 @@
-<div class="container mx-auto sm:px-4">
+<div class="container mx-auto px-4">
   <h1>Dúvidas</h1>
   <div class="join join-vertical w-full">
     <div class="collapse join-item collapse-arrow border border-base-300">

@@ -19,7 +19,7 @@
   };
 </script>
 
-<div class="schedule-container container mx-auto sm:px-4">
+<div class="schedule-container container mx-auto px-4">
   <h1>Programação do Laboratório 8B</h1>
   <span>Recomenda-se trazer o seu próprio computador</span>
   <div class="scrolling-touch block w-full overflow-auto" style="--bs-secondary-rgb: 255, 255, 255">
