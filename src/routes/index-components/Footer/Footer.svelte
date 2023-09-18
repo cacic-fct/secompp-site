@@ -10,7 +10,7 @@
   import { Mail, Phone } from 'lucide-svelte';
 </script>
 
-<footer class="footer bg-neutral p-10 text-neutral-content">
+<footer class="footer bg-neutral p-10 text-neutral-content" id="footer">
   <nav>
     <header class="footer-title">Patrocínio</header>
     <ImgLink href="https://www.rubcube.com/" src={logoRubcube} size="xl" alt="Rubcube" marginBottom />

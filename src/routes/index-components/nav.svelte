@@ -17,7 +17,7 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#programacao">Programação</a></li>
         <li><a href="#duvidas">Dúvidas</a></li>
-        <li><a href="#apoio">Apoio</a></li>
+        <li><a href="#footer">Apoio</a></li>
         <a class="btn">Inscrever-se</a>
       </ul>
     </div>
