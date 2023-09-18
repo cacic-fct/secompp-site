@@ -19,11 +19,11 @@
   };
 </script>
 
-<div class="schedule-container container">
+<div class="schedule-container container mx-auto sm:px-4">
   <h1>Palestras</h1>
-  <div class="table-responsive" style="--bs-secondary-rgb: 255, 255, 255">
-    <table class="table">
-      <thead>
+  <div class="scrolling-touch block w-full overflow-auto" style="--bs-secondary-rgb: 255, 255, 255">
+    <table class="mb-4 w-full max-w-full bg-transparent">
+      <thead class="text-left">
         <tr>
           <th class="bw-0" />
           <th>Segunda</th>
@@ -33,7 +33,7 @@
           <th>Sexta</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="align-top">
         {#each ScheduleGrid as schedule}
           <ScheduleTableRow {onClickEvent} {schedule} />
         {/each}
@@ -47,7 +47,7 @@
 </div>
 
 <style lang="postcss">
-  @use './styles' as *;
+  @import './_styles.pcss';
 
   .schedule-container {
     @media (min-width: 576px) {
@@ -66,7 +66,7 @@
 
   th {
     &:first-child {
-      @include cell-first-child();
+      @mixin cell-first-child;
       background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), 45%, rgba(0, 0, 0, 0));
     }
     border: 0;

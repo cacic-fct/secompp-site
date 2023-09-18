@@ -1,5 +1,18 @@
 @use './variables' as var;
 @tailwind base;
+@layer base {
+  h1 {
+    @apply mb-2;
+    @apply text-4xl;
+    @apply font-medium;
+  }
+  h4 {
+    @apply mb-2;
+    @apply text-2xl;
+    @apply font-medium;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 

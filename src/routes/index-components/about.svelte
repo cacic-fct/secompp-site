@@ -3,7 +3,7 @@
   import unespLogo from '$lib/img/unesp-square.svg';
 </script>
 
-<div class="container mx-auto sm:px-4">
+<div class="container mx-auto mx-auto sm:px-4 sm:px-4">
   <hr class="my-5" />
   <div class="flex flex-wrap">
     <div class="mx-auto p-6 pl-4 pl-4 pr-4 pr-4 md:w-2/3 xl:w-1/2">

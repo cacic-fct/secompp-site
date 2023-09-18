@@ -5,36 +5,36 @@
   export let event: ScheduleEvent;
 </script>
 
-<div id="event-info" class="container">
-  <div class="row">
-    <div class="col col-md-2">
-      <span class="fw-bold">Data:</span>
+<div id="event-info" class="container mx-auto sm:px-4">
+  <div class="flex flex-wrap">
+    <div class="relative max-w-full flex-1 flex-grow px-4 pl-4 pr-4 md:w-1/5">
+      <span class="font-bold">Data:</span>
     </div>
-    <div class="col">
+    <div class="relative max-w-full flex-1 flex-grow px-4">
       {event.startTime.toLocaleDateString('pt-br')}
     </div>
   </div>
-  <div class="row">
-    <div class="col col-md-2">
-      <span class="fw-bold">Início:</span>
+  <div class="flex flex-wrap">
+    <div class="relative max-w-full flex-1 flex-grow px-4 pl-4 pr-4 md:w-1/5">
+      <span class="font-bold">Início:</span>
     </div>
-    <div class="col">
+    <div class="relative max-w-full flex-1 flex-grow px-4">
       {getEventStart(event)}
     </div>
   </div>
-  <div class="row">
-    <div class="col col-md-2">
-      <span class="fw-bold">Fim:</span>
+  <div class="flex flex-wrap">
+    <div class="relative max-w-full flex-1 flex-grow px-4 pl-4 pr-4 md:w-1/5">
+      <span class="font-bold">Fim:</span>
     </div>
-    <div class="col">
+    <div class="relative max-w-full flex-1 flex-grow px-4">
       {getEventEnd(event)}
     </div>
   </div>
-  <div class="row">
-    <div class="col col-md-2">
-      <span class="fw-bold">Local:</span>
+  <div class="flex flex-wrap">
+    <div class="relative max-w-full flex-1 flex-grow px-4 pl-4 pr-4 md:w-1/5">
+      <span class="font-bold">Local:</span>
     </div>
-    <div class="col">
+    <div class="relative max-w-full flex-1 flex-grow px-4">
       {event.place}
     </div>
   </div>

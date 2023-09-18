@@ -37,7 +37,6 @@
 
 <style lang="postcss">
   @import './_styles.pcss';
-  @import '$lib/styles/_variables.pcss';
 
   .table-icon {
     filter: invert(100%) sepia(64%) saturate(532%) hue-rotate(353deg) brightness(109%) contrast(99%);

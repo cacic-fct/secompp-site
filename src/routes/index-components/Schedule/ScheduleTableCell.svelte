@@ -7,8 +7,8 @@
 </script>
 
 <td tabindex="0" role="button" class="shadow-sm">
-  <div class="d-block" on:click={click}>
-    <span class="fw-bold">{event.eventName}</span>
+  <div class="block" on:click={click}>
+    <span class="font-bold">{event.eventName}</span>
     {#if event.shortDescription}
       <br />
       <span class="smaller">
@@ -19,7 +19,6 @@
 </td>
 
 <style lang="postcss">
-  @import '$lib/styles/_variables.pcss';
   @import './_styles.pcss';
 
   td {

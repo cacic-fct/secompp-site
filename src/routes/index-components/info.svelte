@@ -1,7 +1,7 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h1>Localização</h1>
+<div class="container mx-auto sm:px-4">
+  <div class="flex flex-wrap">
+    <div class="pl-4 pr-4 md:w-1/2">
+      <h1 class="mb-2 text-4xl font-medium">Localização</h1>
       <div class="map-container">
         <iframe
           title="Map"
@@ -14,10 +14,10 @@
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCVY40T87ywPBvI98OCCNHrivvLlZM2n6k&region=BR&language=pt-BR&q=Faculdade de Ciências e Tecnologia - Câmpus de Presidente Prudente" />
       </div>
     </div>
-    <div class="col-md-6">
-      <h1>Inscrições</h1>
-      <div class="table-responsive">
-        <table class="table">
+    <div class="pl-4 pr-4 md:w-1/2">
+      <h1 class="mb-2 text-4xl font-medium">Inscrições</h1>
+      <div class="scrolling-touch block w-full overflow-auto">
+        <table class="mb-4 w-full max-w-full bg-transparent">
           <thead>
             <tr>
               <th />
