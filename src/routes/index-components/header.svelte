@@ -33,17 +33,14 @@
       <br />
       Apoio:
       <br />
-
       <ImgLink
-        marginX
         href="https://www.rocketseat.com.br/"
         size="lg"
         marginHorizontalAuto
         src={logoRocketseat}
         alt="Rocketseat" />
       <br />
-      <br />
-      <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" marginHorizontalAuto src={logoVunesp} alt="Vunesp" />
+      <ImgLink href="https://www.vunesp.com.br/" size="lg" marginHorizontalAuto src={logoVunesp} alt="Vunesp" />
     </div>
   </div>
 </header>
