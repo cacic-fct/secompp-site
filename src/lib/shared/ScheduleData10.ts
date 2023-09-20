@@ -11,7 +11,8 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: conexão à internet, pois o material será disponibilizado e apresentado em formato de notebooks no Google Colab, sem a necessidade de instalação.',
   '',
-  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},{name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
+  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},
+  {name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
    	
   createEvent('Introdução à Linguagem Python para Análise de Dados',
   'Laboratório 10',
@@ -20,7 +21,8 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: conexão à internet, pois o material será disponibilizado e apresentado em formato de notebooks no Google Colab, sem a necessidade de instalação.',
   '',
-  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},{name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
+  [{name:'Lucas Vinícius Voltera',email:'lucas.voltera@unesp.br'},
+  {name:'Julio Oliveira Santana',email:'julio.o.santana@unesp.br'}]),
   
   createEvent('Introdução à modelagem e impressão tridimensional',
   'Laboratório 10',
@@ -47,7 +49,8 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: NodeJS, será utilizado o SvelteKit para a geração do projeto.',
   'Uma nova forma de escrever para web',
-  [{name:'Guilherme Cesar Tomiasi',email:'gc.tomiasi@unesp.br'},{name:'Carlos Eduardo Fernandes de Santana',email:'carlos.ef.santana@unesp.br'},]),
+  [{name:'Guilherme Cesar Tomiasi',email:'gc.tomiasi@unesp.br'},
+  {name:'Carlos Eduardo Fernandes de Santana',email:'carlos.ef.santana@unesp.br'},]),
 
   createEvent('Introdução à React.js',
   'Laboratório 10',
@@ -56,7 +59,8 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: computadores com vsCode e com npm e node.js funcionando.',
   '',
-  [{name:'Karolyne Domiciano Marques',email:'karolyne.d.marques@unesp.br'},{name:'Vinícius Polachini Mayer Freitas de Jesus',email:'vinicius.polachini@unesp.br'},]),
+  [{name:'Karolyne Domiciano Marques',email:'karolyne.d.marques@unesp.br'},
+  {name:'Vinícius Polachini Mayer Freitas de Jesus',email:'vinicius.polachini@unesp.br'},]),
 
 	createEvent('Do zero ao Backend, com Javascript',
   'Laboratório 10',
@@ -65,7 +69,9 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: computador, Node.js, Mysql e Insomnia ou Postman instalados.',
   '',
-  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},{name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
+  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},
+  {name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},
+  {name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
   
   createEvent('Do zero ao Backend, com Javascript',
   'Laboratório 10',
@@ -74,7 +80,9 @@ const ScheduleData: ScheduleEventList = [
   240,
   'Requisitos: computador, Node.js, Mysql e Insomnia ou Postman instalados.',
   '',
-  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},{name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
+  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},
+  {name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},
+  {name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
 	
 ];
 
