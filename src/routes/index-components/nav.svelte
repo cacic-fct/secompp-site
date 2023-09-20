@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logo from '$lib/img/secompp23.svg'
+  import logo from '$lib/img/secompp23.svg';
   import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'sveltestrap';
 
   let isOpen = false;
@@ -27,6 +27,10 @@
 
       <NavItem>
         <NavLink href="#footer">Apoio</NavLink>
+      </NavItem>
+
+      <NavItem>
+        <Button outline class="nav-subscribe-btn" href="https://fct-pp.web.app/eventos">Inscrever-se</Button>
       </NavItem>
     </Nav>
   </Collapse>

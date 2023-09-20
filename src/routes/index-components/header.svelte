@@ -7,7 +7,7 @@
 
 <header class="header-bg">
   <div class="container">
-    <div class="text-center intro-text">
+    <div class="intro-text text-center">
       <div class="intro-lead-in intro-lead-in-padding">
         <img src={logo} width="100%" class="secompp-logo" alt="Logo SECOMPP 2023" />
       </div>
@@ -17,6 +17,7 @@
       <div class="text-center intro-heading">
         <span class="fs-4 fw-light">Junte-se a nós de 17 a 21 de outubro de 2022</span>
       </div>
+      <Button outline class="my-3" size="lg" href="https://fct-pp.web.app/eventos">Inscrever-se</Button>
       <br />
       <br />
       Apoio:
