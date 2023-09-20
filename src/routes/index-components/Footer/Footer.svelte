@@ -21,7 +21,7 @@
         <ImgLink marginX href="https://www.rocketseat.com.br/" size="lg" src={rocketseat} alt="Rocketseat"/>
         <br>
         <br>
-        <ImgLink marginX href="https://www.rocketseat.com.br/" size="sm" src={vlab} alt="Vlab"/>
+        <ImgLink marginX href="https://www.vlabhealth.com/" size="sm" src={vlab} alt="Vlab"/>
       </div>
       <div class="col-md-4">
         <h3 class="fs-6 text-white mb-3">Realização</h3>

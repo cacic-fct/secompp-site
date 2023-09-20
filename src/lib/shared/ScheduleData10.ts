@@ -84,6 +84,15 @@ const ScheduleData: ScheduleEventList = [
   {name:'Alvaro Massanori Sato',email:'alvaro.sato@unesp.br'},
   {name:'Guilherme de Aguiar Pacianotto',email:'g.pacianotto@unesp.br'},]),
 	
+  createEvent('Git Simplificado',
+  'Laboratório 6',
+  0,
+  new Date('2023-09-29T08:00'),
+  240,
+  'Requisitos: Git, editor de texto ou IDE',
+  'Introdução ao Controle de Versão',
+  [{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Masanori Sato',email:'alvaro.sato@unesp.br'}]),
+
 ];
 
 export default ScheduleData;
