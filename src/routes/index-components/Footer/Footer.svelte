@@ -17,7 +17,6 @@
         <h3 class="fs-6 text-white" style="margin-top: 15px">Apoio</h3>
         <br />
         <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
-        
         <ImgLink marginX href="https://www.rocketseat.com.br/" size="lg" src={rocketseat} alt="Rocketseat"/>
         <br>
         <br>
