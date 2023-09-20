@@ -5,7 +5,7 @@ const ScheduleData: ScheduleEventList = [
 
 
 createEvent('Docker',
-  'Laboratório de Ensino de Matemática (sala 24)',
+  'Laboratório Didático de Matemática (sala 24)',
   0,
   new Date('2023-09-28T14:00'),
   240,

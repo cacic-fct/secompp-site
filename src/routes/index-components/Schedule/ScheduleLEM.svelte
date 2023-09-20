@@ -20,8 +20,8 @@
 </script>
 
 <div class="container schedule-container">
-  <h1>Programação do LEM</h1>
-  <span>Laboratório de Ensino de Matemática (sala 24)<br/>Recomenda-se trazer o seu próprio computador</span>
+  <h1>Programação do LDM</h1>
+  <span>Laboratório Didático de Matemática (sala 24)<br/>Recomenda-se trazer o seu próprio computador</span>
   <div class="table-responsive" style="--bs-secondary-rgb: 255, 255, 255">
     <table class="table">
       <thead>
