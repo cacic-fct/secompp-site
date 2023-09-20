@@ -3,6 +3,8 @@
   import logoVunesp from '$lib/img/vunesp.svg';
   import { Button } from 'sveltestrap';
   import ImgLink from './Footer/ImgLink.svelte';
+  import rocketseat from '$lib/img/rocketseat.svg'
+  import vlab from '$lib/img/VLab.svg'
 </script>
 
 <header class="header-bg">
@@ -22,6 +24,10 @@
       Apoio:
       <br />
       <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
+      <ImgLink marginX href="https://www.rocketseat.com.br/" size=lg src={rocketseat} alt="Rocketseat"/>
+      <!-- <br> -->
+      <!-- <br> -->
+      <ImgLink marginX href="https://www.rocketseat.com.br/" size="sm" src={vlab} alt="Vlab"/>
     </div>
   </div>
 </header>
