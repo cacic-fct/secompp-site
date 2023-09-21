@@ -37,14 +37,7 @@ new Date('2023-09-28T08:00'),
 '',
 [{name:'Daniel Henrique Serezane Pereira',email:'daniel.serezane@unesp.br'},{name:'Gustavo Becelli do Nacimento	',email:'gustavo.becelli@unesp.br'}]),
 
-createEvent('Git Simplificado',
-'Laboratório 6',
-0,
-new Date('2023-09-29T08:00'),
-240,
-'Requisitos: Git, editor de texto ou IDE',
-'Introdução ao Controle de Versão',
-[{name:'Alexandre Folkl',email:'a.folkl@unesp.br'},{name:'Alvaro Masanori Sato',email:'alvaro.sato@unesp.br'}]),
+
  	
 createEvent('Flappy Bird com IA',
 'Laboratório 6',
@@ -82,16 +75,7 @@ new Date('2023-09-28T14:00'),
 '',
 [{name:'Rafael Nogueira Correia',email:'rafael.n.correia@unesp.br'},{name:'João Vitor Couto Oliveira',email:'joao.couto@unesp.br'}]),
 
-// createEvent('Docker',
-//   'Laboratório 6',
-//   0,
-//   new Date('2023-09-28T14:00'),
-//   240,
-//   'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
-//   'Ambiente para desenvolvimento - Teoria e Prática',
-//   [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
-
-  createEvent('Docker',
+createEvent('Docker',
   'Laboratório 6',
   0,
   new Date('2023-09-29T14:00'),
@@ -99,12 +83,6 @@ new Date('2023-09-28T14:00'),
   'Requisitos: um computador ou notebook com Docker instalado (Docker em qualquer plataforma).',
   'Ambiente para desenvolvimento - Teoria e Prática',
   [{name:'Guilherme Eduardo Silva Batalhoti',email:'guilherme.batalhoti@unesp.br'},{name:'Gabriel Cecon Carlsen',email:'cecon.carlsen@unesp.br'}]),
-
 ];
 	
-
-
-
-
-
 export default ScheduleData;
