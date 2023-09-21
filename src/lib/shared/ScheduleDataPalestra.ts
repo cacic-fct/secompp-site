@@ -39,7 +39,8 @@ const ScheduleData: ScheduleEventList = [
   150,
   'Mesa-redonda',
   '',
-  [{name:'João Paulo da Cunha Freire'}]
+  [{name:'Caio Takeshi Onishi'},
+  {name:'Giulia Campos de Oliveira'}]
   ),
   ]
 

@@ -15,7 +15,7 @@
       1. Faça login no site;
       <br />
       <br />
-      2. Selecione até 3 minicursos.
+      2. Selecione até <b>2</b> minicursos.
       <br />
       Confira se não há choque de horário entre eles e clique no botão de confirmação ✓;
       <br />
@@ -24,7 +24,7 @@
       <br /> <br />
       4. Realize o pagamento conforme as instruções e envie o comprovante.
       <br />
-      Não se esqueça de incluir o nome completo do participante no comentário do pix!;
+      <b>Não se esqueça de incluir o nome completo do participante no comentário do pix!</b>;
       <br /> <br />
       5. Aguarde a confirmação do pagamento.
     </AccordionItem>

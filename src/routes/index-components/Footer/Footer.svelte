@@ -5,6 +5,8 @@
   import logoDmc from '$lib/img/dmc.webp';
   import logoVunesp from '$lib/img/vunesp.svg';
   import ImgLink from './ImgLink.svelte';
+  import rocketseat from '$lib/img/rocketseat.svg'
+  import vlab from '$lib/img/VLab.svg'
   import { Envelope, Telephone } from 'svelte-bootstrap-icons';
 </script>
 
@@ -15,6 +17,10 @@
         <h3 class="fs-6 text-white" style="margin-top: 15px">Apoio</h3>
         <br />
         <ImgLink marginX href="https://www.vunesp.com.br/" size="lg" src={logoVunesp} alt="Vunesp" />
+        <ImgLink marginX href="https://www.rocketseat.com.br/" size="lg" src={rocketseat} alt="Rocketseat"/>
+        <br>
+        <br>
+        <ImgLink marginX href="https://www.vlabhealth.com/" size="sm" src={vlab} alt="Vlab"/>
       </div>
       <div class="col-md-4">
         <h3 class="fs-6 text-white mb-3">Realização</h3>
