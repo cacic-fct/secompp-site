@@ -4,7 +4,7 @@ import { createEvent } from './ScheduleEventUtils';
 const ScheduleData: ScheduleEventList = [
 
 
-createEvent('Docker',
+createEvent('Docker - parte 1',
   'Laboratório Didático de Matemática (sala 24)',
   0,
   new Date('2023-09-28T14:00'),
