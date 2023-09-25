@@ -18,6 +18,7 @@
 <section id="sobre">
   <About />
 </section>
+<Ending/>
 <section id="programacao">
   <Schedule6 />
   <Schedule10 />
