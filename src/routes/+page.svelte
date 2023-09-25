@@ -23,6 +23,7 @@
 <section id="sobre">
   <About />
 </section>
+<Ending/>
 <section id="programacao">
   <Schedule5B />
   <Schedule6B />
