@@ -7,13 +7,13 @@
   <div class="text-center intro-text">
     <hr class="my-5" />
     <br />
-    O evento chegou ao fim. Agradecemos a todos que participaram!<br />
+    <!-- O evento chegou ao fim. Agradecemos a todos que participaram!<br /> -->
     Você pode acessar os materiais utilizados durante os minicursos aqui:<br />
     <Button
       outline
       class="my-3"
       size="lg"
-      href="https://drive.google.com/drive/folders/1rmuhUMoa3cWbGFHj3OxrTUepA_1_3vrc?usp=sharing"
+      href="https://drive.google.com/drive/folders/1QS1X21c6kdrtTGymhBX-mMp7_AciSq1X"
       >Acessar o material</Button>
   </div>
 </div>
