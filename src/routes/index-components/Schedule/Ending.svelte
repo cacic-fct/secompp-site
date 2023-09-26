@@ -8,7 +8,7 @@
     <hr class="my-5" />
     <br />
     <!-- O evento chegou ao fim. Agradecemos a todos que participaram!<br /> -->
-    Você pode acessar os materiais utilizados durante os minicursos aqui:<br />
+    Você pode acessar os materiais utilizados durante os minicursos e palestras aqui:<br />
     <Button
       outline
       class="my-3"
