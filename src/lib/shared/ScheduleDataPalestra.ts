@@ -36,7 +36,7 @@ const ScheduleData: ScheduleEventList = [
     150,
     'Mesa-redonda',
     'Carreiras e trajetórias',
-    [{ name: 'Caio Takeshi Onishi' }, { name: 'Giulia Campos de Oliveira' }, { name: 'Leandro Ungari Cayres' },{name: 'William da Silva Lopes'}]
+    [{ name: 'Caio Takeshi Onishi' }, { name: 'Giulia Campos de Oliveira' }, { name: 'Leandro Ungari Cayres' },{name: 'William da Silva Lopes'},{name: 'Jaqueline Teixeira'}]
   ),
 ];
 
