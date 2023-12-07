@@ -13,7 +13,6 @@
       outline
       class="my-3"
       size="lg"
-      href="https://drive.google.com/drive/folders/1QS1X21c6kdrtTGymhBX-mMp7_AciSq1X"
-      >Acessar o material</Button>
+      href="https://drive.google.com/drive/folders/1QS1X21c6kdrtTGymhBX-mMp7_AciSq1X">Acessar o material</Button>
   </div>
 </div>
