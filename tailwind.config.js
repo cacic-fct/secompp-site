@@ -13,7 +13,7 @@ export default {
     themes: [
       {
         darkTheme: {
-          ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
+          ...require('daisyui/src/theming/themes')['[dark]'],
           'base-100': '#000000',
           'base-200': '#1d1e1f',
           'base-300': '#2f3133',

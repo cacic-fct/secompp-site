@@ -42,7 +42,7 @@
       padding: 8px;
       border-radius: $border-radius;
       transition: $transition-duration;
-      outline: 1px solid hsla(0, 3%, 60%, 0.336);
+      outline: 1px solid oklch(67.8%, 1.75%, 17.331%);
 
       &:hover,
       &:focus-visible {
