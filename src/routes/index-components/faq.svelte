@@ -48,8 +48,7 @@
       <br />
       <br />
       Anexe o comprovante do pagamento
-      <a class="fw-bold" target="_blank" href="https://fct-pp.web.app/inscricoes/pagar/dViFyyJuepTPjcaZXfZa">no site</a
-      >.
+      <a class="fw-bold" target="_blank" href="https://fct-pp.web.app">no site</a>.
       <br />
     </AccordionItem>
     <AccordionItem header="Haverá certificado de participação?">
