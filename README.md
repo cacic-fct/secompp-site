@@ -1,11 +1,25 @@
 # Site da SECOMPP
 
+## Contribuindo
+
+Todos podem contribuir para o "Site da SECOMPP".
+
+Leia o [guia de contribuição do CACiC](https://github.com/cacic-fct/.github/blob/main/Contributing.md).
+
 ## Desenvolvimento
 
-Depois de instalar as dependências utilizando `yarn`, inicie o servidor de desenvolvimento:
+Para iniciar o site localmente, primeiro instale o [Bun](https://bun.sh/).
+
+Depois, instale as dependências:
 
 ```bash
-yarn dev
+bun install
+```
+
+Em seguida, inicie o servidor de desenvolvimento:
+
+```bash
+bun run dev
 ```
 
 ## Building
@@ -13,7 +27,7 @@ yarn dev
 Para criar uma versão de produção do site, execute:
 
 ```bash
-yarn build
+bun run build
 ```
 
-Você pode visualizar a versão de produção com `yarn preview`.
+Você pode visualizar a versão de produção com `bun run preview`.
