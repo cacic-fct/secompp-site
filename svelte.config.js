@@ -16,7 +16,7 @@ const config = {
       strict: true
     }),
     paths: {
-      base: dev ? '' : '/semanas/secompp'
+      base: ''
     }
   }
 };
