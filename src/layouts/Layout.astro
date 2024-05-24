@@ -16,9 +16,21 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/images/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://secompp.ejcomp.com.br" />
+    <meta property="og:title" content="SECOMPP22" />
+    <meta property="og:site_name" content="SECOMPP22" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Semana da Computação de Presidente Prudente 2022 - Minicursos, palestras e mais!" />
+    <meta property="og:image" content="https://secompp.ejcomp.com.br/images/logo-og.png" />
+
+		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
 		<Nav />
@@ -26,21 +38,4 @@ const { title } = Astro.props;
 		<Footer / > 
 	</body>
 </html>
-<style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+
