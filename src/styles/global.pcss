@@ -16,6 +16,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+ html {
+    scroll-behavior: auto;
+	
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', 'Helvetica Neue', 'Neue Helvetica', 'Helvetica', 'Roboto', 'Arial', ui-sans-serif, system-ui, sans-serif;
+}
+
+
 :root {
   --bs-dark-rgb: 0, 0, 0;
   --bs-body-bg: #000;
@@ -156,12 +176,5 @@ section:before {
   width: 200px;
 }
 
-@media (prefers-reduced-motion: reduce) {
- html {
-    scroll-behavior: auto;
-  }
-}
 
-html {
-  scroll-behavior: smooth;
-}
+
