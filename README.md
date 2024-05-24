@@ -2,10 +2,10 @@
 
 ## Desenvolvimento
 
-Depois de instalar as dependências utilizando `npm install` (ou `pnpm install` ou `yarn`), inicie o servidor de desenvolvimento:
+Depois de instalar as dependências utilizando `bun install`, inicie o servidor de desenvolvimento:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ## Building
@@ -13,7 +13,7 @@ npm run dev
 Para criar uma versão de produção do site, execute:
 
 ```bash
-npm run build
+bun run build
 ```
 
-Você pode visualizar a versão de produção com `npm run preview`.
+Você pode visualizar a versão de produção com `bun run preview`.
