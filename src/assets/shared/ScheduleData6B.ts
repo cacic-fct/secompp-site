@@ -13,16 +13,16 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Prof. Dr. Ronaldo Celso Messias Correia',
-        email: 'ronaldo.correia@unesp.br',
+        email: 'ronaldo.correia@unesp.br'
       },
       {
         name: 'Guilherme Eduardo Silva Batalhoti',
-        email: 'guilherme.batalhoti@unesp.br',
+        email: 'guilherme.batalhoti@unesp.br'
       },
       {
         name: 'Lucas Vinícius Voltera',
-        email: 'lucas.voltera@unesp.br',
-      },
+        email: 'lucas.voltera@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -36,16 +36,16 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Prof. Dr. Ronaldo Celso Messias Correia',
-        email: 'ronaldo.correia@unesp.br',
+        email: 'ronaldo.correia@unesp.br'
       },
       {
         name: 'Guilherme Eduardo Silva Batalhoti',
-        email: 'guilherme.batalhoti@unesp.br',
+        email: 'guilherme.batalhoti@unesp.br'
       },
       {
         name: 'Lucas Vinícius Voltera',
-        email: 'lucas.voltera@unesp.br',
-      },
+        email: 'lucas.voltera@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -60,8 +60,8 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Téo Calvo',
-        email: 'teo.bcalvo@gmail.com',
-      },
+        email: 'teo.bcalvo@gmail.com'
+      }
     ]
   ),
   createEvent(
@@ -77,8 +77,8 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Thiago Aires Geraldo de Almeida',
-        email: 'thiago.almeida@lambda3.com.br',
-      },
+        email: 'thiago.almeida@lambda3.com.br'
+      }
     ]
   ),
   createEvent(
@@ -92,12 +92,12 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'João Vitor Couto Oliveira',
-        email: 'joao.couto@unesp.br',
+        email: 'joao.couto@unesp.br'
       },
       {
         name: 'Rafael Nogueira Correia',
-        email: 'rafael.n.correia@unesp.br',
-      },
+        email: 'rafael.n.correia@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -111,12 +111,12 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'João Vitor Couto Oliveira',
-        email: 'joao.couto@unesp.br',
+        email: 'joao.couto@unesp.br'
       },
       {
         name: 'Rafael Nogueira Correia',
-        email: 'rafael.n.correia@unesp.br',
-      },
+        email: 'rafael.n.correia@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -130,12 +130,12 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Gabriel Cecon Carlsen',
-        email: 'cecon.carlsen@unesp.br',
+        email: 'cecon.carlsen@unesp.br'
       },
       {
         name: 'Guilherme de Aguiar Pacianotto',
-        email: 'g.pacianotto@unesp.br',
-      },
+        email: 'g.pacianotto@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -149,15 +149,15 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Gabriel Cecon Carlsen',
-        email: 'cecon.carlsen@unesp.br',
+        email: 'cecon.carlsen@unesp.br'
       },
       {
         name: 'Guilherme de Aguiar Pacianotto',
-        email: 'g.pacianotto@unesp.br',
-      },
+        email: 'g.pacianotto@unesp.br'
+      }
     ]
   ),
-  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270),
+  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270)
 ];
 
 export default ScheduleData;

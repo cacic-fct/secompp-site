@@ -13,8 +13,8 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Murilo Rocha Pereira',
-        email: 'mr.pereira@unesp.br',
-      },
+        email: 'mr.pereira@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -28,8 +28,8 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Murilo Rocha Pereira',
-        email: 'mr.pereira@unesp.br',
-      },
+        email: 'mr.pereira@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -43,12 +43,12 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br',
+        email: 'daniel.n.monteiro@unesp.br'
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br',
-      },
+        email: 'gabriel.a.silva@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -62,12 +62,12 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br',
+        email: 'daniel.n.monteiro@unesp.br'
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br',
-      },
+        email: 'gabriel.a.silva@unesp.br'
+      }
     ]
   ),
   createEvent(
@@ -81,15 +81,15 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br',
+        email: 'daniel.n.monteiro@unesp.br'
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br',
-      },
+        email: 'gabriel.a.silva@unesp.br'
+      }
     ]
   ),
-  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270),
+  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270)
 ];
 
 export default ScheduleData;

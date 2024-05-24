@@ -4,13 +4,8 @@
   "printWidth": 120,
   "singleQuote": true,
   "trailingComma": "none",
-  "plugins": [
-    "prettier-plugin-svelte",
-    "prettier-plugin-tailwindcss"
-  ],
-  "pluginSearchDirs": [
-    "."
-  ],
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": ["."],
   "overrides": [
     {
       "files": "*.svelte",
