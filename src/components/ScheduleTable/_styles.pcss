@@ -1,0 +1,25 @@
+@import 'src/styles/_variables.pcss';
+
+@define-mixin cell-first-child {
+  position: sticky;
+  left: 0px;
+
+  /*
+  Buscando solução para esta gambiarra
+  Na tela de celular o layout da tabela fica
+  "vazando" o conteúdo pra esquerda
+  */
+  @media (max-width: 574px) {
+    left: -1px;
+  }
+  @mixin-content;
+}
+
+$transition-duration: 0.3s;
+$border-radius: 6px;
+$sp-1: 0.25rem;
+$sp-2: 0.5rem;
+
+@define-mixin transition {
+  transition: $transition-duration;
+}

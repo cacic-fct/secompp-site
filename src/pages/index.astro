@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import About from '../components/About.astro';
+import Header from '../components/Header.astro';
+import Faq from '../components/Faq.astro';
+import Info from '../components/Info.astro';
+import Schedule5B from '../components/ScheduleTable/Schedule5B.svelte';
+import Schedule6B from '../components/ScheduleTable/Schedule6B.svelte';
+import Schedule8B from '../components/ScheduleTable/Schedule8B.svelte';
+import Schedule10 from '../components/ScheduleTable/Schedule10.svelte';
+import SchedulePalestra from '../components/ScheduleTable/SchedulePalestra.svelte';
+---
+
+
+<Layout title="SECOMPP24">
+
+	<main>
+
+<Header />
+<!-- 
+<section>
+  <Ending />
+</section>
+-->
+
+<section id="sobre">
+  <About />
+</section>
+<section id="programacao">
+  <Schedule5B  client:only="svelte"/>
+  <Schedule6B  client:only="svelte"/>
+  <Schedule8B  client:only="svelte"/>
+  <Schedule10  client:only="svelte"/>
+  <SchedulePalestra  client:only="svelte"/>
+</section>
+<section id="informacoes">
+  <Info />
+</section>
+<section id="duvidas">
+  <Faq />
+</section>
+
+
+	</main>
+</Layout>
+
+<style>
+</style>
