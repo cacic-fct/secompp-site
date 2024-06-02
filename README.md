@@ -1,5 +1,9 @@
 # Site da SECOMPP
 
+O site da SECOMPP reune todas as informações do evento.
+
+O projeto é contínuo: não deve-se criar um novo repositório a cada ano, nem substituir o site por completo.
+
 ## Contribuindo
 
 Todos podem contribuir para o "Site da SECOMPP".
