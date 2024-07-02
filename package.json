@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/svelte": "^5.4.0",
     "astro": "^4.9.1",
     "lucide-astro": "^0.379.0",
