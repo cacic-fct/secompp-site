@@ -12,25 +12,25 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/svelte": "^5.4.0",
-    "astro": "^4.9.1",
-    "lucide-astro": "^0.379.0",
-    "lucide-svelte": "^0.379.0",
-    "svelte": "^4.2.17",
-    "typescript": "^5.4.5"
+    "@astrojs/svelte": "^5.6.0",
+    "astro": "^4.11.3",
+    "lucide-astro": "^0.399.0",
+    "lucide-svelte": "^0.399.0",
+    "svelte": "^4.2.18",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.9",
     "autoprefixer": "^10.4.19",
-    "daisyui": "^4.11.1",
-    "postcss": "^8.4.38",
+    "daisyui": "^4.12.10",
+    "postcss": "^8.4.39",
     "postcss-import": "^16.1.0",
     "postcss-mixins": "^10.0.1",
     "postcss-simple-vars": "^7.0.1",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-svelte": "^3.2.3",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.3"
+    "prettier-plugin-svelte": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4"
   }
 }
