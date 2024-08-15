@@ -1,27 +1,24 @@
 ---
-  import logoCacic from '@lib/img/cacic.svg';
-  import logoEjcomp from '@lib/img/ejcomp.svg';
-  import logoUnesp from '@lib/img/unesp.svg';
-  import logoDmc from '@lib/img/dmc.webp';
-  import logoRubcube from '@lib/img/rubcube.svg';
-  import logoRocketseat from '@lib/img/rocketseat.svg';
-  import { Mail, Phone } from 'lucide-astro';
+import logoCacic from '@lib/img/cacic.svg';
+import logoEjcomp from '@lib/img/ejcomp.svg';
+import logoUnesp from '@lib/img/unesp.svg';
+import logoDmc from '@lib/img/dmc.webp';
+import logoRubcube from '@lib/img/rubcube.svg';
+import logoRocketseat from '@lib/img/rocketseat.svg';
+import { Mail, Phone } from 'lucide-astro';
 
-  import { Image } from 'astro:assets';
+import { Image } from 'astro:assets';
 ---
 
 <footer class="footer bg-neutral p-10 text-neutral-content" id="footer">
   <nav>
     <header class="footer-title">Patrocínio</header>
-    <a  href="https://www.rubcube.com/" target="_blank">
-    <Image class="mx-auto img-xl mb-1" src={logoRubcube} alt="Rubcube" />
+    <a href="https://www.rubcube.com/" target="_blank">
+      <Image class="img-xl mx-auto mb-1" src={logoRubcube} alt="Rubcube" />
     </a>
     <header class="footer-title">Apoio</header>
-    <a   href="https://www.rocketseat.com.br/" target="_blank">
-    <Image
-      class="margin-left-4 mx-auto img-xl" 
-      src={logoRocketseat}
-      alt="Rocketseat" />
+    <a href="https://www.rocketseat.com.br/" target="_blank">
+      <Image class="margin-left-4 img-xl mx-auto" src={logoRocketseat} alt="Rocketseat" />
     </a>
     <br />
   </nav>
@@ -29,29 +26,20 @@
     <header class="footer-title">Realização</header>
 
     <div class="grid grid-flow-col items-center gap-4">
-      <a         href="https://cacic-fct.github.io" target="_blank">
-      <Image class="img-md mb-1"
-        src={logoCacic}
-        alt="Centro Acadêmico de Ciência da Computação"
- /></a>
-     <a href="https://www.ejcomp.com.br/" target="_blank"> <Image
-        
-      class="margin-left-4 img-md"
-
-        src={logoEjcomp}
-        alt="Empresa Júnior da Computação" /> </a>
+      <a href="https://cacic.dev.br" target="_blank">
+        <Image class="img-md mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
+      >
+      <a href="https://www.ejcomp.com.br/" target="_blank">
+        <Image class="margin-left-4 img-md" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+      </a>
     </div>
     <br />
     <div class="grid grid-flow-col items-center gap-4">
-      <a  href="https://www.fct.unesp.br" target="_blank">
-      <Image  class="img-md" src={logoUnesp} alt="Unesp" />
-    </a>
-    <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/" target="_blank">
-      <Image
-        class="margin-left-4 img-sm md-1"
-        src={logoDmc}
-        alt="Departamento de Matemática e Computação"
-         />
+      <a href="https://www.fct.unesp.br" target="_blank">
+        <Image class="img-md" src={logoUnesp} alt="Unesp" />
+      </a>
+      <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/" target="_blank">
+        <Image class="margin-left-4 img-sm md-1" src={logoDmc} alt="Departamento de Matemática e Computação" />
       </a>
     </div>
     <br />
@@ -71,14 +59,14 @@
       <br />
       <div class="flex">
         <a
-          class=" mr-3 transition-opacity hover:opacity-75"
+          class="mr-3 transition-opacity hover:opacity-75"
           id="contact-mail"
           aria-label="Entrar em contato por e-mail"
           href="mailto:secompp@googlegroups.com?subject=Contato SECOMPP24">
           <Mail color="white" width="24" height="24" />
         </a>
         <a
-          class=" ml-3 transition-opacity hover:opacity-75"
+          class="ml-3 transition-opacity hover:opacity-75"
           id="contact-phone"
           href="tel:1832295600"
           aria-label="Entrar em contato por telefone">
@@ -87,7 +75,7 @@
       </div>
     </div>
 
-    <a class="link-hover link pt-3" href="https://cacic-fct.github.io/legal/privacy-policy">Política de privacidade</a>
+    <a class="link-hover link pt-3" href="https://cacic.dev.br/legal/privacy-policy">Política de privacidade</a>
   </nav>
 </footer>
 
@@ -96,15 +84,13 @@
     margin-left: 4px;
   }
 
-  a  img { 
+  a img {
     opacity: 1;
-  transition: 0.3s;
-  transition-property: opacity, background-color;
+    transition: 0.3s;
+    transition-property: opacity, background-color;
 
-  &:hover {
-    opacity: 0.5;
+    &:hover {
+      opacity: 0.5;
+    }
   }
-  }
-
-
 </style>
