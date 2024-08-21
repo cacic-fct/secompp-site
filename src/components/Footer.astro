@@ -3,8 +3,8 @@ import logoCacic from '@lib/img/cacic.svg';
 import logoEjcomp from '@lib/img/ejcomp.svg';
 import logoUnesp from '@lib/img/unesp.svg';
 import logoDmc from '@lib/img/dmc.webp';
-import logoRubcube from '@lib/img/rubcube.svg';
-import logoRocketseat from '@lib/img/rocketseat.svg';
+import logoVericode from '@lib/img/vericode.svg';
+import logoCobmais from '@lib/img/cobmais.svg';
 import { Mail, Phone } from 'lucide-astro';
 
 import { Image } from 'astro:assets';
@@ -13,13 +13,13 @@ import { Image } from 'astro:assets';
 <footer class="footer bg-neutral p-10 text-neutral-content" id="footer">
   <nav>
     <header class="footer-title">Patrocínio</header>
-    <a href="https://www.rubcube.com/" target="_blank">
-      <Image class="img-xl mx-auto mb-1" src={logoRubcube} alt="Rubcube" />
+    <a href="https://vericode.com.br" target="_blank">
+      <Image class="margin-left-4 img-xl mx-auto" src={logoVericode} alt="Vericode" />
     </a>
-    <header class="footer-title">Apoio</header>
-    <a href="https://www.rocketseat.com.br/" target="_blank">
-      <Image class="margin-left-4 img-xl mx-auto" src={logoRocketseat} alt="Rocketseat" />
+    <a href="https://www.cobmais.com.br" target="_blank">
+      <Image class="img-xl mx-auto mb-1" src={logoCobmais} alt="Cobmais" />
     </a>
+    <!-- <header class="footer-title">Apoio</header> -->
     <br />
   </nav>
   <nav>
@@ -30,7 +30,7 @@ import { Image } from 'astro:assets';
         <Image class="img-md mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
       >
       <a href="https://www.ejcomp.com.br/" target="_blank">
-        <Image class="margin-left-4 img-md" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+        <Image class="margin-left-4 img-lg" src={logoEjcomp} alt="Empresa Júnior da Computação" />
       </a>
     </div>
     <br />
