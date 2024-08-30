@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { ministerHasDetailInfo, type EventMinister } from '@lib/shared/EventMinister';
+  import { ministerHasDetailInfo } from '@lib/shared/EventMinister';
+  import type { EventMinister } from '@lib/shared/EventMinister';
   import { Mail, Link } from 'lucide-svelte';
 
   export let minister: EventMinister;
