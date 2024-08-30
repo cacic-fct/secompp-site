@@ -33,7 +33,7 @@ jobs:
 
   deploy:
     needs: [build, lint]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     permissions:
       pages: write
