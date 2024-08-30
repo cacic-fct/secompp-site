@@ -8,3 +8,5 @@ coverage
 *.md
 /.angular
 /.husky
+
+package.json

@@ -14,9 +14,9 @@ const ScheduleData: ScheduleEventList = [
       {
         name: 'Prof. Dr. Marcelo Medeiros Eler (EACH/USP)',
         description:
-          'Marcelo Medeiros Eler possui graduação em Ciência da Computação pela Faculdade de Informática de Presidente Prudente (FIPP-UNOESTE); mestrado e doutorado em Ciência da Computação e Matemática Computacional pela Universidade de São Paulo (ICMC-USP); e fez pós-doutorado no Departamento de Ciência da Computação da Universidade de Sheffield, na Inglaterra.\nAtualmente, ele é professor associado da USP e coordenador do Programa de Pós-graduação em Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).\n\nSua atuação acadêmica inclui atividades de ensino, pesquisa e extensão, além de consultorias especializadas na área de Engenharia e Teste de Software. Seus interesses de pesquisa atuais são nas áreas de Teste de Software e Acessibilidade Digital.'
-      }
-    ]
+          'Marcelo Medeiros Eler possui graduação em Ciência da Computação pela Faculdade de Informática de Presidente Prudente (FIPP-UNOESTE); mestrado e doutorado em Ciência da Computação e Matemática Computacional pela Universidade de São Paulo (ICMC-USP); e fez pós-doutorado no Departamento de Ciência da Computação da Universidade de Sheffield, na Inglaterra.\nAtualmente, ele é professor associado da USP e coordenador do Programa de Pós-graduação em Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).\n\nSua atuação acadêmica inclui atividades de ensino, pesquisa e extensão, além de consultorias especializadas na área de Engenharia e Teste de Software. Seus interesses de pesquisa atuais são nas áreas de Teste de Software e Acessibilidade Digital.',
+      },
+    ],
   ),
   createEvent(
     'Time de Dados da GC: como nos organizamos para gerar valor',
@@ -30,9 +30,9 @@ const ScheduleData: ScheduleEventList = [
       {
         name: 'Téo Calvo',
         description:
-          'Téo Calvo é Bacharel em Estatística pela FCT-UNESP e pós-graduado em Data Science & Big Data pela Universidade Federal do Paraná. Atualmente é Head de Dados na Gamers Club, com alta experiência empresarial. Faz parte do corpo docente da escola ASN.Rocks, ministrando aulas de Introdução ao Python, Algoritmos Classificadores e Regressores. Além disso, tem um canal na Twitch (Téo Me Why), onde faz lives sobre Ciência de Dados, Machine Learning, Engenharia de Dados, etc.'
-      }
-    ]
+          'Téo Calvo é Bacharel em Estatística pela FCT-UNESP e pós-graduado em Data Science & Big Data pela Universidade Federal do Paraná. Atualmente é Head de Dados na Gamers Club, com alta experiência empresarial. Faz parte do corpo docente da escola ASN.Rocks, ministrando aulas de Introdução ao Python, Algoritmos Classificadores e Regressores. Além disso, tem um canal na Twitch (Téo Me Why), onde faz lives sobre Ciência de Dados, Machine Learning, Engenharia de Dados, etc.',
+      },
+    ],
   ),
   createEvent(
     'Quanto tempo tem o tempo?',
@@ -46,9 +46,9 @@ const ScheduleData: ScheduleEventList = [
       {
         name: 'Dinael Corrêa de Campos',
         description:
-          'Professor assistente na Unesp no Campus de Bauru, vice-chefe do departamento de psicologia. Possui doutorado em psicologia pela Pontifícia Universidade Católica de Campinas.'
-      }
-    ]
+          'Professor assistente na Unesp no Campus de Bauru, vice-chefe do departamento de psicologia. Possui doutorado em psicologia pela Pontifícia Universidade Católica de Campinas.',
+      },
+    ],
   ),
   createEvent(
     'Mesa redonda',
@@ -60,26 +60,26 @@ const ScheduleData: ScheduleEventList = [
     'Mesa-redonda: Ciência da Computação na FCT - 20 anos: narrativas e experiências',
     [
       {
-        name: 'Alisson Fernando Coelho do Carmo'
+        name: 'Alisson Fernando Coelho do Carmo',
       },
       {
-        name: 'Fabio Takaki'
+        name: 'Fabio Takaki',
       },
       {
-        name: 'Cedryk Augusto dos Santos'
+        name: 'Cedryk Augusto dos Santos',
       },
       {
-        name: 'Giovanna Carreira Marinho'
+        name: 'Giovanna Carreira Marinho',
       },
 
       {
-        name: "Phillipe Sant'Ana"
+        name: "Phillipe Sant'Ana",
       },
       {
-        name: 'Marco Antônio Piteri'
-      }
-    ]
-  )
+        name: 'Marco Antônio Piteri',
+      },
+    ],
+  ),
 ];
 
 export default ScheduleData;

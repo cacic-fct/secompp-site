@@ -15,7 +15,7 @@
 
   const icon = {
     minicurso: { desc: 'Minicursos', src: minicursosIcon },
-    palestra: { desc: 'Palestras', src: palestrasIcon }
+    palestra: { desc: 'Palestras', src: palestrasIcon },
   };
 </script>
 

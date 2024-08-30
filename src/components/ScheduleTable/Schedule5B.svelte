@@ -13,7 +13,7 @@
   let isOpen = false;
   let event: ScheduleEvent | null;
   const toggle = () => (isOpen = !isOpen);
-  const onClickEvent: ScheduleEventClickHandler = ev => {
+  const onClickEvent: ScheduleEventClickHandler = (ev) => {
     isOpen = true;
     event = ev;
   };

@@ -1,12 +1,10 @@
 ---
-  import logoCobmais from '@lib/img/cobmais.svg';
-  import logoVericode from '@lib/img/vericode.svg';
-  // import logoVunesp from '@lib/img/vunesp.svg';
-  // import ImgLink from './Footer/ImgLink.svelte';
-  import { Image } from 'astro:assets';
-  import logoSecompp from '/src/assets/img/secompp22-logo.svg';
-
-
+import logoCobmais from '@lib/img/cobmais.svg';
+import logoVericode from '@lib/img/vericode.svg';
+// import logoVunesp from '@lib/img/vunesp.svg';
+// import ImgLink from './Footer/ImgLink.svelte';
+import { Image } from 'astro:assets';
+import logoSecompp from '/src/assets/img/secompp22-logo.svg';
 ---
 
 <header class="header-bg">
@@ -25,16 +23,28 @@
       <br />
       Patrocínio:
       <br />
+      <<<<<<< HEAD
       <br />
       <a href="https://vericode.com.br" target="_blank">
-        <Image src={logoVericode} alt="Vericode" class="mx-auto img-lg " />
-
+        <Image src={logoVericode} alt="Vericode" class="img-lg mx-auto" />
       </a>
       <br />
-      <a  href="https://www.cobmais.com.br" target="_blank">
-        <Image src={logoCobmais} alt="Cobmais" class="img-lg mx-auto"/>
+      <a href="https://www.cobmais.com.br" target="_blank">
+        <Image src={logoCobmais} alt="Cobmais" class="img-lg mx-auto" />
       </a>
-      
+
+      =======
+      <a href="https://www.rubcube.com" target="_blank">
+        <Image src={logoRubcube} alt="Rubcube" class="img-lg mx-auto" />
+      </a>
+
+      <br />
+      <br />
+      Apoio:
+      <br />
+      <a href="https://www.rocketseat.com.br/" target="_blank"></a>
+      <Image class="img-lg mx-auto" src={logoRocketseat} alt="Rocketseat" />
+      >>>>>>> main
       <br />
       <!-- <ImgLink href="https://www.vunesp.com.br/" size="lg" marginHorizontalAuto src={logoVunesp} alt="Vunesp" /> -->
     </div>
