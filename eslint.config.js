@@ -30,6 +30,7 @@ export default [
     },
   },
   {
-    ignores: ['src/env.d.ts'],
+    // Svelte lint not working with typescript
+    ignores: ['src/env.d.ts', '**/*.svelte'],
   },
 ];
