@@ -8,20 +8,22 @@ import logoSecompp from '/src/assets/img/secompp22-logo.svg';
 
 <div class="navbar sticky top-0 z-50 bg-base-100 pl-5 pr-5">
   <div class="navbar-start">
-    <Image src={logoSecompp} class="py-1" width="150" alt="Logo da SECOMPP 2022" loading="eager" />
+    <a href="/#" class="btn btn-ghost p-0">
+      <Image src={logoSecompp} class="py-1" width="150" alt="Logo da SECOMPP 2022" loading="eager" />
+    </a>
   </div>
-
   <div class="navbar-end">
-    <div class="dropdown dropdown-end">
-      <button tabindex="0" class="btn btn-ghost lg:hidden">
+    <div class="dropdown dropdown-left">
+      <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
         <Menu class="h-5 w-5" />
-      </button>
+      </div>
       <ul class="menu dropdown-content menu-lg z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#programacao">Programação</a></li>
         <li><a href="#duvidas">Dúvidas</a></li>
         <li><a href="#footer">Apoio</a></li>
-        <button class="btn">Inscrever-se</button>
+        <!-- TODO: Alterar placeholder -->
+        <a class="btn" href="PLACEHOLDER">Inscrever-se</a>
       </ul>
     </div>
     <div class="hidden lg:flex">
@@ -31,7 +33,8 @@ import logoSecompp from '/src/assets/img/secompp22-logo.svg';
         <li><a href="#duvidas">Dúvidas</a></li>
         <li><a href="#footer">Apoio</a></li>
       </ul>
-      <button class="btn">Inscrever-se</button>
+      <!-- TODO: Alterar placeholder -->
+      <a class="btn" href="PLACEHOLDER">Inscrever-se</a>
     </div>
   </div>
 </div>
