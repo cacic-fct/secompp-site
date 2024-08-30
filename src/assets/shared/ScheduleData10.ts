@@ -13,13 +13,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Prof. Dr. Rogério Eduardo Garcia',
-        email: 'rogerio.garcia@unesp.br'
+        email: 'rogerio.garcia@unesp.br',
       },
       {
         name: 'Willian Yoshio Murayama',
-        email: 'willian.murayama@unesp.br'
-      }
-    ]
+        email: 'willian.murayama@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Introdução ao LaTeX - parte 2',
@@ -32,14 +32,14 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Prof. Dr. Rogério Eduardo Garcia',
-        email: 'rogerio.garcia@unesp.br'
+        email: 'rogerio.garcia@unesp.br',
       },
       {
         name: 'Willian Yoshio Murayama',
-        email: 'willian.murayama@unesp.br'
-      }
-    ]
-  )
+        email: 'willian.murayama@unesp.br',
+      },
+    ],
+  ),
 ];
 
 export default ScheduleData;

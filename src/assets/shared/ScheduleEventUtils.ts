@@ -16,7 +16,7 @@ export function createEvent(
   duration = 30,
   fullDescription = '',
   shortDescription = '',
-  ministers: EventMinister[] = []
+  ministers: EventMinister[] = [],
 ): ScheduleEvent {
   return {
     place,
@@ -26,7 +26,7 @@ export function createEvent(
     fullDescription,
     shortDescription,
     type: type === 0 ? 'minicurso' : 'palestra',
-    endTime: new Date(startTime.valueOf() + duration * 60_000)
+    endTime: new Date(startTime.valueOf() + duration * 60_000),
   };
 }
 
@@ -38,7 +38,7 @@ function putEvent(schedule: ScheduleEventRow, event: ScheduleEvent) {
 }
 
 export function findEvent(row: ScheduleEventRow, where?: (ev: ScheduleEvent) => boolean) {
-  return row.find(ev => ev != null && (where == undefined || where(ev))) as ScheduleEvent | undefined;
+  return row.find((ev) => ev != null && (where == undefined || where(ev))) as ScheduleEvent | undefined;
 }
 
 export function getEventStart(event: ScheduleEvent | null | undefined) {
@@ -59,13 +59,13 @@ function createScheduleRow(event: ScheduleEvent): ScheduleEventRow {
 }
 
 function findSameStartTimeRow(schedule: ScheduleEventGrid, ev: ScheduleEvent) {
-  return schedule.find(row => row.some(event => getEventStart(event) == getEventStart(ev)));
+  return schedule.find((row) => row.some((event) => getEventStart(event) == getEventStart(ev)));
 }
 
 export function createScheduleGrid(schedule: ScheduleEventList) {
   const scheduleGrid: ScheduleEventGrid = [];
 
-  schedule.forEach(event => {
+  schedule.forEach((event) => {
     let row = findSameStartTimeRow(scheduleGrid, event);
 
     if (row) {

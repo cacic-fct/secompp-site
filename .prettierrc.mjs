@@ -3,22 +3,18 @@ export default {
   singleQuote: true,
   bracketSameLine: true,
   printWidth: 120,
-  plugins: [
-    "prettier-plugin-astro",
-    "prettier-plugin-svelte",
-    "prettier-plugin-tailwindcss",
-  ],
+  plugins: ['prettier-plugin-astro', 'prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
   overrides: [
     {
-      files: "*.astro",
+      files: '*.astro',
       options: {
-        parser: "astro",
+        parser: 'astro',
       },
     },
     {
-      files: "*.svelte",
+      files: '*.svelte',
       options: {
-        parser: "svelte",
+        parser: 'svelte',
       },
     },
   ],

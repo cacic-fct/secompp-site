@@ -13,9 +13,9 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Murilo Rocha Pereira',
-        email: 'mr.pereira@unesp.br'
-      }
-    ]
+        email: 'mr.pereira@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Introdução ao desenvolvimento mobile com Flutter - parte 2',
@@ -28,9 +28,9 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Murilo Rocha Pereira',
-        email: 'mr.pereira@unesp.br'
-      }
-    ]
+        email: 'mr.pereira@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Construindo o primeiro portfólio: HTML, CSS e JavaScript básico - parte 1',
@@ -43,13 +43,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br'
+        email: 'daniel.n.monteiro@unesp.br',
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br'
-      }
-    ]
+        email: 'gabriel.a.silva@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Construindo o primeiro portfólio: HTML, CSS e JavaScript básico - parte 2',
@@ -62,13 +62,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br'
+        email: 'daniel.n.monteiro@unesp.br',
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br'
-      }
-    ]
+        email: 'gabriel.a.silva@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Guia de sobrevivência do estudante de exatas: as ferramentas que simplificam a matemática do seu dia a dia',
@@ -81,15 +81,15 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Nunes Monteiro',
-        email: 'daniel.n.monteiro@unesp.br'
+        email: 'daniel.n.monteiro@unesp.br',
       },
       {
         name: 'Gabriel Augusto Lima Silva',
-        email: 'gabriel.a.silva@unesp.br'
-      }
-    ]
+        email: 'gabriel.a.silva@unesp.br',
+      },
+    ],
   ),
-  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270)
+  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270),
 ];
 
 export default ScheduleData;

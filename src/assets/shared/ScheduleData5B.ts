@@ -13,9 +13,9 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Bruno Vitorelli Tacca de Oliveira',
-        email: 'bruno.tacca@unesp.br'
-      }
-    ]
+        email: 'bruno.tacca@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Introdução ao Rust: a linguagem perfeita? - parte 1',
@@ -28,13 +28,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Henrique Serezane Pereira',
-        email: 'daniel.serezane@unesp.br'
+        email: 'daniel.serezane@unesp.br',
       },
       {
         name: 'Gustavo Becelli do Nascimento',
-        email: 'gustavo.becelli@unesp.br'
-      }
-    ]
+        email: 'gustavo.becelli@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Do zero ao bootstrap - parte 1',
@@ -47,13 +47,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Lucas Gaspar Stumpf',
-        email: 'lg.stumpf@unesp.br'
+        email: 'lg.stumpf@unesp.br',
       },
       {
         name: 'Manoela Moreno Frattini',
-        email: 'manoela.frattini@unesp.br'
-      }
-    ]
+        email: 'manoela.frattini@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Introdução ao Rust: a linguagem perfeita? - parte 2',
@@ -66,13 +66,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Daniel Henrique Serezane Pereira',
-        email: 'daniel.serezane@unesp.br'
+        email: 'daniel.serezane@unesp.br',
       },
       {
         name: 'Gustavo Becelli do Nascimento',
-        email: 'gustavo.becelli@unesp.br'
-      }
-    ]
+        email: 'gustavo.becelli@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Do zero ao bootstrap - parte 2',
@@ -85,13 +85,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Lucas Gaspar Stumpf',
-        email: 'lg.stumpf@unesp.br'
+        email: 'lg.stumpf@unesp.br',
       },
       {
         name: 'Manoela Moreno Frattini',
-        email: 'manoela.frattini@unesp.br'
-      }
-    ]
+        email: 'manoela.frattini@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Introdução ao GitHub',
@@ -104,13 +104,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Vinicius Polachini Mayer Freitas De Jesus',
-        email: 'vinicius.polachini@unesp.br'
+        email: 'vinicius.polachini@unesp.br',
       },
       {
         name: 'Hariã Othon Gomes Silva',
-        email: 'haria.othon@unesp.br'
-      }
-    ]
+        email: 'haria.othon@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Job interview: como escrever um résumé e apresentar-se para um emprego ' + 'em língua inglesa - parte 1',
@@ -123,13 +123,13 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Paula Tavares Pinto',
-        email: 'paula.pinto@unesp.br'
+        email: 'paula.pinto@unesp.br',
       },
       {
         name: 'Maurício Araújo Dias',
-        email: 'ma.dias@unesp.br'
-      }
-    ]
+        email: 'ma.dias@unesp.br',
+      },
+    ],
   ),
   createEvent(
     'Job interview: como escrever um résumé e apresentar-se para um emprego ' + 'em língua inglesa - parte 2',
@@ -142,15 +142,15 @@ const ScheduleData: ScheduleEventList = [
     [
       {
         name: 'Paula Tavares Pinto',
-        email: 'paula.pinto@unesp.br'
+        email: 'paula.pinto@unesp.br',
       },
       {
         name: 'Maurício Araújo Dias',
-        email: 'ma.dias@unesp.br'
-      }
-    ]
+        email: 'ma.dias@unesp.br',
+      },
+    ],
   ),
-  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270)
+  createEvent('Confraternização e encerramento', 'Laboratórios centrais', 0, new Date('2022-10-21T16:30'), 270),
 ];
 
 export default ScheduleData;

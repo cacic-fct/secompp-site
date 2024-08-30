@@ -5,6 +5,6 @@ module.exports = {
     require('postcss-simple-vars'),
     require('tailwindcss/nesting'),
     require('tailwindcss'),
-    require('autoprefixer')
-  ]
+    require('autoprefixer'),
+  ],
 };

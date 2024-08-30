@@ -2,7 +2,7 @@
 export default {
   content: ['./src/**/*.{astro,html,svelte,vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {},
   },
   plugins: [require('daisyui')],
   daisyui: {
@@ -13,9 +13,9 @@ export default {
           'base-100': '#000000',
           'base-200': '#1d1e1f',
           'base-300': '#2f3133',
-          'base-content': '#fefedf'
-        }
-      }
-    ]
-  }
+          'base-content': '#fefedf',
+        },
+      },
+    ],
+  },
 };
