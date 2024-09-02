@@ -6,7 +6,7 @@
   let click = () => onClickEvent(event);
 </script>
 
-<td tabindex="0" role="button" class="shadow-sm">
+<td tabindex="0" role="button" class="shadow-sm outline outline-1">
   <div class="block" on:click={click}>
     <span class="font-bold">{event.eventName}</span>
     {#if event.shortDescription}
@@ -23,8 +23,7 @@
 
   td {
     padding: 8px;
-    border-width: 0;
-    outline: 0 solid transparent;
+    /* outline: 1px solid  $body-color; */
 
     span {
       transition: $transition-duration;
