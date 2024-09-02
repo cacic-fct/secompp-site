@@ -3,8 +3,11 @@ import logoCacic from '@lib/img/cacic.svg';
 import logoEjcomp from '@lib/img/ejcomp.svg';
 import logoUnesp from '@lib/img/unesp.svg';
 import logoDmc from '@lib/img/dmc.webp';
-import logoRubcube from '@lib/img/rubcube.svg';
-import logoRocketseat from '@lib/img/rocketseat.svg';
+import logoFundacte from '@lib/img/fundacte-dark.svg';
+import logoVericode from '@lib/img/vericode.svg';
+
+import logoCobmais from '@lib/img/cobmais.avif';
+import logoVunesp from '@lib/img/vunesp.svg';
 import { Mail, Phone } from 'lucide-astro';
 
 import { Image } from 'astro:assets';
@@ -12,13 +15,17 @@ import { Image } from 'astro:assets';
 
 <footer class="footer bg-neutral p-10 text-neutral-content" id="footer">
   <nav>
-    <header class="footer-title">Patrocínio</header>
-    <a href="https://www.rubcube.com/" target="_blank">
-      <Image class="img-xl mx-auto mb-1" src={logoRubcube} alt="Rubcube" />
+    <!-- TODO: É patrocínio ou apoio? -->
+    <!-- <header class="footer-title">???:</header> -->
+    <a href="https://www.cobmais.com.br/" target="_blank">
+      <Image class="margin-left-4 img-lg mx-auto" src={logoCobmais} alt="Cobmais" />
+    </a>
+    <a href="https://vericode.com.br/" target="_blank">
+      <Image class="img-lg mx-auto mb-1" src={logoVericode} alt="Vericode" />
     </a>
     <header class="footer-title">Apoio</header>
-    <a href="https://www.rocketseat.com.br/" target="_blank">
-      <Image class="margin-left-4 img-xl mx-auto" src={logoRocketseat} alt="Rocketseat" />
+    <a href="https://www.vunesp.com.br/">
+      <Image class="img-lg mx-auto" src={logoVunesp} alt="Vunesp" />
     </a>
     <br />
   </nav>
@@ -30,7 +37,7 @@ import { Image } from 'astro:assets';
         <Image class="img-md mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
       >
       <a href="https://www.ejcomp.com.br/" target="_blank">
-        <Image class="margin-left-4 img-md" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+        <Image class="margin-left-4 img-lg" src={logoEjcomp} alt="Empresa Júnior da Computação" />
       </a>
     </div>
     <br />
@@ -38,14 +45,18 @@ import { Image } from 'astro:assets';
       <a href="https://www.fct.unesp.br" target="_blank">
         <Image class="img-md" src={logoUnesp} alt="Unesp" />
       </a>
-      <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/" target="_blank">
-        <Image class="margin-left-4 img-sm md-1" src={logoDmc} alt="Departamento de Matemática e Computação" />
+      <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/">
+        <Image class="margin-left-4 img-sm md-1" src={logoDmc} alt="Logo do Departamento de Matemática e Computação" />
+      </a>
+
+      <a href="https://www.fct.unesp.br/#!/entidades/fundacoes/">
+        <Image
+          class="margin-left-4 img-sm md-1"
+          src={logoFundacte}
+          alt="Logo da Fundacte - Fundação de Ciência Tecnologia e Ensino"
+        />
       </a>
     </div>
-    <br />
-    <p class="fs-light small text-start">
-      <b>Fundacte</b> - Fundação de Ciência, Tecnologia e Ensino<br />
-    </p>
   </nav>
   <nav>
     <header class="footer-title">FCT – Faculdade de Ciências e Tecnologia</header>
