@@ -16,16 +16,16 @@ import { Image } from 'astro:assets';
 <footer class="footer bg-neutral p-10 text-neutral-content" id="footer">
   <nav>
     <!-- TODO: É patrocínio ou apoio? -->
-    <!-- <header class="footer-title">???:</header> -->
+    <!-- <header class="footer-title">???</header> -->
     <a href="https://www.cobmais.com.br/">
-      <Image class="margin-left-4 img-lg mx-auto" src={logoCobmais} alt="Cobmais" />
+      <Image class="img-lg img-clickable mx-auto ml-1" src={logoCobmais} alt="Cobmais" />
     </a>
     <a href="https://vericode.com.br/">
-      <Image class="img-lg mx-auto mb-1" src={logoVericode} alt="Vericode" />
+      <Image class="img-lg img-clickable mx-auto mb-1" src={logoVericode} alt="Vericode" />
     </a>
     <header class="footer-title">Apoio</header>
     <a href="https://www.vunesp.com.br/">
-      <Image class="img-lg mx-auto" src={logoVunesp} alt="Vunesp" />
+      <Image class="img-lg img-clickable mx-auto" src={logoVunesp} alt="Vunesp" />
     </a>
     <br />
   </nav>
@@ -34,24 +34,28 @@ import { Image } from 'astro:assets';
 
     <div class="grid grid-flow-col items-center gap-4">
       <a href="https://cacic.dev.br">
-        <Image class="img-md mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
+        <Image class="img-md img-clickable mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
       >
       <a href="https://www.ejcomp.com.br/">
-        <Image class="margin-left-4 img-lg" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+        <Image class="img-lg img-clickable ml-1" src={logoEjcomp} alt="Empresa Júnior da Computação" />
       </a>
     </div>
     <br />
     <div class="grid grid-flow-col items-center gap-4">
       <a href="https://www.fct.unesp.br">
-        <Image class="img-md" src={logoUnesp} alt="Unesp" />
+        <Image class="img-md img-clickable" src={logoUnesp} alt="Unesp" />
       </a>
       <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/">
-        <Image class="margin-left-4 img-sm md-1" src={logoDmc} alt="Logo do Departamento de Matemática e Computação" />
+        <Image
+          class="img-sm md-1 img-clickable ml-1"
+          src={logoDmc}
+          alt="Logo do Departamento de Matemática e Computação"
+        />
       </a>
 
       <a href="https://www.fct.unesp.br/#!/entidades/fundacoes/">
         <Image
-          class="margin-left-4 img-sm md-1"
+          class="img-sm md-1 img-clickable ml-1"
           src={logoFundacte}
           alt="Logo da Fundacte - Fundação de Ciência Tecnologia e Ensino"
         />
@@ -89,19 +93,3 @@ import { Image } from 'astro:assets';
     <a class="link-hover link pt-3" href="https://cacic.dev.br/legal/privacy-policy">Política de privacidade</a>
   </nav>
 </footer>
-
-<style>
-  .margin-left-4 {
-    margin-left: 4px;
-  }
-
-  a img {
-    opacity: 1;
-    transition: 0.3s;
-    transition-property: opacity, background-color;
-
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-</style>
