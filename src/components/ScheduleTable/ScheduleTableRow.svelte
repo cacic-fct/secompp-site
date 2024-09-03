@@ -51,6 +51,7 @@
       @mixin cell-first-child;
       background-color: #000;
       padding: 32px;
+      padding-left: 0;
 
       div {
         @media (min-width: 574px) {

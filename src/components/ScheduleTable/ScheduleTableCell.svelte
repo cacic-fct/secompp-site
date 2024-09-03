@@ -23,7 +23,6 @@
 
   td {
     padding: 8px;
-    /* outline: 1px solid  $body-color; */
 
     span {
       transition: $transition-duration;

@@ -13,32 +13,37 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
         <Image src={logoSecompp} alt="Logo SECOMPP 2024" class="secompp-logo mx-auto p-3" loading="eager" />
       </div>
       <div class="intro-heading text-center">
-        <span class="fs-3 fw-semibold"> 21ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
+        <span class="fs-4 font-semibold"> 21ª Semana do Curso de Ciência da Computação da FCT-Unesp </span>
       </div>
       <div class="intro-heading text-center">
         <!-- A inclusão do ano foi exigência do prof. Danilo -->
         <span class="fs-4 fw-light">Junte-se a nós de 30 de setembro a 05 de outubro de 2024</span>
       </div>
-      <br />
-      <br />
-      <!-- TODO: É patrocínio ou apoio? -->
-      <br />
+    </div>
+
+    <div class="flex w-full justify-center pb-4 pt-8">
+      <a
+        href="https://fctapp.cacic.dev.br/eventos"
+        class="rounded-md px-6 py-2 font-semibold text-[var(--primary-color)] outline-double outline-1 outline-[var(--primary-color)]">
+        Inscrever-se
+      </a>
+    </div>
+
+    <!-- TODO: É patrocínio ou apoio? -->
+    <div class="flex flex-wrap items-end justify-center gap-8 py-4">
       <a href="https://www.cobmais.com.br">
         <Image src={logoCobmais} alt="Cobmais" class="img-lg mx-auto" />
       </a>
-      <br />
       <a href="https://vericode.com.br">
         <Image src={logoVericode} alt="Vericode" class="img-lg mx-auto" />
       </a>
 
-      <br />
-      <br />
-      Apoio
-      <br />
-      <a href="https://www.vunesp.com.br/">
-        <Image class="img-lg mx-auto" src={logoVunesp} alt="Vunesp" />
-      </a>
-      <br />
+      <div class="flex flex-col items-start">
+        <p>Apoio</p>
+        <a href="https://www.vunesp.com.br/">
+          <Image class="img-lg mx-auto" src={logoVunesp} alt="Vunesp" />
+        </a>
+      </div>
     </div>
   </div>
 </header>

@@ -21,7 +21,7 @@
 
 <div class="schedule-container container mx-auto px-4">
   <h1>Palestras</h1>
-  <div class="scrolling-touch block w-full overflow-auto" style="--bs-secondary-rgb: 255, 255, 255">
+  <div class="scrolling-touch block w-full overflow-auto pt-8" style="--bs-secondary-rgb: 255, 255, 255">
     <table class="mb-4 w-full max-w-full bg-transparent">
       <thead class="text-left">
         <tr>
