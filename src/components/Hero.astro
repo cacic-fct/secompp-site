@@ -7,15 +7,15 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
 
 <header class="hero-bg">
   <div class="container mx-auto">
-    <div class="intro-text text-center">
+    <div class="intro-text px-4 text-center">
       <div class="intro-lead-in intro-lead-in-padding">
         <Image src={logoSecompp} alt="Logo SECOMPP 2024" class="secompp-logo mx-auto p-3" loading="eager" />
       </div>
-      <div class="intro-heading text-center">
-        <span class="fs-4 font-semibold">21ª Semana do Curso de Ciência da Computação da FCT-Unesp</span>
+      <div class="intro-heading pb-1 text-center">
+        <span class="fs-4 text-lg font-semibold">21ª Semana do Curso de Ciência da Computação da FCT-Unesp</span>
       </div>
       <div class="intro-heading text-center">
-        <!-- A inclusão do ano foi exigência do prof. Danilo -->
+        <!-- Embora o ano já esteja no logotipo, a inclusão dele no texto foi exigência do prof. Danilo -->
         <span class="fs-4 fw-light">Junte-se a nós de 30 de setembro a 04 de outubro de 2024</span>
       </div>
     </div>
@@ -23,21 +23,22 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
     <div class="flex w-full justify-center pb-4 pt-8">
       <a
         href="https://fctapp.cacic.dev.br/eventos"
-        class="rounded-md px-6 py-2 font-semibold text-[var(--primary-color)] outline-double outline-1 outline-[var(--primary-color)]">
+        class="rounded-md px-6 py-2 font-semibold text-[var(--primary-color)] outline outline-1 outline-[var(--primary-color)]">
         Inscrever-se
       </a>
     </div>
 
-    <div class="flex flex-wrap items-end justify-center gap-8 py-4">
-      <!-- <p>Patrocínio</p> -->
-      <a href="https://www.cobmais.com.br">
-        <img src="/images/cobmais.avif" alt="Cobmais" class="img-lg img-clickable mx-auto" />
-      </a>
+    <div class="flex flex-wrap items-start justify-center gap-8 py-4">
+      <div class="flex flex-col items-start">
+        <p>Patrocínio</p>
+        <a href="https://www.cobmais.com.br" class="py-2">
+          <img src="/images/cobmais.avif" alt="Cobmais" class="img-lg img-clickable mx-auto" />
+        </a>
 
-      <a href="https://vericode.com.br">
-        <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" />
-      </a>
-
+        <a href="https://vericode.com.br" class="py-2">
+          <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" />
+        </a>
+      </div>
       <div class="flex flex-col items-start">
         <p>Apoio</p>
         <a href="https://www.vunesp.com.br/">

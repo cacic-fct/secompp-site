@@ -4,10 +4,17 @@
   export let event: ScheduleEvent;
   export let onClickEvent: ScheduleEventClickHandler;
   let click = () => onClickEvent(event);
+
+  let handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      onClickEvent(event);
+    }
+  };
 </script>
 
-<td tabindex="0" role="button" class="shadow-sm outline outline-1">
-  <div class="block" on:click={click}>
+<td tabindex="0" role="button" class="shadow-sm outline outline-1" on:click={click} on:keydown={handleKeyDown}>
+  <div class="block">
     <span class="font-bold">{event.eventName}</span>
     {#if event.shortDescription}
       <br />

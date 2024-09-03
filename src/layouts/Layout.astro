@@ -5,34 +5,34 @@ import '../styles/global.pcss';
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const defaultDescription = 'A Semana da Computação de Presidente Prudente oferece minicursos, palestras e mais!';
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
 
+    <title>{title}</title>
+    <meta name="description" content={description || defaultDescription} />
+
+    <!-- OGP: Open Graph -->
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:url" content="https://secompp.cacic.dev.br" />
     <meta property="og:title" content="SECOMPP24" />
     <meta property="og:site_name" content="SECOMPP24" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Semana da Computação de Presidente Prudente 2024 - Minicursos, palestras e mais!"
-    />
+    <meta property="og:description" content={description || defaultDescription} />
     <meta property="og:image" content="https://secompp.cacic.dev.br/images/logo-og.png" />
 
-    <meta name="viewport" content="width=device-width" />
-
+    <!-- Analytics -->
     <script is:inline defer data-domain="secompp.cacic.dev.br" src="https://plausible.cacic.dev.br/js/script.js"
     ></script>
   </head>
