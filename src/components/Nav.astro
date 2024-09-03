@@ -5,7 +5,7 @@ import { Image } from 'astro:assets';
 import logoSecompp from '/src/assets/img/secompp24-logo.svg';
 ---
 
-<div class="navbar sticky top-0 z-50 bg-base-100 pl-5 pr-5">
+<div class="navbar sticky top-0 z-50 m-auto max-w-screen-2xl bg-base-100 pl-5 pr-5">
   <div class="navbar-start">
     <a href="/#" class="p-0">
       <Image src={logoSecompp} class="img-clickable py-1" width="150" alt="Logo da SECOMPP 2024" loading="eager" />
@@ -27,7 +27,7 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
     <div class="hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li><a href="#sobre">Sobre</a></li>
-        <!-- <li><a href="#programacao">Programação</a></li> -->
+        <li><a href="#programacao">Programação</a></li>
         <li><a href="#duvidas">Dúvidas</a></li>
         <li><a href="#footer">Apoio</a></li>
       </ul>
