@@ -46,13 +46,12 @@
 
   td {
     padding: 8px;
-    border-width: 0;
-    outline: 0 solid transparent;
 
     &:first-child {
       @mixin cell-first-child;
       background-color: #000;
-      outline: 5px solid #000;
+      padding: 32px;
+      padding-left: 0;
 
       div {
         @media (min-width: 574px) {

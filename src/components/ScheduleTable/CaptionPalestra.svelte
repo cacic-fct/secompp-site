@@ -81,7 +81,7 @@
       max-width: 1199px;
       padding: 0px 24px;
     }
-    padding: 12px;
+    padding: 24px 12px 12px 12px;
     margin: auto;
   }
 
