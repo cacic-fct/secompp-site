@@ -19,7 +19,7 @@
       <button class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2" on:click={() => toggleModal()}
         ><X /></button>
     </form>
-    <h3 class="text-lg font-bold pb-8 text-base-primary pr-4">{event.eventName} - {type}</h3>
+    <h3 class="text-base-primary pb-8 pr-4 text-lg font-bold">{event.eventName} - {type}</h3>
     <EventInfo {event} />
     <EventMinisterList ministers={event.ministers} />
   </div>
