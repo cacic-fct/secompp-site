@@ -19,7 +19,7 @@
         Clique no evento para visualizar mais informações.<br />
       </p>
       <div id="caption-small-screen">
-        <p class="mb-0">Arraste para esquerda para visualizar mais eventos.</p>
+        <p class="mb-0">Arraste para a esquerda para visualizar mais eventos.</p>
         <p>
           Clique ou toque no evento para visualizar mais informações.<br />
         </p>
