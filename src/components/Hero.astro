@@ -1,6 +1,5 @@
 ---
 import logoVericode from '@lib/img/vericode.svg';
-import logoCobmais from '@lib/img/cobmais.avif';
 import logoVunesp from '@lib/img/vunesp.svg';
 import { Image } from 'astro:assets';
 import logoSecompp from '/src/assets/img/secompp24-logo.svg';
@@ -29,16 +28,15 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
       </a>
     </div>
 
-    <div class="items-top flex flex-wrap justify-center gap-8 py-4">
-      <div class="flex flex-col items-start">
-        <p>Patrocínio</p>
-        <a href="https://www.cobmais.com.br" class="py-2">
-          <Image src={logoCobmais} alt="Cobmais" class="img-lg img-clickable mx-auto" />
-        </a>
-        <a href="https://vericode.com.br" class="py-2">
-          <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" />
-        </a>
-      </div>
+    <div class="flex flex-wrap items-end justify-center gap-8 py-4">
+      <!-- <p>Patrocínio</p> -->
+      <a href="https://www.cobmais.com.br">
+        <img src="/images/cobmais.avif" alt="Cobmais" class="img-lg img-clickable mx-auto" />
+      </a>
+
+      <a href="https://vericode.com.br">
+        <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" />
+      </a>
 
       <div class="flex flex-col items-start">
         <p>Apoio</p>
