@@ -86,21 +86,6 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
-    'Hardware contemporâneo para leigos',
-    'Laboratório 6',
-    0,
-    new Date('2024-10-03T08:00'),
-    120,
-    'Através de uma abordagem parte teórica, parte demonstrativa, o minicurso pretende ensinar sobre os principais componentes e tecnologias de hardware contemporâneos, indo desde o funcionamento básico de alguns componentes e padrões até a escolha de componentes/máquinas. Também pretendo ensinar o básico sobre periféricos, como teclados, mouses, mousepads, fones de ouvido e monitores. \n\n Pré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
-    'Hardware e Periféricos',
-    [
-      {
-        name: 'Rodrigo Isao Goto',
-        email: 'r.goto@unesp.br',
-      },
-    ],
-  ),
-  createEvent(
     'Introdução a Impressão Tridimensional - Parte 2',
     'Laboratório 6',
     0,

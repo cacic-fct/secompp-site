@@ -56,12 +56,35 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
+    'Domine o Design com Tailwind CSS: Estilização Eficiente para Web',
+    'Laboratório 10',
+    0,
+    new Date('2024-10-01T14:00'),
+    120,
+    'Ensinar aos participantes como estilizar páginas web de forma rápida e eficiente utilizando o Tailwind CSS, mostrando as principais vantagens de um framework utilitário e como aplicá-lo em projetos reais. \n\nPré-requisitos: Conhecimentos básicos de HTML e CSS. \n\nMateriais necessários: Node.js e VsCode.',
+    'Estilizição de páginas web com Tailwind CSS',
+    [
+      {
+        name: 'Luiz Henrique Serafim',
+        email: 'henrique.serafim@unesp.br',
+      },
+      {
+        name: 'Rafael Correia',
+        email: 'rafael.n.correia@unesp.br',
+      },
+      {
+        name: 'Guilherme Goes',
+        email: 'guilherme.goes@unesp.br',
+      },
+    ],
+  ),
+  createEvent(
     'Introdução à linguagem Lua',
     'Laboratório 10',
     0,
     new Date('2024-10-02T14:00'),
     120,
-    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, artimética e outras funções básicas. \n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada. \n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e o editor de código fonte Visual Studio Code',
+    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, artimética e outras funções básicas. \n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada. \n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VsCode.',
     'Linguagem Lua - conceitos básicos',
     [
       {
@@ -74,12 +97,21 @@ const ScheduleData: ScheduleEventList = [
       },
     ],
   ),
-  createEvent('HTML', 'Laboratório 10', 0, new Date('2024-10-03T08:00'), 120, '', '', [
-    {
-      name: 'Luiz Henrique Serafim da Silva',
-      email: 'henrique.serafim@unesp.br',
-    },
-  ]),
+  createEvent(
+    'Introdução à HTML e CSS',
+    'Laboratório 10',
+    0,
+    new Date('2024-10-03T08:00'),
+    120,
+    'Apresentar conceitos fundamentais dessas tecnologias da web para iniciantes, estruturar páginas utilizando HTML, além de estilizar e personalizar visualmente essas páginas com CSS. O minicurso incluirá alguns conceitos básicos, melhores práticas e dicas úteis, permitindo que os alunos criem seus próprios projetos. \n\n Pré-requisitos: Nenhum. \n\n Materiais necessários: VsCode.',
+    'Desenvolvimento Web com HTML e CSS',
+    [
+      {
+        name: 'Laís Isabella Santos Sousa',
+        email: 'lais.isabella@unesp.br',
+      },
+    ],
+  ),
   createEvent(
     'Desbravando o Next.js: O Futuro do Desenvolvimento Web - Parte 1',
     'Laboratório 10',
@@ -90,27 +122,16 @@ const ScheduleData: ScheduleEventList = [
     'Desenvolvimento Web com Next.js',
     [
       {
-        name: 'Luiz Henrique Serafim da Silva',
+        name: 'Luiz Henrique Serafim',
         email: 'henrique.serafim@unesp.br',
       },
-    ],
-  ),
-  createEvent(
-    'Introdução ao Git: Dominando o Controle de Versão',
-    'Laboratório 10',
-    0,
-    new Date('2024-10-04T08:00'),
-    120,
-    'Aprenda os conceitos essenciais do Git, incluindo instalação, configuração, comandos básicos, gerenciamento de branches, e colaboração em projetos. Ideal para iniciantes e profissionais que desejam melhorar suas habilidades em controle de versão. \n\nPré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
-    'Git e Controle de Versão',
-    [
       {
-        name: 'Alexandre Folkl',
-        email: 'a.folkl@unesp.br',
+        name: 'Rafael Correia',
+        email: 'rafael.n.correia@unesp.br',
       },
       {
-        name: 'Leticia Yuri Takaki Kavakita',
-        email: 'leticia.takaki@unesp.br',
+        name: 'Guilherme Goes',
+        email: 'guilherme.goes@unesp.br',
       },
     ],
   ),

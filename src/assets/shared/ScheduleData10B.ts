@@ -3,8 +3,8 @@ import { createEvent } from './ScheduleEventUtils';
 
 const ScheduleData: ScheduleEventList = [
   createEvent(
-    'Microfrontends - Aplicações com React - Parte 1',
-    'Laboratório Didático de Computação 2',
+    'Microfrontends - Aplicações com React',
+    'Laboratório 10B',
     0,
     new Date('2024-09-30T08:00'),
     120,
@@ -19,7 +19,7 @@ const ScheduleData: ScheduleEventList = [
   ),
   createEvent(
     'Introdução ao desenvolvimento mobile com Flutter',
-    'Laboratório Didático de Computação 2',
+    'Laboratório 10B',
     0,
     new Date('2024-09-30T14:00'),
     120,
@@ -37,8 +37,27 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
+    'Introdução ao Git: Dominando o Controle de Versão',
+    'Laboratório 10B',
+    0,
+    new Date('2024-10-01T08:00'),
+    120,
+    'Aprenda os conceitos essenciais do Git, incluindo instalação, configuração, comandos básicos, gerenciamento de branches, e colaboração em projetos. Ideal para iniciantes e profissionais que desejam melhorar suas habilidades em controle de versão. \n\nPré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
+    'Git e Controle de Versão',
+    [
+      {
+        name: 'Alexandre Folkl',
+        email: 'a.folkl@unesp.br',
+      },
+      {
+        name: 'Leticia Yuri Takaki Kavakita',
+        email: 'leticia.takaki@unesp.br',
+      },
+    ],
+  ),
+  createEvent(
     'Desenvolvimento de uma aplicação web com Django - Parte 1',
-    'Laboratório Didático de Computação 2',
+    'Laboratório 10B',
     0,
     new Date('2024-10-01T14:00'),
     120,
@@ -57,7 +76,7 @@ const ScheduleData: ScheduleEventList = [
   ),
   createEvent(
     'Introdução a Impressão Tridimensional - Parte 1',
-    'Laboratório 6',
+    'Laboratório 10B',
     0,
     new Date('2024-10-02T08:00'),
     120,
@@ -72,7 +91,7 @@ const ScheduleData: ScheduleEventList = [
   ),
   createEvent(
     'Desenvolvimento de uma aplicação web com Django - Parte 2',
-    'Laboratório Didático de Computação 2',
+    'Laboratório 10B',
     0,
     new Date('2024-10-02T14:00'),
     120,
@@ -90,8 +109,23 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
+    'Hardware contemporâneo para leigos',
+    'Laboratório 10B',
+    0,
+    new Date('2024-10-03T08:00'),
+    120,
+    'Através de uma abordagem parte teórica, parte demonstrativa, o minicurso pretende ensinar sobre os principais componentes e tecnologias de hardware contemporâneos, indo desde o funcionamento básico de alguns componentes e padrões até a escolha de componentes/máquinas. Também pretendo ensinar o básico sobre periféricos, como teclados, mouses, mousepads, fones de ouvido e monitores. \n\n Pré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
+    'Hardware e Periféricos',
+    [
+      {
+        name: 'Rodrigo Isao Goto',
+        email: 'r.goto@unesp.br',
+      },
+    ],
+  ),
+  createEvent(
     'Introdução ao Docker',
-    'Laboratório Didático de Computação 2',
+    'Laboratório 10B',
     0,
     new Date('2024-10-03T14:00'),
     120,
@@ -114,7 +148,7 @@ const ScheduleData: ScheduleEventList = [
   ),
   createEvent(
     'Versionamento de código com Git e GitHub',
-    'Laboratório Didático de Computação 2',
+    'Laboratório 10B',
     0,
     new Date('2024-10-04T08:00'),
     120,
@@ -128,25 +162,29 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
-    'Versionamento de código com Git e GitHub',
-    'Laboratório Didático de Computação 2',
+    'Introdução ao Linux',
+    'Laboratório 10B',
     0,
-    new Date('2024-10-04T08:00'),
+    new Date('2024-10-04T14:00'),
     120,
     'Faremos uma introdução ao OS Linux, com sua história, e principais distribuições. Mostraremos como é a organização das pastas no sistema, e ensinaremos sobre os processos no Linux, explicando como ele gerencia e executa os processos. E por fim explicaremos alguns comandos básicos do terminal, e alguns aplicativos como editores de texto, gerenciadores de pacote e ferramentas de rede. \n\n Pré-Requisitos: Nenhum. \n\n Materiais necessários: Máquina operando com uma distribuição Linux baseada no Debian (Pode ser uma máquina virtual ou WSL).',
     'Docker e Contêineres',
     [
       {
-        name: 'Ígor José Rodrigues',
-        email: 'igor.jose@unesp.br',
+        name: 'Vítor Moreira Rodrigues',
+        email: 'vitor.m.rodrigues@unesp.br',
       },
       {
-        name: 'Igor Mendes Domingues Miras',
-        email: 'im.miras@unesp.br',
+        name: 'Kauan dos Santos Loche',
+        email: 'kauan.loche@unesp.br',
       },
       {
-        name: 'Gabriel Menezes Tiburcio',
-        email: 'gabriel.m.tiburcio@unesp.br',
+        name: 'José Henrique Ioki Yamaoki',
+        email: 'jose.yamaoki@unesp.br',
+      },
+      {
+        name: 'João Gabriel de Morais Bezerra',
+        email: 'j.bezerra@unesp.br',
       },
     ],
   ),
