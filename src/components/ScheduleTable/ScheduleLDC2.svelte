@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ScheduleData from '@lib/shared/ScheduleData8B';
+  import ScheduleData from '@lib/shared/ScheduleDataLDC2';
 
   import type { ScheduleEvent, ScheduleEventClickHandler } from '@lib/shared/ScheduleEvent';
   import { createScheduleGrid } from '@lib/shared/ScheduleEventUtils';
@@ -20,7 +20,7 @@
 </script>
 
 <div class="schedule-container container mx-auto px-4">
-  <h1>Programação do Laboratório 8B</h1>
+  <h1>Programação do Laboratório Didático de Computação 2</h1>
   <span>Recomenda-se levar o seu próprio computador</span>
   <div class="scrolling-touch block w-full overflow-auto pt-8" style="--bs-secondary-rgb: 255, 255, 255">
     <table class="mb-4 w-full max-w-full bg-transparent">
@@ -68,7 +68,7 @@
 
   th {
     &:first-child {
-      @mixin cell-first-child;
+      @include cell-first-child();
       background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), 45%, rgba(0, 0, 0, 0));
     }
     border: 0;
