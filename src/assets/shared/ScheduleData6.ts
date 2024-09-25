@@ -8,7 +8,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-09-30T08:00'),
     120,
-    'Introdução à ferramenta LaTeX para produção de trabalhos e artigos científicos para discentes da ciência da computação. \n\n Pré-requisitos: Recomenda-se ter concluído a disciplina Metodologia cientifica. \n\nMateriais necessários: Navegador de internet (Firefox, Chrome ou qualquer outro).',
+    'Introdução à ferramenta LaTeX para produção de trabalhos e artigos científicos para discentes da ciência da computação.\n\nPré-requisitos: Recomenda-se ter concluído a disciplina Metodologia cientifica.\n\nMateriais necessários: Navegador de internet (Firefox, Chrome ou qualquer outro).',
     'LaTex para produção de trabalhos científicos',
     [
       {
@@ -23,7 +23,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-09-30T14:00'),
     120,
-    'Explorar o processo de prototipação de Interfaces usando a ferramenta de design Figma. O objetivo é capacitar os participantes a transformar conceitos e ideias em protótipos interativos e funcionais, usando os conceitos de Design UX e UI. Mostrar como utilizar o Figma de forma profissional e com melhor aproveitamento. \n\n Pré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
+    'Explorar o processo de prototipação de Interfaces usando a ferramenta de design Figma. O objetivo é capacitar os participantes a transformar conceitos e ideias em protótipos interativos e funcionais, usando os conceitos de Design UX e UI. Mostrar como utilizar o Figma de forma profissional e com melhor aproveitamento.\n\nPré-requisitos: Nenhum.\n\nMateriais necessários: Nenhum.',
     'Design UX/UI, Prototipação e Figma',
     [
       {
@@ -42,7 +42,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-01T08:00'),
     120,
-    'Introdução à ferramenta LaTeX para produção de trabalhos e artigos científicos para discentes da ciência da computação. \n\n Pré-requisitos: Recomenda-se ter concluído a disciplina Metodologia cientifica. \n\nMateriais necessários: Navegador de internet (Firefox, Chrome ou qualquer outro).',
+    'Introdução à ferramenta LaTeX para produção de trabalhos e artigos científicos para discentes da ciência da computação.\n\nPré-requisitos: Recomenda-se ter concluído a disciplina Metodologia cientifica.\n\nMateriais necessários: Navegador de internet (Firefox, Chrome ou qualquer outro).',
     'LaTex para produção de trabalhos científicos',
     [
       {
@@ -57,7 +57,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-01T14:00'),
     120,
-    'Explorar o processo de prototipação de Interfaces usando a ferramenta de design Figma. O objetivo é capacitar os participantes a transformar conceitos e ideias em protótipos interativos e funcionais, usando os conceitos de Design UX e UI. Mostrar como utilizar o Figma de forma profissional e com melhor aproveitamento. \n\n Pré-requisitos: Nenhum. \n\nMateriais necessários: Nenhum.',
+    'Explorar o processo de prototipação de Interfaces usando a ferramenta de design Figma. O objetivo é capacitar os participantes a transformar conceitos e ideias em protótipos interativos e funcionais, usando os conceitos de Design UX e UI. Mostrar como utilizar o Figma de forma profissional e com melhor aproveitamento.\n\nPré-requisitos: Nenhum.\n\nMateriais necessários: Nenhum.',
     'Design UX/UI, Prototipação e Figma',
     [
       {
@@ -76,7 +76,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-02T14:00'),
     120,
-    'Explicar conceitos básicos de cloud, apresentar a plataforma da google gcp, criar e conectar em uma maquina virtual basica e apresentar a plataforma de estudos google cloud skills boost. \n\n Pré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall. \n\nMateriais necessários: Conta Google (Gmail).',
+    'Explicar conceitos básicos de cloud, apresentar a plataforma da google gcp, criar e conectar em uma maquina virtual basica e apresentar a plataforma de estudos google cloud skills boost.\n\nPré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall.\n\nMateriais necessários: Conta Google (Gmail).',
     'Google Cloud e Google Cloud Skills',
     [
       {
@@ -91,7 +91,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-03T14:00'),
     120,
-    'Introdução a modelagem e impressão tridimensional em impressoras 3D. \n\n Pré-requisitos: Nenhum. \n\nMateriais necessários: Ultimaker Cura.',
+    'Introdução a modelagem e impressão tridimensional em impressoras 3D.\n\nPré-requisitos: Nenhum.\n\nMateriais necessários: Ultimaker Cura.',
     'Modelagem e Impressão 3D',
     [
       {
@@ -106,7 +106,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-04T14:00'),
     120,
-    'Explicar conceitos básicos de cloud, apresentar a plataforma da google gcp, criar e conectar em uma maquina virtual basica e apresentar a plataforma de estudos google cloud skills boost. \n\n Pré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall. \n\nMateriais necessários: Conta Google (Gmail).',
+    'Explicar conceitos básicos de cloud, apresentar a plataforma da google gcp, criar e conectar em uma maquina virtual basica e apresentar a plataforma de estudos google cloud skills boost.\n\nPré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall.\n\nMateriais necessários: Conta Google (Gmail).',
     'Google Cloud e Google Cloud Skills',
     [
       {
