@@ -56,7 +56,7 @@ const ScheduleData: ScheduleEventList = [
     new Date('2024-10-03T19:00'),
     90,
     'Um bate-papo sobre carreira e tecnologia',
-    'Mesa-redonda: bate-papo sobre carreira e tecnologia',
+    'Mesa redonda: bate-papo sobre carreira e tecnologia',
     [
       {
         name: 'Aurélio Prado',
