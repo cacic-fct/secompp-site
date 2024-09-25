@@ -8,7 +8,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-09-30T08:00'),
     240,
-    'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados a linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
+    'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados à linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
     'Introdução à linguagem Python para análise de dados',
     [
       {
@@ -27,7 +27,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-09-30T14:00'),
     240,
-    'Apresentar conceitos relacionados à programação funcional, imutabilidade, currying, e a linguagem Elixir: sintaxe básica e boas práticas\n\nPré-requisitos: Noções básicas de programação e estruturas de dados.\n\nMaterial necessário: Nenhum, porém recomenda-se a instalação do Elixir para utilizar do IEx.',
+    'Apresentar conceitos relacionados à programação funcional, imutabilidade, currying, e a linguagem Elixir: sintaxe básica e boas práticas\n\nPré-requisitos: Noções básicas de programação e estruturas de dados.\n\nMaterial necessário: Nenhum, porém recomenda-se a instalação do Elixir para utilizar o IEx.',
     'Programação funcional e Elixir',
     [
       {
@@ -42,7 +42,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-01T08:00'),
     240,
-    'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados a linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
+    'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados à linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
     'Introdução à linguagem Python para análise de dados',
     [
       {
@@ -84,7 +84,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-02T14:00'),
     240,
-    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, artimética e outras funções básicas.\n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada.\n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VSCode.',
+    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, aritmética e outras funções básicas.\n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada.\n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VSCode.',
     'Linguagem Lua - conceitos básicos',
     [
       {
