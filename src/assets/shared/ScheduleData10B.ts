@@ -167,8 +167,8 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-04T14:00'),
     240,
-    'Faremos uma introdução ao OS Linux, com sua história, e principais distribuições. Mostraremos como é a organização das pastas no sistema, e ensinaremos sobre os processos no Linux, explicando como ele gerencia e executa os processos. E por fim explicaremos alguns comandos básicos do terminal, e alguns aplicativos como editores de texto, gerenciadores de pacote e ferramentas de rede.\n\nPré-Requisitos: Nenhum.\n\nMateriais necessários: Máquina operando com uma distribuição Linux baseada no Debian (Pode ser uma máquina virtual ou WSL).',
-    'Sistema Operacionais Linux',
+    'Faremos uma introdução ao SO Linux, com sua história, e principais distribuições. Mostraremos como é a organização das pastas no sistema, e ensinaremos sobre os processos no Linux, explicando como ele gerencia e executa os processos. E por fim explicaremos alguns comandos básicos do terminal, e alguns aplicativos como editores de texto, gerenciadores de pacote e ferramentas de rede.\n\nPré-Requisitos: Nenhum.\n\nMateriais necessários: Máquina operando com uma distribuição Linux baseada no Debian (Pode ser uma máquina virtual ou WSL).',
+    'Sistema Operacional Linux',
     [
       {
         name: 'Vítor Moreira Rodrigues',
