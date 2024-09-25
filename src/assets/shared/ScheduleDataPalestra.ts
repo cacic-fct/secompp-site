@@ -42,7 +42,7 @@ const ScheduleData: ScheduleEventList = [
     new Date('2024-10-02T19:00'),
     90,
     'Introdução sobre DevOps;\nApresentar o status do DevOps dentro da UNESP;\nIntrodução à observabilidade;\nCiclo DevOps: pipelines de CI/CD e melhorias contínuas;\nAutomatização: desde Infraestrutura legada até novos componentes;\nInfraestrutura em Kubernetes;\nApresentar resiliência, antifragilidade;\nIntrodução sobre SRE (Engenharia de Confiabilidade): práticas de alta disponibilidade,\nInfra/aplicações escaláveis; ',
-    'DevOps e Infraestrutura de sistemas',
+    'DevOps e infraestrutura de sistemas',
     [
       {
         name: 'Aurélio Prado',
