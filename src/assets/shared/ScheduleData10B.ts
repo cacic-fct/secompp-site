@@ -23,7 +23,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-09-30T14:00'),
     120,
-    'Flutter é um framework desenvolvido pelo Google com o objetivo de facilitar a construção de aplicativos multiplataformas. O objetivo do curso é ensinar os conceitos básicos do Flutter bem como as bases do dart, linguagem utilizada pelo Flutter.\n\nPré-requisitos: conceitos de lógica de programação\n\nMateriais necessários:\nSDK do flutter;\nLinguagem Dart;\nAndroid Studio;\nSDK do Android;\nVsCode.',
+    'Flutter é um framework desenvolvido pelo Google com o objetivo de facilitar a construção de aplicativos multiplataformas. O objetivo do curso é ensinar os conceitos básicos do Flutter bem como as bases do dart, linguagem utilizada pelo Flutter.\n\nPré-requisitos: conceitos de lógica de programação\n\nMateriais necessários:\nSDK do flutter;\nLinguagem Dart;\nAndroid Studio;\nSDK do Android;\nVSCode.',
     'Desenvolvimento Mobile com Flutter',
     [
       {

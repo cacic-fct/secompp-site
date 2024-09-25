@@ -13,7 +13,7 @@ const ScheduleData: ScheduleEventList = [
     1,
     new Date('2024-10-01T19:00'),
     90,
-    'O Arquiteto de Sistemas\nArquitetura: Introdução e Definições\nArquitetura: High-level & Low-level\nMonolíto vs Microserviços\nArquitetura Limpa, Hexagonal, Em camadas ou MVC.\nProjeto Orientado a Domínio (DDD)',
+    'O Arquiteto de Sistemas\nArquitetura: Introdução e Definições\nArquitetura: High-level & Low-level\nMonólito vs Microserviços\nArquitetura Limpa, Hexagonal, Em camadas ou MVC.\nProjeto Orientado a Domínio (DDD)',
     'Conceitos de Arquitetura de Sistemas',
     [
       {
@@ -55,8 +55,8 @@ const ScheduleData: ScheduleEventList = [
     1,
     new Date('2024-10-03T19:00'),
     90,
-    'Um bate papo sobre carreira e tecnologia',
-    'Mesa-redonda: bate papo sobre carreira e tecnologia',
+    'Um bate-papo sobre carreira e tecnologia',
+    'Mesa-redonda: bate-papo sobre carreira e tecnologia',
     [
       {
         name: 'Aurélio Prado',
