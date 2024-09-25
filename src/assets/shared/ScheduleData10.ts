@@ -7,7 +7,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-09-30T08:00'),
-    120,
+    240,
     'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados a linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
     'Introdução à linguagem Python para análise de dados',
     [
@@ -26,7 +26,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-09-30T14:00'),
-    120,
+    240,
     'Apresentar conceitos relacionados à programação funcional, imutabilidade, currying, e a linguagem Elixir: sintaxe básica e boas práticas\n\nPré-requisitos: Noções básicas de programação e estruturas de dados.\n\nMaterial necessário: Nenhum, porém recomenda-se a instalação do Elixir para utilizar do IEx.',
     'Programação funcional e Elixir',
     [
@@ -41,7 +41,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-01T08:00'),
-    120,
+    240,
     'Curso introdutório utilizando a linguagem Python para análise de dados, apresentando conceitos relacionados a linguagem Python e as bibliotecas Pandas, NumPy e Matplotlib, além de alguns exercícios de fixação.\n\nPré-requisitos: nenhum.\n\nMateriais necessários: Última versão do Python e a IDE VSCode.',
     'Introdução à linguagem Python para análise de dados',
     [
@@ -60,7 +60,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-01T14:00'),
-    120,
+    240,
     'Ensinar aos participantes como estilizar páginas web de forma rápida e eficiente utilizando o Tailwind CSS, mostrando as principais vantagens de um framework utilitário e como aplicá-lo em projetos reais.\n\nPré-requisitos: Conhecimentos básicos de HTML e CSS.\n\nMateriais necessários: Node.js e VSCode.',
     'Estilização de páginas web com Tailwind CSS',
     [
@@ -83,7 +83,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-02T14:00'),
-    120,
+    240,
     'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, artimética e outras funções básicas.\n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada.\n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VSCode.',
     'Linguagem Lua - conceitos básicos',
     [
@@ -102,7 +102,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-03T08:00'),
-    120,
+    240,
     'Apresentar conceitos fundamentais dessas tecnologias da web para iniciantes, estruturar páginas utilizando HTML, além de estilizar e personalizar visualmente essas páginas com CSS. O minicurso incluirá alguns conceitos básicos, melhores práticas e dicas úteis, permitindo que os alunos criem seus próprios projetos.\n\nPré-requisitos: Nenhum.\n\nMateriais necessários: VSCode.',
     'Desenvolvimento Web com HTML e CSS',
     [
@@ -117,7 +117,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-03T14:00'),
-    120,
+    240,
     'Venha aprender Next.js, uma das tecnologias mais avançadas para desenvolvimento web! Neste curso de 8 horas (dividido em dois dias), você terá uma introdução completa ao Next.js, suas vantagens e como utilizá-lo para criar aplicações modernas, rápidas e otimizadas.\n\nPré-requisitos: Conhecimentos básicos de HTML, CSS e JavaScript\n\nMateriais necessários: Node.js e VSCode.',
     'Desenvolvimento Web com Next.js',
     [
@@ -140,7 +140,7 @@ const ScheduleData: ScheduleEventList = [
     'Laboratório 10',
     0,
     new Date('2024-10-04T14:00'),
-    120,
+    240,
     'Venha aprender Next.js, uma das tecnologias mais avançadas para desenvolvimento web! Neste curso de 8 horas (dividido em dois dias), você terá uma introdução completa ao Next.js, suas vantagens e como utilizá-lo para criar aplicações modernas, rápidas e otimizadas.\n\nPré-requisitos: Conhecimentos básicos de HTML, CSS e JavaScript\n\nMateriais necessários: Node.js e VSCode.',
     'Desenvolvimento Web com Next.js',
     [
