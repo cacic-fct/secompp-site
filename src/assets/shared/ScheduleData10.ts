@@ -98,7 +98,7 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
-    'Introdução à HTML e CSS',
+    'Introdução ao HTML e CSS',
     'Laboratório 10',
     0,
     new Date('2024-10-03T08:00'),
