@@ -75,7 +75,7 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
-    'Introdução a Impressão Tridimensional - Parte 1',
+    'Introdução a Impressão Tridimensional',
     'Laboratório 10B',
     0,
     new Date('2024-10-02T08:00'),
