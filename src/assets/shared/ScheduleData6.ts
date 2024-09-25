@@ -106,7 +106,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-04T14:00'),
     240,
-    'Explicar conceitos básicos de cloud, apresentar a plataforma da Google GCP, criar e conectar em uma máquina virtual basica e apresentar a plataforma de estudos google cloud skills boost.\n\nPré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall.\n\nMateriais necessários: Conta Google (Gmail).',
+    'Explicar conceitos básicos de cloud, apresentar a plataforma da Google GCP, criar e conectar em uma máquina virtual básica e apresentar a plataforma de estudos google cloud skills boost.\n\nPré-requisitos: Conceitos básicos de requisições HTTP e camadas de rede e firewall.\n\nMateriais necessários: Conta Google (Gmail).',
     'Google Cloud e Google Cloud Skills',
     [
       {
