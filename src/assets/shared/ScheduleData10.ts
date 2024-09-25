@@ -84,7 +84,7 @@ const ScheduleData: ScheduleEventList = [
     0,
     new Date('2024-10-02T14:00'),
     120,
-    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, artimética e outras funções básicas.\n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada.\n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VSCode.',
+    'Apresentar superficialmente a linguagem, permitindo o participante desenvolver programas e protótipos simples em Lua: manipulação de arquivos e cadeia de caracteres, estrutura de dados, aritmética e outras funções básicas.\n\nPré-requisitos: Noções básicas de uma linguagem de programação interpretada.\n\nMateriais necessários: Arquivos binários para executar código Lua (Lua Binaries) e VSCode.',
     'Linguagem Lua - conceitos básicos',
     [
       {

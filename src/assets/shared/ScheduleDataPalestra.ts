@@ -13,7 +13,7 @@ const ScheduleData: ScheduleEventList = [
     1,
     new Date('2024-10-01T19:00'),
     90,
-    'O Arquiteto de Sistemas\nArquitetura: Introdução e Definições\nArquitetura: High-level & Low-level\nMonólito vs Microserviços\nArquitetura Limpa, Hexagonal, Em camadas ou MVC.\nProjeto Orientado a Domínio (DDD)',
+    'O Arquiteto de Sistemas\nArquitetura: Introdução e Definições\nArquitetura: High-level & Low-level\nAplicação monolítica vs Microserviços\nArquitetura Limpa, Hexagonal, Em camadas ou MVC.\nProjeto Orientado a Domínio (DDD)',
     'Conceitos de Arquitetura de Sistemas',
     [
       {
@@ -36,12 +36,12 @@ const ScheduleData: ScheduleEventList = [
     ],
   ),
   createEvent(
-    'Devops: de Observabilidade à Confiabilidade',
+    'DevOps: de Observabilidade à Confiabilidade',
     'Auditório',
     1,
     new Date('2024-10-02T19:00'),
     90,
-    'Introdução sobre Devops;\nApresentar o status do Devops dentro da UNESP;\nIntrodução à observabilidade;\nCiclo Devops: pipelines de CI/CD e melhorias contínuas;\nAutomatização: desde Infraestrutura legada até novos componentes;\nInfraestrutura em Kubernetes;\nApresentar resiliência, anti-fragilidade;\nIntrodução sobre SRE (Engenharia de Confiabilidade): práticas de alta disponibilidade,\nInfra/aplicações escaláveis; ',
+    'Introdução sobre DevOps;\nApresentar o status do DevOps dentro da UNESP;\nIntrodução à observabilidade;\nCiclo DevOps: pipelines de CI/CD e melhorias contínuas;\nAutomatização: desde Infraestrutura legada até novos componentes;\nInfraestrutura em Kubernetes;\nApresentar resiliência, antifragilidade;\nIntrodução sobre SRE (Engenharia de Confiabilidade): práticas de alta disponibilidade,\nInfra/aplicações escaláveis; ',
     'DevOps e Infraestrutura de sistemas',
     [
       {
