@@ -10,6 +10,7 @@
         "astro": "^5.14.4",
         "lucide-astro": "^0.471.0",
         "lucide-svelte": "^0.471.0",
+        "sharp": "^0.34.4",
         "svelte": "^5.39.12",
         "typescript": "^5.9.3",
       },
