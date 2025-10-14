@@ -42,6 +42,9 @@
       },
     },
   },
+  "trustedDependencies": [
+    "sharp",
+  ],
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, ""],
 
