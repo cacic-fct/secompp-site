@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import svelte from '@astrojs/svelte';
 
 import sitemap from '@astrojs/sitemap';
@@ -7,4 +7,12 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://secompp.cacic.dev.br',
   integrations: [svelte(), sitemap()],
+  fonts: [
+    {
+      provider: fontProviders.fontsource(),
+      name: 'Inter',
+      cssVariable: '--font-inter',
+      weights: ['100 900'],
+    },
+  ],
 });
