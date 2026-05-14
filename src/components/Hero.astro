@@ -39,17 +39,24 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
       <div class="flex flex-col items-start">
         <p>Patrocínio</p>
         <a href="https://www.cobmais.com.br" class="py-2">
-          <Image src={logoCobmais} alt="Cobmais" class="img-lg img-clickable mx-auto" />
+          <Image
+            src={logoCobmais}
+            alt="Cobmais"
+            class="img-lg img-clickable mx-auto"
+            format="avif"
+            quality="low"
+            priority
+          />
         </a>
 
         <a href="https://vericode.com.br" class="py-2">
-          <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" />
+          <Image src={logoVericode} alt="Vericode" class="img-lg img-clickable mx-auto" priority />
         </a>
       </div>
       <div class="flex flex-col items-start">
         <p>Apoio</p>
         <a href="https://www.vunesp.com.br/">
-          <Image class="img-lg img-clickable mx-auto" src={logoVunesp} alt="Vunesp" />
+          <Image class="img-lg img-clickable mx-auto" src={logoVunesp} alt="Vunesp" priority />
         </a>
       </div>
     </div>

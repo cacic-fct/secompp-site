@@ -7,6 +7,7 @@ import logoFundacte from '@lib/img/fundacte-dark.svg';
 import logoVericode from '@lib/img/vericode.svg';
 
 import logoVunesp from '@lib/img/vunesp.svg';
+import logoCobmais from '@lib/img/cobmais.avif';
 import { Mail, Phone } from 'lucide-astro';
 
 import { Image } from 'astro:assets';
@@ -16,7 +17,7 @@ import { Image } from 'astro:assets';
   <nav>
     <header class="footer-title">Patrocínio</header>
     <a href="https://www.cobmais.com.br/">
-      <img class="img-lg img-clickable mx-auto ml-1" src="/images/cobmais.avif" alt="Cobmais" />
+      <Image class="img-lg img-clickable mx-auto ml-1" src={logoCobmais} alt="Cobmais" format="avif" quality="low" />
     </a>
     <a href="https://vericode.com.br/">
       <Image class="img-lg img-clickable mx-auto mb-1" src={logoVericode} alt="Vericode" />
