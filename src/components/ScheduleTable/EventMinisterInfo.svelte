@@ -1,25 +1,25 @@
 <script lang="ts">
-  import { ministerHasDetailInfo } from '@lib/shared/EventMinister';
-  import type { EventMinister } from '@lib/shared/EventMinister';
+  import { lecturerHasDetailInfo } from '@lib/shared/EventLecturer';
+  import type { EventLecturer } from '@lib/shared/EventLecturer';
   import { Mail, Link } from 'lucide-svelte';
 
-  export let minister: EventMinister;
+  export let lecturer: EventLecturer;
 </script>
 
-<div class="minister-info d-grid mx-1 rounded px-3 py-2 shadow">
-  <h6 class="font-bold">{minister.name}</h6>
-  {#if ministerHasDetailInfo(minister)}
-    {#if minister.description}
-      <span class="small pre-wrap">{minister.description}</span>
+<div class="lecturer-info d-grid mx-1 rounded px-3 py-2 shadow">
+  <h6 class="font-bold">{lecturer.name}</h6>
+  {#if lecturerHasDetailInfo(lecturer)}
+    {#if lecturer.description}
+      <span class="small pre-wrap">{lecturer.description}</span>
     {/if}
-    {#if minister.link}
-      <a class="minister-url smaller" href={minister.link.path} target="_blank">
-        <Link width="22" height="22" color="white" />{minister.link.label ?? minister.link.path}
+    {#if lecturer.link}
+      <a class="lecturer-url smaller" href={lecturer.link.path} target="_blank">
+        <Link width="22" height="22" color="white" />{lecturer.link.label ?? lecturer.link.path}
       </a>
     {/if}
-    {#if minister.email}
-      <a class="minister-email smaller" href="mailto:{minister.email}" target="_blank">
-        <Mail color="white" />{minister.email ?? minister.email}
+    {#if lecturer.email}
+      <a class="lecturer-email smaller" href="mailto:{lecturer.email}" target="_blank">
+        <Mail color="white" />{lecturer.email ?? lecturer.email}
       </a>
     {/if}
   {/if}
@@ -28,8 +28,8 @@
 <style lang="postcss">
   @import './_styles.pcss';
   @import '../../styles/_variables.pcss';
-  .minister-url,
-  .minister-email {
+  .lecturer-url,
+  .lecturer-email {
     text-decoration: none;
     color: $body-color;
     margin-top: $sp-2;
@@ -46,14 +46,14 @@
     }
   }
 
-  .minister-email {
+  .lecturer-email {
     margin-left: 3px;
     :global(svg) {
       margin-right: $sp-1;
     }
   }
 
-  .minister-url :global(svg) {
+  .lecturer-url :global(svg) {
     margin-right: calc($sp-1 - 3px);
   }
 
@@ -63,7 +63,7 @@
     @mixin transition;
   }
 
-  .minister-info {
+  .lecturer-info {
     @media (max-width: 573px) {
       margin-bottom: $sp-2;
     }

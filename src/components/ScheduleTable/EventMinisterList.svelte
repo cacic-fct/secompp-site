@@ -1,21 +1,21 @@
 <script lang="ts">
-  import type { EventMinister } from '@lib/shared/EventMinister';
-  import EventMinisterInfo from './EventMinisterInfo.svelte';
+  import type { EventLecturer } from '@lib/shared/EventLecturer';
+  import EventLecturerInfo from './EventLecturerInfo.svelte';
 
-  export let ministers: EventMinister[];
+  export let lecturers: EventLecturer[];
 </script>
 
-{#if ministers.length !== 0}
+{#if lecturers.length !== 0}
   <br />
-  <div id="ministers">
-    {#each ministers as minister (minister.name)}
-      <EventMinisterInfo {minister} />
+  <div id="lecturers">
+    {#each lecturers as lecturer (lecturer.name)}
+      <EventLecturerInfo {lecturer} />
     {/each}
   </div>
 {/if}
 
 <style lang="postcss">
-  #ministers {
+  #lecturers {
     width: 100%;
     @media (min-width: 574px) {
       display: inline-flex;

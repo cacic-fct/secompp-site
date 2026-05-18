@@ -1,4 +1,4 @@
-import type { EventMinister } from './EventMinister';
+import type { EventLecturer } from './EventLecturer';
 import type { ScheduleEvent, ScheduleEventGrid, ScheduleEventList, ScheduleEventRow } from './ScheduleEvent';
 
 export function createEvent(
@@ -16,12 +16,12 @@ export function createEvent(
   duration = 30,
   fullDescription = '',
   shortDescription = '',
-  ministers: EventMinister[] = [],
+  lecturers: EventLecturer[] = [],
 ): ScheduleEvent {
   return {
     place,
     eventName,
-    ministers,
+    lecturers,
     startTime,
     fullDescription,
     shortDescription,

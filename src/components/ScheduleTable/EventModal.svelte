@@ -4,7 +4,7 @@
   import { X } from 'lucide-svelte';
 
   import EventInfo from './EventInfo.svelte';
-  import EventMinisterList from './EventMinisterList.svelte';
+  import EventLecturerList from './EventLecturerList.svelte';
 
   export let isModalOpen: boolean;
   export let toggleModal: () => void;
@@ -22,7 +22,7 @@
     </form>
     <h3 class="pb-8 pr-4 text-lg font-bold text-[var(--primary-color)]">{event.eventName} - {type}</h3>
     <EventInfo {event} />
-    <EventMinisterList ministers={event.ministers} />
+    <EventLecturerList lecturers={event.lecturers} />
   </div>
   <form method="dialog" class="modal-backdrop">
     <button on:click={() => toggleModal()}>close</button>

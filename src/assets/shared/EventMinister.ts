@@ -1,11 +1,11 @@
-export type EventMinisterUrl = { path: string; label?: string };
-export type EventMinister = {
+export type EventLecturerUrl = { path: string; label?: string };
+export type EventLecturer = {
   name: string;
   description?: string;
-  link?: EventMinisterUrl;
+  link?: EventLecturerUrl;
   email?: string;
 };
 
-export function ministerHasDetailInfo(minister: EventMinister) {
-  return !!minister.description || !!minister.email || !!minister.link;
+export function lecturerHasDetailInfo(lecturer: EventLecturer) {
+  return !!lecturer.description || !!lecturer.email || !!lecturer.link;
 }

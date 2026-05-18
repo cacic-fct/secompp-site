@@ -1,8 +1,8 @@
-import type { EventMinister } from './EventMinister';
+import type { EventLecturer } from './EventLecturer';
 
 export type ScheduleEventType = 'minicurso' | 'palestra';
 export type ScheduleEvent = {
-  ministers: Array<EventMinister>;
+  lecturers: Array<EventLecturer>;
   eventName: string;
   startTime: Date;
   endTime: Date;
