@@ -13,6 +13,7 @@
     "lint": "prettier --check . && eslint 'src/**/*.{js,astro,ts,svelte}'"
   },
   "dependencies": {
+    "@cacic-fct/account-manager-cookie-banner": "^0.0.1",
     "@cacic-fct/account-manager-privacy": "0.0.2",
     "@astrojs/check": "0.9.9",
     "@astrojs/sitemap": "3.7.3",

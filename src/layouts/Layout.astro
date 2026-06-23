@@ -3,6 +3,7 @@ import { Font } from 'astro:assets';
 import { Ticket } from 'lucide-astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
+import '@cacic-fct/account-manager-cookie-banner/styles.css';
 import '../styles/global.css';
 
 interface Props {
@@ -64,6 +65,16 @@ const isProduction = import.meta.env.PROD;
       <Ticket size={18} aria-hidden="true" />
       Inscrever-se
     </a>
+    <script>
+      import { createCookieBanner } from '@cacic-fct/account-manager-cookie-banner';
+
+      createCookieBanner({
+        privacyPolicyUrl: 'https://cacic.dev.br/legal/privacy-policy',
+        onAccept: () => {
+          window.dispatchEvent(new Event('cookieBannerAccepted'));
+        },
+      });
+    </script>
   </body>
 </html>
 
