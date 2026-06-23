@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build:analytics": "mkdir -p public/js && bun build src/analytics/cacic-umami-tracking.ts --target=browser --format=iife --outfile=public/js/cacic-umami-tracking.js --minify",
+    "build": "bun run build:analytics && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky",
     "lint": "prettier --check . && eslint 'src/**/*.{js,astro,ts,svelte}'"
   },
   "dependencies": {
+    "@cacic-fct/account-manager-privacy": "0.0.2",
     "@astrojs/check": "0.9.9",
     "@astrojs/sitemap": "3.7.3",
     "@astrojs/svelte": "9.0.0",

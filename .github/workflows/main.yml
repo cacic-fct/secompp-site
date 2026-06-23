@@ -8,6 +8,10 @@ jobs:
 
     permissions:
       contents: read
+      packages: read
+
+    env:
+      NPM_CONFIG_TOKEN: ${{ github.token }}
 
     steps:
       - name: Checkout
@@ -28,6 +32,10 @@ jobs:
 
     permissions:
       contents: read
+      packages: read
+
+    env:
+      NPM_CONFIG_TOKEN: ${{ github.token }}
 
     steps:
       - name: Checkout

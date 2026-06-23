@@ -2,6 +2,7 @@
 dist/
 # generated types
 .astro/
+public/js/cacic-umami-tracking.js
 
 # dependencies
 node_modules/

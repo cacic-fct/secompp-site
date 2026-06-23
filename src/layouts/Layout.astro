@@ -13,6 +13,7 @@ interface Props {
 const defaultDescription = 'A Semana da Computação de Presidente Prudente oferece minicursos, palestras e mais!';
 
 const { title, description } = Astro.props;
+const isProduction = import.meta.env.PROD;
 ---
 
 <!doctype html>
@@ -28,6 +29,8 @@ const { title, description } = Astro.props;
     <Font cssVariable="--font-inter" />
 
     <link rel="preconnect" href="https://eventos.cacic.dev.br" crossorigin />
+    {isProduction && <link rel="preconnect" href="https://account.cacic.dev.br" crossorigin />}
+    {isProduction && <link rel="preconnect" href="https://a.cacic.dev.br" />}
 
     <!-- OGP: Open Graph -->
     <meta property="og:locale" content="pt_BR" />
@@ -38,17 +41,20 @@ const { title, description } = Astro.props;
     <meta property="og:description" content={description || defaultDescription} />
     <meta property="og:image" content="https://secompp.cacic.dev.br/images/logo-og.png" />
 
-    <!-- Analytics -->
-    <script defer is:inline src="https://a.cacic.dev.br/b.js" data-website-id="7648931d-e076-44ff-b7eb-714602e2cc20"
-    ></script>
-    <script
-      defer
-      is:inline
-      src="https://a.cacic.dev.br/recorder.js"
-      data-website-id="7648931d-e076-44ff-b7eb-714602e2cc20"
-      data-sample-rate="1"
-      data-mask-level="moderate"
-      data-max-duration="1200000"></script>
+    {
+      isProduction && (
+        <script
+          defer
+          is:inline
+          src="/js/cacic-umami-tracking.js"
+          data-website-id="7648931d-e076-44ff-b7eb-714602e2cc20"
+          data-recorder-src="https://a.cacic.dev.br/recorder.js"
+          data-sample-rate="1"
+          data-mask-level="moderate"
+          data-max-duration="1200000"
+        />
+      )
+    }
   </head>
   <body>
     <Nav />
