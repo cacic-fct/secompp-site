@@ -2,16 +2,13 @@
   import minicursosIcon from '@lib/img/minicursos.svg';
   import palestrasIcon from '@lib/img/palestras.svg';
   import type { ScheduleEventClickHandler, ScheduleEventRow } from '@lib/shared/ScheduleEvent';
-  import { findEvent, getEventStart, getEventType } from '@lib/shared/ScheduleEventUtils';
+  import { getEventType } from '@lib/shared/ScheduleEventUtils';
   import ScheduleTableCell from './ScheduleTableCell.svelte';
 
   export let schedule: ScheduleEventRow;
   export let onClickEvent: ScheduleEventClickHandler;
 
-  const event = findEvent(schedule);
-
-  const type = getEventType(event);
-  const startTime = getEventStart(event);
+  $: type = getEventType(schedule);
 
   const icon = {
     minicurso: { desc: 'Minicursos', src: minicursosIcon },
@@ -23,14 +20,14 @@
   <td>
     <div>
       <img src={icon[type].src.src} alt={icon[type].desc} loading="lazy" class="table-icon" />
-      {startTime}
+      {schedule.startTime}
     </div>
   </td>
-  {#each schedule as event}
-    {#if event}
-      <ScheduleTableCell {onClickEvent} {event} />
+  {#each schedule.cells as events}
+    {#if events.length}
+      <ScheduleTableCell {onClickEvent} event={events[0]} />
     {:else}
-      <td aria-hidden="true" aria-disabled="true" />
+      <td aria-hidden="true" aria-disabled="true"></td>
     {/if}
   {/each}
 </tr>
@@ -77,7 +74,7 @@
     }
 
     &[aria-disabled] {
-      min-width: 120px;
+      min-width: 200px;
       border-width: 0;
     }
   }

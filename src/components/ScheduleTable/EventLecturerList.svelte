@@ -7,6 +7,7 @@
 
 {#if lecturers.length !== 0}
   <br />
+  <h4 class="mb-2 text-base font-semibold">Ministrantes</h4>
   <div id="lecturers">
     {#each lecturers as lecturer (lecturer.name)}
       <EventLecturerInfo {lecturer} />

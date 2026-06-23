@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ScheduleEvent } from '@lib/shared/ScheduleEvent';
-  import { getEventEnd, getEventStart } from '@lib/shared/ScheduleEventUtils';
+  import { getEventDate, getEventEnd, getEventStart } from '@lib/shared/ScheduleEventUtils';
 
   export let event: ScheduleEvent;
 </script>
@@ -11,7 +11,7 @@
       <span class="font-bold">Data:</span>
     </div>
     <div class="relative max-w-full flex-1 flex-grow px-4">
-      {event.startTime.toLocaleDateString('pt-br')}
+      {getEventDate(event)}
     </div>
   </div>
   <div class="flex flex-wrap">
@@ -38,6 +38,16 @@
       {event.place}
     </div>
   </div>
+  {#if event.groupName}
+    <div class="flex flex-wrap">
+      <div class="relative max-w-full flex-1 flex-grow md:w-1/5">
+        <span class="font-bold">Atividade:</span>
+      </div>
+      <div class="relative max-w-full flex-1 flex-grow px-4">
+        {event.groupName}
+      </div>
+    </div>
+  {/if}
   {#if event.fullDescription !== ''}
     <br />
     <div class="pre-wrap">{event.fullDescription}</div>

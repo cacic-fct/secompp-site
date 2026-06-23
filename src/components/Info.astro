@@ -1,5 +1,6 @@
 ---
 import Map from './Map.astro';
+import EventPriceTable from './EventPriceTable.svelte';
 ---
 
 <div class="container mx-auto sm:px-4">
@@ -7,26 +8,13 @@ import Map from './Map.astro';
     <div class="w-full pl-4 pr-4">
       <h1 class="mb-2 text-4xl font-medium">Inscrições</h1>
       <div class="scrolling-touch block w-full overflow-auto">
-        <table class="w-full max-w-full bg-transparent">
-          <thead>
-            <tr>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="h-16 border-b-2 border-t-2">
-            <tr>
-              <td>Valor da inscrição</td>
-              <td aria-label="30 reais">R$ 30,00</td>
-            </tr>
-          </tbody>
-        </table>
+        <EventPriceTable client:load />
       </div>
     </div>
     <div class="w-full pl-4 pr-4">
       <h1 class="mb-2 text-4xl font-medium">Localização</h1>
       <div class="map-container">
-        <Map client:visible />
+        <Map />
       </div>
     </div>
   </div>

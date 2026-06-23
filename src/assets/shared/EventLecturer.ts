@@ -4,6 +4,7 @@ export type EventLecturer = {
   description?: string;
   link?: EventLecturerUrl;
   email?: string;
+  avatarUrl?: string;
 };
 
 export function lecturerHasDetailInfo(lecturer: EventLecturer) {

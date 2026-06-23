@@ -1,13 +1,18 @@
 <script lang="ts">
   import { lecturerHasDetailInfo } from '@lib/shared/EventLecturer';
   import type { EventLecturer } from '@lib/shared/EventLecturer';
-  import { Mail, Link } from 'lucide-svelte';
+  import { Link, Mail } from 'lucide-svelte';
 
   export let lecturer: EventLecturer;
 </script>
 
 <div class="lecturer-info d-grid mx-1 rounded px-3 py-2 shadow">
-  <h6 class="font-bold">{lecturer.name}</h6>
+  <div class="lecturer-heading">
+    {#if lecturer.avatarUrl}
+      <img src={lecturer.avatarUrl} alt="" loading="lazy" />
+    {/if}
+    <h6 class="font-bold">{lecturer.name}</h6>
+  </div>
   {#if lecturerHasDetailInfo(lecturer)}
     {#if lecturer.description}
       <span class="small pre-wrap">{lecturer.description}</span>
@@ -30,6 +35,8 @@
   @import '../../styles/_variables.pcss';
   .lecturer-url,
   .lecturer-email {
+    align-items: center;
+    display: inline-flex;
     text-decoration: none;
     color: $body-color;
     margin-top: $sp-2;
@@ -61,6 +68,19 @@
     height: fit-content;
     margin: 0;
     @mixin transition;
+  }
+
+  .lecturer-heading {
+    align-items: center;
+    display: flex;
+    gap: $sp-2;
+  }
+
+  .lecturer-heading img {
+    border-radius: 999px;
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
   }
 
   .lecturer-info {

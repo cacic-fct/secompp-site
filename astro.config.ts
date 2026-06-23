@@ -7,6 +7,17 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://secompp.cacic.dev.br',
   integrations: [svelte(), sitemap()],
+  vite: {
+    server: {
+      proxy: {
+        '/event-manager-api': {
+          target: 'https://eventos.cacic.dev.br',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/event-manager-api/, '/api'),
+        },
+      },
+    },
+  },
   fonts: [
     {
       provider: fontProviders.fontsource(),

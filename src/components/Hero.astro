@@ -4,6 +4,7 @@ import logoVunesp from '@lib/img/vunesp.svg';
 import logoCobmais from '@lib/img/cobmais.avif';
 import { Image } from 'astro:assets';
 import logoSecompp from '/src/assets/img/secompp24-logo.svg';
+import HeroEventDate from './HeroEventDate.svelte';
 ---
 
 <header class="hero-bg">
@@ -22,8 +23,7 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
         <span class="fs-4 text-lg font-semibold">21ª Semana do Curso de Ciência da Computação da FCT-Unesp</span>
       </div>
       <div class="intro-heading text-center">
-        <!-- Embora o ano já esteja no logotipo, a inclusão dele no texto foi exigência do prof. Danilo -->
-        <span class="fs-4 fw-light">Junte-se a nós de 30 de setembro a 04 de outubro de 2024</span>
+        <span class="fs-4 fw-light"><HeroEventDate client:load /></span>
       </div>
     </div>
 
