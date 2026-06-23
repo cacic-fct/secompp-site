@@ -7,7 +7,7 @@
   import { SquareArrowOutUpRight, X } from 'lucide-svelte';
   import { getEventEnd, getEventStart } from '@lib/shared/ScheduleEventUtils';
 
-  // import EventInfo from './EventInfo.svelte';
+  import EventInfo from './EventInfo.svelte';
   import EventLecturerList from './EventLecturerList.svelte';
   import EventTypeBadge from './EventTypeBadge.svelte';
   import Twemoji from '../Twemoji.svelte';
@@ -144,7 +144,7 @@
         <p>{event.place}</p>
       </div>
     </div>
-    <!-- <EventInfo {event} /> -->
+    <EventInfo {event} />
     <EventLecturerList lecturers={event.lecturers} />
     <div class="modal-actions">
       <a class="btn btn-primary event-manager-link" href={`https://eventos.cacic.dev.br/app/event/${event.id}`}>
