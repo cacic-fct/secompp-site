@@ -1,8 +1,9 @@
 <script lang="ts">
+  import minicursosIcon from '@lib/img/minicursos.svg';
+  import palestrasIcon from '@lib/img/palestras.svg';
   import type { ScheduleDay, ScheduleEventClickHandler, ScheduleEventList } from '@lib/shared/ScheduleEvent';
   import { createScheduleGrid } from '@lib/shared/ScheduleEventUtils';
-  import Caption from './Caption.svelte';
-  import CaptionPalestra from './CaptionPalestra.svelte';
+  import ScheduleCaption from './ScheduleCaption.svelte';
   import ScheduleTableRow from './ScheduleTableRow.svelte';
 
   export let title: string;
@@ -13,19 +14,23 @@
   export let onClickEvent: ScheduleEventClickHandler;
 
   $: scheduleGrid = createScheduleGrid(events, days);
+  $: caption =
+    type === 'palestra' ? { icon: palestrasIcon, label: 'Palestra' } : { icon: minicursosIcon, label: 'Minicurso' };
 </script>
 
 {#if events.length}
   <div class="schedule-container container mx-auto px-4">
-    <h1>{title}</h1>
+    <div class="desktop-section-heading">
+      <h1>{title}</h1>
+    </div>
     {#if subtitle}
-      <span>{subtitle}</span>
+      <p class="subtitle">{subtitle}</p>
     {/if}
-    <div class="scrolling-touch block w-full overflow-auto pt-8" style="--bs-secondary-rgb: 255, 255, 255">
-      <table class="mb-4 w-full max-w-full bg-transparent">
+    <div class="block w-full overflow-auto pt-7">
+      <table class="mb-4 w-full max-w-full bg-transparent" aria-label={title}>
         <thead class="text-left">
           <tr>
-            <th class="bw-0"></th>
+            <th class="border-0"></th>
             {#each days as day (day.key)}
               <th>
                 <span>{day.weekday}</span>
@@ -41,45 +46,53 @@
         </tbody>
       </table>
     </div>
-    {#if type === 'palestra'}
-      <CaptionPalestra />
-    {:else}
-      <Caption />
-    {/if}
+    <ScheduleCaption icon={caption.icon} label={caption.label} />
   </div>
 {/if}
 
 <style lang="postcss">
-  @import './_styles.pcss';
-
   .schedule-container {
-    @media (min-width: 576px) {
-      max-width: 767px;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 991px;
-      padding: 24px;
-    }
-
-    @media (min-width: 992px) {
-      max-width: 1232px;
-      padding: 24px;
-    }
-
+    border-top: 1px solid color-mix(in srgb, var(--color-base-content) 16%, transparent);
     padding-bottom: 0;
+    padding-top: 32px;
+  }
+
+  .desktop-section-heading {
+    align-items: end;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .desktop-section-heading h1 {
+    line-height: 1;
+    margin: 0;
+  }
+
+  .subtitle {
+    color: color-mix(in srgb, var(--color-base-content) 78%, transparent);
+    font-size: 1rem;
+    margin-top: 0.65rem;
   }
 
   th {
     &:first-child {
-      @mixin cell-first-child;
-      background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), 45%, rgba(0, 0, 0, 0));
+      background: linear-gradient(45deg, color-mix(in srgb, var(--color-base-100) 82%, transparent), 45%, transparent);
+      left: 0;
+      position: sticky;
+      z-index: 2;
+
+      @media (max-width: 574px) {
+        left: -1px;
+      }
     }
 
     border: 0;
+    color: var(--color-base-content);
+    padding: 0.35rem;
 
     &:not(:first-child) {
-      min-width: 200px;
+      min-width: 214px;
       vertical-align: bottom;
     }
   }
@@ -89,13 +102,13 @@
   }
 
   .day-label {
-    color: var(--bs-gray-500);
+    color: color-mix(in srgb, var(--color-base-content) 62%, transparent);
     font-size: 0.75rem;
     font-weight: 400;
   }
 
   table {
     border-collapse: separate;
-    border-spacing: 8px;
+    border-spacing: 0.35rem;
   }
 </style>

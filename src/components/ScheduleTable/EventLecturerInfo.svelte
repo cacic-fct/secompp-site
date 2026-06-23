@@ -6,7 +6,7 @@
   export let lecturer: EventLecturer;
 </script>
 
-<div class="lecturer-info d-grid mx-1 rounded px-3 py-2 shadow">
+<div class="lecturer-info mx-1 rounded px-3 py-2 shadow">
   <div class="lecturer-heading">
     {#if lecturer.avatarUrl}
       <img src={lecturer.avatarUrl} alt="" loading="lazy" />
@@ -15,7 +15,7 @@
   </div>
   {#if lecturerHasDetailInfo(lecturer)}
     {#if lecturer.description}
-      <span class="small pre-wrap">{lecturer.description}</span>
+      <span class="lecturer-description pre-wrap">{lecturer.description}</span>
     {/if}
     {#if lecturer.link}
       <a class="lecturer-url smaller" href={lecturer.link.path} target="_blank">
@@ -31,49 +31,47 @@
 </div>
 
 <style lang="postcss">
-  @import './_styles.pcss';
-  @import '../../styles/_variables.pcss';
   .lecturer-url,
   .lecturer-email {
     align-items: center;
+    color: var(--color-base-content);
     display: inline-flex;
+    margin-top: 0.5rem;
     text-decoration: none;
-    color: $body-color;
-    margin-top: $sp-2;
+    transition: 0.3s;
     width: fit-content;
-    @mixin transition;
 
     &:hover,
     &:active,
     &:focus-visible {
-      color: $primary-color;
-      text-decoration: underline;
       border: 0;
+      color: var(--color-primary);
       outline: 0;
+      text-decoration: underline;
     }
   }
 
   .lecturer-email {
     margin-left: 3px;
     :global(svg) {
-      margin-right: $sp-1;
+      margin-right: 0.25rem;
     }
   }
 
   .lecturer-url :global(svg) {
-    margin-right: calc($sp-1 - 3px);
+    margin-right: calc(0.25rem - 3px);
   }
 
   h6 {
     height: fit-content;
     margin: 0;
-    @mixin transition;
+    transition: 0.3s;
   }
 
   .lecturer-heading {
     align-items: center;
     display: flex;
-    gap: $sp-2;
+    gap: 0.5rem;
   }
 
   .lecturer-heading img {
@@ -84,8 +82,13 @@
   }
 
   .lecturer-info {
+    background: rgb(38, 39, 41);
+    border: 1px solid transparent;
+    display: grid;
+    transition: 0.3s;
+
     @media (max-width: 573px) {
-      margin-bottom: $sp-2;
+      margin-bottom: 0.5rem;
     }
 
     h6 {
@@ -93,24 +96,24 @@
     }
 
     span {
-      margin: $sp-1 0;
-      @mixin transition;
+      margin: 0.25rem 0;
+      transition: 0.3s;
     }
 
     &:hover,
     &:focus {
       background: rgb(47, 49, 51);
-      border-color: $primary-color;
+      border-color: var(--color-primary);
 
       h6 {
         &:first-child {
-          color: $primary-color;
+          color: var(--color-primary);
         }
       }
     }
+  }
 
-    background: rgb(38, 39, 41);
-    border: 1px solid transparent;
-    @mixin transition;
+  .lecturer-description {
+    font-size: 0.875rem;
   }
 </style>

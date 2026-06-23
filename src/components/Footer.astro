@@ -13,81 +13,83 @@ import { Mail, Phone } from 'lucide-astro';
 import { Image } from 'astro:assets';
 ---
 
-<footer class="footer m-auto max-w-screen-2xl bg-neutral p-10 text-neutral-content" id="footer">
-  <nav>
-    <header class="footer-title">Patrocínio</header>
-    <a href="https://www.cobmais.com.br/">
-      <Image class="img-lg img-clickable mx-auto ml-1" src={logoCobmais} alt="Cobmais" format="avif" quality="low" />
-    </a>
-    <a href="https://vericode.com.br/">
-      <Image class="img-lg img-clickable mx-auto mb-1" src={logoVericode} alt="Vericode" />
-    </a>
-    <br />
-    <header class="footer-title m-0">Apoio</header>
-    <a href="https://www.vunesp.com.br/">
-      <Image class="img-lg img-clickable mx-auto" src={logoVunesp} alt="Vunesp" />
-    </a>
-  </nav>
-  <nav>
-    <header class="footer-title">Realização</header>
-    <div class="grid grid-flow-col items-center gap-4">
-      <a href="https://cacic.dev.br">
-        <Image class="img-md img-clickable mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
-      >
-      <a href="https://www.ejcomp.com.br/">
-        <Image class="img-lg img-clickable ml-1" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+<footer class="brand-surface bg-neutral text-neutral-content" id="footer" data-theme="secompp">
+  <div class="footer md:footer-horizontal mx-auto max-w-screen-2xl p-10 md:justify-between">
+    <nav>
+      <header class="footer-title">Patrocínio</header>
+      <a href="https://www.cobmais.com.br/">
+        <Image class="img-lg img-clickable mx-auto ml-1" src={logoCobmais} alt="Cobmais" format="avif" quality="low" />
       </a>
-    </div>
-    <br />
-    <div class="grid grid-flow-col items-center gap-4">
-      <a href="https://www.fct.unesp.br">
-        <Image class="img-md img-clickable" src={logoUnesp} alt="Unesp" />
+      <a href="https://vericode.com.br/">
+        <Image class="img-lg img-clickable mx-auto mb-1" src={logoVericode} alt="Vericode" />
       </a>
-      <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/">
-        <Image
-          class="img-sm md-1 img-clickable ml-1"
-          src={logoDmc}
-          alt="Logo do Departamento de Matemática e Computação"
-        />
+      <br />
+      <header class="footer-title m-0">Apoio</header>
+      <a href="https://www.vunesp.com.br/">
+        <Image class="img-lg img-clickable mx-auto" src={logoVunesp} alt="Vunesp" />
       </a>
-
-      <a href="https://www.fct.unesp.br/#!/entidades/fundacoes/">
-        <Image
-          class="img-sm md-1 img-clickable ml-1"
-          src={logoFundacte}
-          alt="Logo da Fundacte - Fundação de Ciência Tecnologia e Ensino"
-        />
-      </a>
-    </div>
-  </nav>
-  <nav>
-    <header class="footer-title">FCT – Faculdade de Ciências e Tecnologia</header>
-    <div>
-      <div>
-        Universidade Estadual Paulista "Júlio de Mesquita Filho"<br />
-        Rua Roberto Simonsen, 305<br />
-        Presidente Prudente - SP<br />
-        19060-900
+    </nav>
+    <nav>
+      <header class="footer-title">Realização</header>
+      <div class="grid grid-flow-col items-center gap-4">
+        <a href="https://cacic.dev.br">
+          <Image class="img-md img-clickable mb-1" src={logoCacic} alt="Centro Acadêmico de Ciência da Computação" /></a
+        >
+        <a href="https://www.ejcomp.com.br/">
+          <Image class="img-lg img-clickable ml-1" src={logoEjcomp} alt="Empresa Júnior da Computação" />
+        </a>
       </div>
       <br />
-      <div class="flex">
-        <a
-          class="mr-3 transition-opacity hover:opacity-75"
-          id="contact-mail"
-          aria-label="Entrar em contato por e-mail"
-          href="mailto:secompp@googlegroups.com?subject=Contato SECOMPP24">
-          <Mail color="white" width="24" height="24" />
+      <div class="grid grid-flow-col items-center gap-4">
+        <a href="https://www.fct.unesp.br">
+          <Image class="img-md img-clickable" src={logoUnesp} alt="Unesp" />
         </a>
-        <a
-          class="ml-3 transition-opacity hover:opacity-75"
-          id="contact-phone"
-          href="tel:1832295600"
-          aria-label="Entrar em contato por telefone">
-          <Phone color="white" width="24" height="24" />
+        <a href="https://www.fct.unesp.br/#!/departamentos/matematica-e-computacao/">
+          <Image
+            class="img-sm md-1 img-clickable ml-1"
+            src={logoDmc}
+            alt="Logo do Departamento de Matemática e Computação"
+          />
+        </a>
+
+        <a href="https://www.fct.unesp.br/#!/entidades/fundacoes/">
+          <Image
+            class="img-sm md-1 img-clickable ml-1"
+            src={logoFundacte}
+            alt="Logo da Fundacte - Fundação de Ciência Tecnologia e Ensino"
+          />
         </a>
       </div>
-    </div>
+    </nav>
+    <nav>
+      <header class="footer-title">FCT – Faculdade de Ciências e Tecnologia</header>
+      <div>
+        <div>
+          Universidade Estadual Paulista "Júlio de Mesquita Filho"<br />
+          Rua Roberto Simonsen, 305<br />
+          Presidente Prudente - SP<br />
+          19060-900
+        </div>
+        <br />
+        <div class="flex">
+          <a
+            class="mr-3 transition-opacity hover:opacity-75"
+            id="contact-mail"
+            aria-label="Entrar em contato por e-mail"
+            href="mailto:secompp@googlegroups.com?subject=Contato SECOMPP24">
+            <Mail color="white" width="24" height="24" />
+          </a>
+          <a
+            class="ml-3 transition-opacity hover:opacity-75"
+            id="contact-phone"
+            href="tel:1832295600"
+            aria-label="Entrar em contato por telefone">
+            <Phone color="white" width="24" height="24" />
+          </a>
+        </div>
+      </div>
 
-    <a class="link-hover link pt-3" href="https://cacic.dev.br/legal/privacy-policy">Política de privacidade</a>
-  </nav>
+      <a class="link-hover link pt-3" href="https://cacic.dev.br/legal/privacy-policy">Política de privacidade</a>
+    </nav>
+  </div>
 </footer>

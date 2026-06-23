@@ -12,6 +12,45 @@ export const SECOMPP_MAJOR_EVENT_ID = '018cc251-f400-77b8-ac7f-a0874360c3e4';
 
 const EVENT_PAGE_SIZE = 100;
 
+const SECOMPP_MAJOR_EVENT_FIELDS = `
+  startDate
+  endDate
+  isPaymentRequired
+  majorEventPrices {
+    id
+    type
+    tiers {
+      id
+      name
+      value
+    }
+  }
+`;
+
+const SECOMPP_EVENT_FIELDS = `
+  id
+  name
+  emoji
+  type
+  startDate
+  endDate
+  shortDescription
+  description
+  locationDescription
+  eventGroup {
+    name
+    emoji
+  }
+  lecturers {
+    displayName
+    biography
+    publishGoogleUserPicture
+    googleUserPicture
+    email
+    whatsapp
+  }
+`;
+
 export type SecomppPublicMajorEvent = Pick<PublicMajorEvent, 'startDate' | 'endDate'>;
 export type SecomppPublicMajorEventPriceTier = {
   id: string;
@@ -33,48 +72,27 @@ export type SecomppPublicLecturer = Pick<
 >;
 export type SecomppPublicEvent = Pick<
   PublicEvent,
-  'id' | 'name' | 'type' | 'startDate' | 'endDate' | 'shortDescription' | 'description' | 'locationDescription'
+  | 'id'
+  | 'name'
+  | 'emoji'
+  | 'type'
+  | 'startDate'
+  | 'endDate'
+  | 'shortDescription'
+  | 'description'
+  | 'locationDescription'
 > & {
-  eventGroup?: Pick<NonNullable<PublicEvent['eventGroup']>, 'name'> | null;
+  eventGroup?: Pick<NonNullable<PublicEvent['eventGroup']>, 'name' | 'emoji'> | null;
   lecturers?: SecomppPublicLecturer[];
 };
 
 const SECOMPP_SCHEDULE_QUERY = `
   query SecomppSchedule($majorEventId: String!, $skip: Int, $take: Int) {
     publicMajorEvent(id: $majorEventId) {
-      startDate
-      endDate
-      isPaymentRequired
-      majorEventPrices {
-        id
-        type
-        tiers {
-          id
-          name
-          value
-        }
-      }
+      ${SECOMPP_MAJOR_EVENT_FIELDS}
     }
     publicEvents(majorEventId: $majorEventId, skip: $skip, take: $take) {
-      id
-      name
-      type
-      startDate
-      endDate
-      shortDescription
-      description
-      locationDescription
-      eventGroup {
-        name
-      }
-      lecturers {
-        displayName
-        biography
-        publishGoogleUserPicture
-        googleUserPicture
-        email
-        whatsapp
-      }
+      ${SECOMPP_EVENT_FIELDS}
     }
   }
 `;
@@ -82,25 +100,7 @@ const SECOMPP_SCHEDULE_QUERY = `
 const SECOMPP_EVENTS_QUERY = `
   query SecomppEvents($majorEventId: String!, $skip: Int, $take: Int) {
     publicEvents(majorEventId: $majorEventId, skip: $skip, take: $take) {
-      id
-      name
-      type
-      startDate
-      endDate
-      shortDescription
-      description
-      locationDescription
-      eventGroup {
-        name
-      }
-      lecturers {
-        displayName
-        biography
-        publishGoogleUserPicture
-        googleUserPicture
-        email
-        whatsapp
-      }
+      ${SECOMPP_EVENT_FIELDS}
     }
   }
 `;
@@ -108,18 +108,7 @@ const SECOMPP_EVENTS_QUERY = `
 const SECOMPP_MAJOR_EVENT_QUERY = `
   query SecomppMajorEvent($majorEventId: String!) {
     publicMajorEvent(id: $majorEventId) {
-      startDate
-      endDate
-      isPaymentRequired
-      majorEventPrices {
-        id
-        type
-        tiers {
-          id
-          name
-          value
-        }
-      }
+      ${SECOMPP_MAJOR_EVENT_FIELDS}
     }
   }
 `;

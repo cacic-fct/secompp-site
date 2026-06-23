@@ -7,7 +7,7 @@ import logoSecompp from '/src/assets/img/secompp24-logo.svg';
 import HeroEventDate from './HeroEventDate.svelte';
 ---
 
-<header class="hero-bg">
+<header class="brand-surface hero-bg" data-theme="secompp">
   <div class="container mx-auto">
     <div class="intro-text px-4 text-center">
       <div class="intro-lead-in intro-lead-in-padding">
@@ -20,22 +20,18 @@ import HeroEventDate from './HeroEventDate.svelte';
         />
       </div>
       <div class="intro-heading pb-1 text-center">
-        <span class="fs-4 text-lg font-semibold">21ª Semana do Curso de Ciência da Computação da FCT-Unesp</span>
+        <span class="text-lg font-semibold">21ª Semana do Curso de Ciência da Computação da FCT-Unesp</span>
       </div>
       <div class="intro-heading text-center">
-        <span class="fs-4 fw-light"><HeroEventDate client:load /></span>
+        <span class="text-lg font-light"><HeroEventDate client:load /></span>
       </div>
     </div>
 
-    <div class="flex w-full justify-center pb-4 pt-8">
-      <a
-        href="https://fctapp.cacic.dev.br/eventos"
-        class="rounded-md px-6 py-2 font-semibold text-[var(--primary-color)] outline outline-1 outline-[var(--primary-color)]">
-        Inscrever-se
-      </a>
+    <div class="flex w-full justify-center pt-8 pb-4">
+      <a href="https://eventos.cacic.dev.br/app/major-event" class="btn btn-primary px-7 font-bold"> Inscrever-se </a>
     </div>
 
-    <div class="flex flex-wrap items-start justify-center gap-8 py-4">
+    <div class="sponsor-strip flex flex-wrap items-start justify-center gap-8 py-4">
       <div class="flex flex-col items-start">
         <p>Patrocínio</p>
         <a href="https://www.cobmais.com.br" class="py-2">
@@ -76,9 +72,12 @@ import HeroEventDate from './HeroEventDate.svelte';
   }
 
   .hero-bg {
-    background: linear-gradient(0deg, black 0%, rgb(33, 32, 13) 100%);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 11%, #111111), var(--color-base-100));
     padding-top: 50px;
+    min-height: 75vh;
   }
 
-
+  .sponsor-strip {
+    color: color-mix(in srgb, var(--color-base-content) 78%, transparent);
+  }
 </style>

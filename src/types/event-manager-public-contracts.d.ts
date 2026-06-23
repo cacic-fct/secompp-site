@@ -17,6 +17,7 @@ declare module '@cacic-fct/event-manager-public-contracts' {
   export interface PublicMajorEvent {
     id: string;
     name: string;
+    emoji?: string | null;
     startDate: DateTimeString;
     endDate: DateTimeString;
     isPaymentRequired?: boolean | null;
@@ -38,6 +39,7 @@ declare module '@cacic-fct/event-manager-public-contracts' {
   export interface PublicEventGroup {
     id: string;
     name: string;
+    emoji?: string | null;
   }
 
   export interface PublicLecturerProfile {
@@ -53,6 +55,7 @@ declare module '@cacic-fct/event-manager-public-contracts' {
   export interface PublicEvent {
     id: string;
     name: string;
+    emoji?: string | null;
     startDate: DateTimeString;
     endDate: DateTimeString;
     type: EventType;

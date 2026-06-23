@@ -1,8 +1,3 @@
-<script lang="ts">
-  // import { Button } from 'sveltestrap';
-  import '@styles/global.pcss';
-</script>
-
 <div class="container">
   <div class="intro-text text-center">
     <hr class="my-5" />

@@ -5,6 +5,7 @@ export type ScheduleEvent = {
   id: string;
   lecturers: Array<EventLecturer>;
   eventName: string;
+  emoji: string;
   startTime: Date;
   endTime: Date;
   dateKey: string;

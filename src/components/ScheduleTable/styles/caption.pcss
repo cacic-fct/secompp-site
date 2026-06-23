@@ -1,10 +1,5 @@
-@define-mixin typo-gray {
-  color: var(--bs-gray-500);
-  @mixin-content;
-}
-
 .caption-gray {
-  @mixin typo-gray;
+  color: var(--muted-color);
 }
 
 .icon-desc {
@@ -34,13 +29,13 @@
 
 @media (max-width: 1199px) {
   .caption-large-screen {
-    @mixin typo-gray;
+    color: var(--muted-color);
     display: none;
   }
 }
 
 .caption-container {
-  @mixin typo-gray;
+  color: var(--muted-color);
   @media (min-width: 575px) {
     max-width: 767px;
   }
@@ -57,7 +52,8 @@
 }
 
 .caption-icon {
-  filter: invert(48%) sepia(10%) saturate(449%) hue-rotate(167deg) brightness(90%) contrast(82%);
-  width: 20px;
+  filter: var(--schedule-muted-icon-filter);
   margin-right: 0.5rem;
+  opacity: var(--schedule-muted-icon-opacity);
+  width: 20px;
 }

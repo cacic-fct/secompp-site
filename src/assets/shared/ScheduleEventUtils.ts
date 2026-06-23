@@ -1,6 +1,6 @@
 import type { EventLecturer } from './EventLecturer';
 import type { EventType } from '@cacic-fct/event-manager-public-contracts';
-import { addDays, addMinutes, compareAsc, format, intlFormat, parse, parseISO } from 'date-fns';
+import { addDays, compareAsc, intlFormat, parseISO } from 'date-fns';
 import type {
   SecomppPublicEvent,
   SecomppPublicLecturer,
@@ -12,49 +12,11 @@ import type {
   ScheduleEventGrid,
   ScheduleEventList,
   ScheduleEventRow,
+  ScheduleEventType,
 } from './ScheduleEvent';
 
 export const EVENT_TIME_ZONE = 'America/Sao_Paulo';
 const UTC_TIME_ZONE = 'UTC';
-const EVENT_DATE_FORMAT = 'yyyy-MM-dd HH:mm';
-const REFERENCE_DATE = parseISO('2000-01-01T00:00:00');
-
-export function createEvent(
-  eventName: string,
-  place: string,
-  /**
-   * 0 - minicurso
-   * 1 - palestra
-   */
-  type: 0 | 1,
-  startTime: Date,
-  /**
-   * duração em minutos
-   */
-  duration = 30,
-  fullDescription = '',
-  shortDescription = '',
-  lecturers: EventLecturer[] = [],
-): ScheduleEvent {
-  const id = `${eventName}-${format(startTime, "yyyy-MM-dd'T'HH:mm:ssXXX")}`;
-
-  return {
-    id,
-    place,
-    eventName,
-    lecturers,
-    startTime,
-    dateKey: getEventDateKey(startTime),
-    fullDescription,
-    shortDescription,
-    type: type === 0 ? 'minicurso' : 'palestra',
-    endTime: addMinutes(startTime, duration),
-  };
-}
-
-export function createEventDate(dateTime: string) {
-  return parse(dateTime.replace('T', ' '), EVENT_DATE_FORMAT, REFERENCE_DATE);
-}
 
 export function getEventDateKey(date: Date | string) {
   return formatInTimeZone(
@@ -85,8 +47,16 @@ export function getEventType(row: ScheduleEventRow | undefined) {
   return row?.type ?? 'minicurso';
 }
 
+export function getScheduleEventTypeLabel(type: ScheduleEventType) {
+  return type === 'palestra' ? 'Palestra' : 'Minicurso';
+}
+
 export function getShortLocationName(location: string) {
   return location.split(' - ')[0]?.trim() || location;
+}
+
+export function getDefaultEventEmoji(type: ScheduleEvent['type']) {
+  return type === 'palestra' ? '🎤' : '💻';
 }
 
 export function formatMajorEventDateRange(majorEvent: SecomppPublicMajorEvent) {
@@ -178,6 +148,7 @@ export function publicEventToScheduleEvent(event: SecomppPublicEvent): ScheduleE
   return {
     id: event.id,
     eventName: event.name,
+    emoji: event.eventGroup?.emoji?.trim() || event.emoji?.trim() || getDefaultEventEmoji(type),
     startTime,
     endTime,
     dateKey: getEventDateKey(startTime),
@@ -224,6 +195,20 @@ export function compareScheduleEvents(left: ScheduleEvent, right: ScheduleEvent)
   }
 
   return left.eventName.localeCompare(right.eventName, 'pt-BR');
+}
+
+export function getEventSummary(event: ScheduleEvent) {
+  return event.shortDescription || event.groupName || '';
+}
+
+export function getEventLecturerLine(event: ScheduleEvent, maxVisibleNames = 2) {
+  const names = event.lecturers.map((lecturer) => lecturer.name);
+
+  if (names.length <= maxVisibleNames) {
+    return names.join(', ');
+  }
+
+  return `${names.slice(0, maxVisibleNames).join(', ')} +${names.length - maxVisibleNames}`;
 }
 
 function getDateKeyRange(startKey: string, endKey: string) {

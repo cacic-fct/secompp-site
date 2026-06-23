@@ -2,6 +2,7 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import eslintPluginAstro from 'eslint-plugin-astro';
+import astroParser from 'astro-eslint-parser';
 import eslintPluginSvelte from 'eslint-plugin-svelte';
 import svelteParser from 'svelte-eslint-parser';
 import tsParser from '@typescript-eslint/parser';
@@ -13,14 +14,14 @@ export default [
   ...eslintPluginAstro.configs['jsx-a11y-strict'],
   ...eslintPluginSvelte.configs['flat/prettier'],
   {
-    files: ['*.astro'],
+    files: ['**/*.astro'],
     languageOptions: {
-      parser: 'astro-eslint-parser',
+      parser: astroParser,
       globals: globals.browser,
     },
   },
   {
-    files: ['*.svelte'],
+    files: ['**/*.svelte'],
     languageOptions: {
       parser: svelteParser,
       globals: globals.browser,
@@ -30,7 +31,6 @@ export default [
     },
   },
   {
-    // Svelte lint not working with typescript
-    ignores: ['src/env.d.ts', '**/*.svelte'],
+    ignores: ['src/env.d.ts'],
   },
 ];

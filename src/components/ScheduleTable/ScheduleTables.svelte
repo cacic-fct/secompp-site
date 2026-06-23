@@ -9,6 +9,7 @@
   } from '@lib/shared/ScheduleEventUtils';
   import { onMount } from 'svelte';
   import EventModal from './EventModal.svelte';
+  import MobileScheduleTimeline from './MobileScheduleTimeline.svelte';
   import ScheduleTable from './ScheduleTable.svelte';
 
   type ScheduleTableModel = {
@@ -120,15 +121,18 @@
     <p class="schedule-status">Nenhuma atividade publicada para este evento.</p>
   </div>
 {:else}
-  {#each tableModels as table (table.id)}
-    <ScheduleTable
-      title={table.title}
-      subtitle={table.subtitle}
-      type={table.type}
-      events={table.events}
-      {days}
-      {onClickEvent} />
-  {/each}
+  <MobileScheduleTimeline events={scheduleEvents} {days} {onClickEvent} />
+  <div class="desktop-schedule hidden lg:block">
+    {#each tableModels as table (table.id)}
+      <ScheduleTable
+        title={table.title}
+        subtitle={table.subtitle}
+        type={table.type}
+        events={table.events}
+        {days}
+        {onClickEvent} />
+    {/each}
+  </div>
 {/if}
 
 {#if event}
@@ -136,23 +140,7 @@
 {/if}
 
 <style lang="postcss">
-  .schedule-container {
-    @media (min-width: 576px) {
-      max-width: 767px;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 991px;
-      padding: 24px;
-    }
-
-    @media (min-width: 992px) {
-      max-width: 1232px;
-      padding: 24px;
-    }
-  }
-
   .schedule-status {
-    color: var(--bs-gray-500);
+    color: color-mix(in srgb, var(--color-base-content) 68%, transparent);
   }
 </style>

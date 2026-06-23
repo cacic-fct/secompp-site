@@ -1,75 +1,23 @@
 <script lang="ts">
   import type { ScheduleEvent, ScheduleEventClickHandler } from '@lib/shared/ScheduleEvent';
+  import EventSummaryCard from './EventSummaryCard.svelte';
 
   export let event: ScheduleEvent;
   export let onClickEvent: ScheduleEventClickHandler;
-
-  let click = () => onClickEvent(event);
-
-  let handleKeyDown = (keyboardEvent: KeyboardEvent) => {
-    if (keyboardEvent.key === 'Enter') {
-      keyboardEvent.preventDefault();
-      onClickEvent(event);
-    }
-  };
 </script>
 
-<td
-  tabindex="0"
-  role="button"
-  class="event-cell shadow-sm outline outline-1"
-  on:click={click}
-  on:keydown={handleKeyDown}>
-  <div class="block">
-    <span class="font-bold">{event.eventName}</span>
-    {#if event.shortDescription}
-      <br />
-      <span class="smaller">
-        {event.shortDescription}
-      </span>
-    {/if}
-  </div>
+<td class="event-cell-wrapper">
+  <EventSummaryCard {event} {onClickEvent} />
 </td>
 
 <style lang="postcss">
-  @import './_styles.pcss';
-
   td {
-    padding: 8px;
-
-    span {
-      transition: $transition-duration;
-
-      &:not(:first-child) {
-        color: var(--bs-gray-500);
-      }
-    }
+    height: 100%;
+    padding: 0;
 
     &:not(:first-child) {
-      min-width: 200px;
-      color: $body-color;
-    }
-
-    &:not([aria-disabled], :first-child) {
-      padding: 8px;
-      border-radius: $border-radius;
-      transition: $transition-duration;
-      outline: 1px solid currentColor;
-
-      &:hover,
-      &:focus-visible {
-        background: rgba(52, 58, 64, 0.4);
-        outline: 1px solid $primary-color;
-        box-shadow: 0 0.125rem 0.25rem rgb(253 189 0 / 45%) !important;
-
-        span {
-          color: $body-color;
-
-          &:first-child {
-            color: $primary-color;
-          }
-        }
-      }
+      color: var(--color-base-content);
+      min-width: 214px;
     }
   }
 </style>
