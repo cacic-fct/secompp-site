@@ -160,6 +160,10 @@ body {
   --muted-color: color-mix(in srgb, var(--color-base-content) 66%, transparent);
 }
 
+[data-theme] {
+  --page-scroll-bg: var(--root-bg);
+}
+
 main > section {
   padding-block: 2.5rem;
 }
