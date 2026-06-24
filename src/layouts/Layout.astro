@@ -67,12 +67,19 @@ const isProduction = import.meta.env.PROD;
     </a>
     <script>
       import { createCookieBanner } from '@cacic-fct/account-manager-cookie-banner';
+      import { isCookieBannerEnabled } from '../feature-flags/cookie-banner-feature-flag';
 
-      createCookieBanner({
-        privacyPolicyUrl: 'https://cacic.dev.br/legal/privacy-policy',
-        onAccept: () => {
-          window.dispatchEvent(new Event('cookieBannerAccepted'));
-        },
+      void isCookieBannerEnabled('site-secompp').then((enabled) => {
+        if (!enabled) {
+          return;
+        }
+
+        createCookieBanner({
+          privacyPolicyUrl: 'https://cacic.dev.br/legal/privacy-policy',
+          onAccept: () => {
+            window.dispatchEvent(new Event('cookieBannerAccepted'));
+          },
+        });
       });
     </script>
   </body>
