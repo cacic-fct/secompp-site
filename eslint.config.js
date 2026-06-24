@@ -31,6 +31,12 @@ export default [
     },
   },
   {
+    files: ['src/**/*.js'],
+    languageOptions: {
+      globals: globals.browser,
+    },
+  },
+  {
     ignores: ['src/env.d.ts'],
   },
 ];
