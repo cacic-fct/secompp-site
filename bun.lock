@@ -8,7 +8,7 @@
         "@astrojs/check": "0.9.9",
         "@astrojs/sitemap": "3.7.3",
         "@astrojs/svelte": "9.0.0",
-        "@cacic-fct/account-manager-cookie-banner": "^0.0.1",
+        "@cacic-fct/account-manager-cookie-banner": "^0.0.2",
         "@cacic-fct/account-manager-privacy": "0.0.2",
         "@fontsource-variable/inter": "^5.2.8",
         "@twemoji/parser": "^17.0.2",
@@ -124,7 +124,7 @@
 
     "@bruits/satteri-win32-x64-msvc": ["@bruits/satteri-win32-x64-msvc@0.9.2", "", { "os": "win32", "cpu": "x64" }, "sha512-+hVrOLFtGgXakKO38F6afcc9/uuWvRGghPmiA6/ez5XGnWaM9VjQxqvogam5aOa7Nvl4V65P8Vpj5RsLzYeO8g=="],
 
-    "@cacic-fct/account-manager-cookie-banner": ["@cacic-fct/account-manager-cookie-banner@0.0.1", "https://npm.pkg.github.com/download/@cacic-fct/account-manager-cookie-banner/0.0.1/b429d2eaeca92306f4a044c46f615a4c373c0b9e", { "peerDependencies": { "@angular/common": ">=19", "@angular/core": ">=19" }, "optionalPeers": ["@angular/common", "@angular/core"] }, "sha512-lNllPo8JwJCVqDB/6bhLTaWu2Yr6ZvIkHk20tfpV8LvP2ZZcLOpRbimrRFaDZcQXg0VdgaU1wxwnRfshcCNkEw=="],
+    "@cacic-fct/account-manager-cookie-banner": ["@cacic-fct/account-manager-cookie-banner@0.0.2", "https://npm.pkg.github.com/download/@cacic-fct/account-manager-cookie-banner/0.0.2/695ae11e9bad48a294af37a38deb1d59ec9672ea", {}, "sha512-6RtBMnJhvPFcTSs7BhSkFl0v8To4+oYtoWSfNHbfZFyvB0Ow3wngNBsCXZX8dE0+n0LJh6+pFCslI3cGADZTuw=="],
 
     "@cacic-fct/account-manager-m2m-contracts": ["@cacic-fct/account-manager-m2m-contracts@0.0.2", "https://npm.pkg.github.com/download/@cacic-fct/account-manager-m2m-contracts/0.0.2/615723236427967b338a512668c954c643e53c89", {}, "sha512-sYy0xG3kFp+2U2a6dAavCsUfs9qpvObmgESpyqfNspiU2qBXoyfruw4Sqzn+g8hD3UHnveQPTdfT5VLpQOyvOg=="],
 
