@@ -5,7 +5,7 @@
 </script>
 
 <div id="event-info" class="container mx-auto">
-  {#if event.groupName}
+  <!-- {#if event.groupName}
     <div class="flex flex-wrap">
       <div class="relative max-w-full flex-1 flex-grow md:w-1/5">
         <span class="font-bold">Atividade:</span>
@@ -14,7 +14,7 @@
         {event.groupName}
       </div>
     </div>
-  {/if}
+  {/if} -->
   {#if event.fullDescription !== ''}
     <br />
     <div class="pre-wrap">{event.fullDescription}</div>
