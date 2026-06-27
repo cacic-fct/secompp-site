@@ -19,12 +19,12 @@
     {/if}
     {#if lecturer.link}
       <a class="lecturer-url smaller" href={lecturer.link.path} target="_blank">
-        <Link width="22" height="22" color="white" />{lecturer.link.label ?? lecturer.link.path}
+        <Link width="22" height="22" />{lecturer.link.label ?? lecturer.link.path}
       </a>
     {/if}
     {#if lecturer.email}
       <a class="lecturer-email smaller" href="mailto:{lecturer.email}" target="_blank">
-        <Mail color="white" />{lecturer.email ?? lecturer.email}
+        <Mail />{lecturer.email ?? lecturer.email}
       </a>
     {/if}
   {/if}
@@ -82,8 +82,9 @@
   }
 
   .lecturer-info {
-    background: rgb(38, 39, 41);
-    border: 1px solid transparent;
+    background: color-mix(in srgb, var(--color-base-content) 6%, var(--color-base-100));
+    border: 1px solid color-mix(in srgb, var(--color-base-content) 12%, transparent);
+    color: var(--color-base-content);
     display: grid;
     transition: 0.3s;
 
@@ -102,7 +103,7 @@
 
     &:hover,
     &:focus {
-      background: rgb(47, 49, 51);
+      background: color-mix(in srgb, var(--color-primary) 9%, var(--color-base-100));
       border-color: var(--color-primary);
 
       h6 {
