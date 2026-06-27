@@ -30,8 +30,9 @@ const isProduction = import.meta.env.PROD;
     <Font cssVariable="--font-inter" />
 
     <link rel="preconnect" href="https://eventos.cacic.dev.br" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     {isProduction && <link rel="preconnect" href="https://account.cacic.dev.br" crossorigin />}
-    {isProduction && <link rel="preconnect" href="https://a.cacic.dev.br" />}
+    {isProduction && <link rel="preconnect" href="https://a.cacic.dev.br" crossorigin />}
 
     <!-- OGP: Open Graph -->
     <meta property="og:locale" content="pt_BR" />
