@@ -28,7 +28,14 @@ import HeroEventDate from './HeroEventDate.svelte';
     </div>
 
     <div class="flex w-full justify-center pt-8 pb-4">
-      <a href="https://eventos.cacic.dev.br/app/major-event" class="btn btn-primary px-7 font-bold"> Inscrever-se </a>
+      <a
+        href="https://eventos.cacic.dev.br/app/major-event"
+        class="btn btn-primary px-7 font-bold"
+        data-analytics-event="subscription_click"
+        data-analytics-location="hero"
+        data-analytics-label="Inscrever-se">
+        Inscrever-se
+      </a>
     </div>
 
     <div class="sponsor-strip flex flex-wrap items-start justify-center gap-8 py-4">

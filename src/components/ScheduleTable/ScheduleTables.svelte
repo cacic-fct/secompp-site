@@ -7,6 +7,7 @@
     getShortLocationName,
     publicEventToScheduleEvent,
   } from '@lib/shared/ScheduleEventUtils';
+  import { trackScheduleEventClick } from '@lib/shared/SiteInteractionTracking';
   import { onMount } from 'svelte';
   import EventModal from './EventModal.svelte';
   import MobileScheduleTimeline from './MobileScheduleTimeline.svelte';
@@ -45,6 +46,7 @@
   };
 
   const onClickEvent: ScheduleEventClickHandler = (selectedEvent) => {
+    trackScheduleEventClick(selectedEvent);
     isOpen = true;
     event = selectedEvent;
   };

@@ -62,13 +62,21 @@ const isProduction = import.meta.env.PROD;
     <Nav />
     <slot />
     <Footer />
-    <a class="btn btn-primary mobile-signup-fab md:hidden" href="https://eventos.cacic.dev.br/app/major-event">
+    <a
+      class="btn btn-primary mobile-signup-fab md:hidden"
+      href="https://eventos.cacic.dev.br/app/major-event"
+      data-analytics-event="subscription_click"
+      data-analytics-location="mobile_fab"
+      data-analytics-label="Inscrever-se">
       <Ticket size={18} aria-hidden="true" />
       Inscrever-se
     </a>
     <script>
       import { createCookieBanner } from '@cacic-fct/account-manager-cookie-banner';
+      import { registerSiteInteractionTracking } from '../assets/shared/SiteInteractionTracking';
       import { isCookieBannerEnabled } from '../feature-flags/cookie-banner-feature-flag';
+
+      registerSiteInteractionTracking();
 
       void isCookieBannerEnabled('site-secompp').then((enabled) => {
         if (!enabled) {
