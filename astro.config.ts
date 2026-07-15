@@ -6,14 +6,14 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://secompp.cacic.dev.br',
+  site: 'https://secompp.cacic.com.br',
   integrations: [svelte(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
     server: {
       proxy: {
         '/event-manager-api': {
-          target: 'https://eventos.cacic.dev.br',
+          target: 'https://eventos.cacic.com.br',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/event-manager-api/, '/api'),
         },

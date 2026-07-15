@@ -147,7 +147,7 @@
     <EventInfo {event} />
     <EventLecturerList lecturers={event.lecturers} />
     <div class="modal-actions">
-      <a class="btn btn-primary event-manager-link" href={`https://eventos.cacic.dev.br/app/event/${event.id}`}>
+      <a class="btn btn-primary event-manager-link" href={`https://eventos.cacic.com.br/app/event/${event.id}`}>
         <span>Ver no CACiC Eventos</span>
         <SquareArrowOutUpRight size="18" aria-hidden="true" />
       </a>

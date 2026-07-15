@@ -6,7 +6,7 @@ import type {
   PublicMajorEvent,
 } from '@cacic-fct/event-manager-public-contracts';
 
-export const EVENT_MANAGER_API_URL = 'https://eventos.cacic.dev.br/api/graphql';
+export const EVENT_MANAGER_API_URL = 'https://eventos.cacic.com.br/api/graphql';
 const EVENT_MANAGER_DEV_API_URL = '/event-manager-api/graphql';
 export const SECOMPP_MAJOR_EVENT_ID = '018cc251-f400-77b8-ac7f-a0874360c3e4';
 

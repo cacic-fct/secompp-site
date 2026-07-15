@@ -29,19 +29,19 @@ const isProduction = import.meta.env.PROD;
     <meta name="description" content={description || defaultDescription} />
     <Font cssVariable="--font-inter" />
 
-    <link rel="preconnect" href="https://eventos.cacic.dev.br" crossorigin />
+    <link rel="preconnect" href="https://eventos.cacic.com.br" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    {isProduction && <link rel="preconnect" href="https://account.cacic.dev.br" crossorigin />}
-    {isProduction && <link rel="preconnect" href="https://a.cacic.dev.br" crossorigin />}
+    {isProduction && <link rel="preconnect" href="https://account.cacic.com.br" crossorigin />}
+    {isProduction && <link rel="preconnect" href="https://a.cacic.com.br" crossorigin />}
 
     <!-- OGP: Open Graph -->
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:url" content="https://secompp.cacic.dev.br" />
+    <meta property="og:url" content="https://secompp.cacic.com.br" />
     <meta property="og:title" content="SECOMPP24" />
     <meta property="og:site_name" content="SECOMPP24" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description || defaultDescription} />
-    <meta property="og:image" content="https://secompp.cacic.dev.br/images/logo-og.png" />
+    <meta property="og:image" content="https://secompp.cacic.com.br/images/logo-og.png" />
 
     {
       isProduction && (
@@ -50,7 +50,7 @@ const isProduction = import.meta.env.PROD;
           is:inline
           src="/js/cacic-umami-tracking.js"
           data-website-id="7648931d-e076-44ff-b7eb-714602e2cc20"
-          data-recorder-src="https://a.cacic.dev.br/recorder.js"
+          data-recorder-src="https://a.cacic.com.br/recorder.js"
           data-sample-rate="1"
           data-mask-level="moderate"
           data-max-duration="1200000"
@@ -64,7 +64,7 @@ const isProduction = import.meta.env.PROD;
     <Footer />
     <a
       class="btn btn-primary mobile-signup-fab md:hidden"
-      href="https://eventos.cacic.dev.br/app/major-event"
+      href="https://eventos.cacic.com.br/app/major-event"
       data-analytics-event="subscription_click"
       data-analytics-location="mobile_fab"
       data-analytics-label="Inscrever-se">
@@ -84,7 +84,7 @@ const isProduction = import.meta.env.PROD;
         }
 
         createCookieBanner({
-          privacyPolicyUrl: 'https://cacic.dev.br/legal/privacy-policy',
+          privacyPolicyUrl: 'https://cacic.com.br/legal/privacy-policy',
           onAccept: () => {
             window.dispatchEvent(new Event('cookieBannerAccepted'));
           },
