@@ -7,7 +7,7 @@
     getEventSummary,
     getShortLocationName,
   } from '@lib/shared/ScheduleEventUtils';
-  import { Clock3, MapPin } from 'lucide-svelte';
+  import { Clock3, MapPin, Speech } from 'lucide-svelte';
   import Twemoji from '../Twemoji.svelte';
   import EventTypeBadge from './EventTypeBadge.svelte';
 
@@ -26,11 +26,11 @@
 
 <button type="button" class="event-card {variant}" aria-label="Abrir detalhes de {event.eventName}" on:click={click}>
   {#if variant === 'mobile'}
-    <span class="emoji-frame mobile-emoji" aria-hidden="true">
-      <Twemoji emoji={event.emoji} label={event.eventName} />
-    </span>
+    <span class="mobile-topline">
+      <span class="emoji-frame mobile-emoji" aria-hidden="true">
+        <Twemoji emoji={event.emoji} label={event.eventName} />
+      </span>
 
-    <span class="event-content">
       <span class="event-topline">
         <EventTypeBadge type={event.type} />
         <span class="time-range">
@@ -38,7 +38,9 @@
           {getEventStart(event)} - {getEventEnd(event)}
         </span>
       </span>
+    </span>
 
+    <span class="event-content">
       <strong>{event.eventName}</strong>
 
       {#if summary}
@@ -47,11 +49,14 @@
 
       <span class="event-meta">
         <MapPin size="14" aria-hidden="true" />
-        {location}
+        <span>{location}</span>
       </span>
 
       {#if lecturerLine}
-        <span class="event-meta">{lecturerLine}</span>
+        <span class="event-meta">
+          <Speech size="14" aria-hidden="true" />
+          <span>{lecturerLine}</span>
+        </span>
       {/if}
     </span>
   {:else}
@@ -69,14 +74,20 @@
     {/if}
 
     <span class="event-meta-row">
-      <span>
+      <span class="event-meta time-range">
         <Clock3 size="13" aria-hidden="true" />
-        {getEventStart(event)} - {getEventEnd(event)}
+        <span>{getEventStart(event)} - {getEventEnd(event)}</span>
       </span>
-      <span>
+      <span class="event-meta">
         <MapPin size="13" aria-hidden="true" />
-        {location}
+        <span>{location}</span>
       </span>
+      {#if lecturerLine}
+        <span class="event-meta">
+          <Speech size="13" aria-hidden="true" />
+          <span>{lecturerLine}</span>
+        </span>
+      {/if}
     </span>
   {/if}
 </button>
@@ -122,7 +133,7 @@
 
   .event-card.mobile {
     gap: 0.75rem;
-    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     padding: 0.85rem;
   }
 
@@ -170,19 +181,30 @@
     min-width: 0;
   }
 
-  .event-topline {
+  .mobile-topline {
     align-items: center;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    min-width: 0;
+  }
+
+  .event-topline {
+    align-items: flex-start;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
+    flex-direction: column;
+    gap: 0.36rem;
+    min-width: 0;
   }
 
   .time-range,
   .event-meta {
-    align-items: center;
+    align-items: start;
     color: color-mix(in srgb, var(--color-base-content) 70%, transparent);
-    display: inline-flex;
-    gap: 0.3rem;
+    display: grid;
+    gap: 0.35rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    min-width: 0;
   }
 
   .time-range {
@@ -215,21 +237,22 @@
     line-height: 1.35;
   }
 
-  .event-meta-row {
-    align-items: center;
-    color: color-mix(in srgb, var(--color-base-content) 66%, transparent);
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.76rem;
-    font-weight: 700;
-    gap: 0.5rem;
-    margin-top: auto;
+  .event-meta :global(svg) {
+    margin-left: 0.1rem;
+    margin-top: 0.12rem;
   }
 
-  .event-meta-row span {
-    align-items: center;
-    display: inline-flex;
-    gap: 0.22rem;
+  .event-meta > span {
     min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .event-meta-row {
+    align-items: start;
+    color: color-mix(in srgb, var(--color-base-content) 66%, transparent);
+    display: grid;
+    font-size: 0.76rem;
+    gap: 0.5rem;
+    margin-top: auto;
   }
 </style>

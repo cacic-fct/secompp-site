@@ -7,7 +7,7 @@
 </script>
 
 <td class="event-cell-wrapper">
-  <EventSummaryCard {event} {onClickEvent} />
+  <EventSummaryCard {event} {onClickEvent} showLecturers />
 </td>
 
 <style lang="postcss">

@@ -13,6 +13,7 @@
   export let events: ScheduleEvent[];
   export let onClickEvent: ScheduleEventClickHandler;
 
+  let scheduleContent: HTMLElement | undefined;
   let selectedDayKey = '';
 
   $: daysWithEvents = days.map((day) => ({
@@ -57,6 +58,15 @@
   function shortDate(day: ScheduleDay) {
     return day.dateLabel.split('/').slice(0, 2).join('/');
   }
+
+  function selectDay(dayKey: string) {
+    if (dayKey === selectedDayKey) {
+      return;
+    }
+
+    selectedDayKey = dayKey;
+    scheduleContent?.scrollIntoView({ block: 'start' });
+  }
 </script>
 
 <section class="mobile-schedule lg:hidden" aria-labelledby="mobile-schedule-title">
@@ -64,48 +74,50 @@
     <h1 id="mobile-schedule-title">Programação</h1>
   </div>
 
-  <div class="day-tabs" role="tablist" aria-label="Dias da programação">
-    {#each daysWithEvents as day (day.key)}
-      <button
-        type="button"
-        role="tab"
-        aria-selected={day.key === selectedDayKey}
-        class="day-tab"
-        class:active={day.key === selectedDayKey}
-        on:click={() => (selectedDayKey = day.key)}>
-        <span>{shortWeekday(day)}</span>
-        <strong>{shortDate(day)}</strong>
-      </button>
-    {/each}
-  </div>
-
-  {#if selectedDay}
-    <div class="selected-day-label">{selectedDay.weekday}, {selectedDay.dateLabel}</div>
-  {/if}
-
-  {#if selectedSlots.length === 0}
-    <div class="empty-state">
-      <CalendarDays size="32" aria-hidden="true" />
-      <p>Nenhuma atividade neste dia.</p>
-    </div>
-  {:else}
-    <div class="timeline" aria-label="Atividades do dia selecionado">
-      {#each selectedSlots as slot (slot.startTime)}
-        <section class="timeline-slot" aria-label="Atividades às {slot.startTime}">
-          <div class="time-marker">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>{slot.startTime}</time>
-          </div>
-
-          <div class="event-stack">
-            {#each slot.events as event (event.id)}
-              <EventSummaryCard {event} {onClickEvent} variant="mobile" showLecturers shortLocation={false} />
-            {/each}
-          </div>
-        </section>
+  <div bind:this={scheduleContent} class="schedule-content">
+    <div class="day-tabs" role="tablist" aria-label="Dias da programação">
+      {#each daysWithEvents as day (day.key)}
+        <button
+          type="button"
+          role="tab"
+          aria-selected={day.key === selectedDayKey}
+          class="day-tab"
+          class:active={day.key === selectedDayKey}
+          on:click={() => selectDay(day.key)}>
+          <span>{shortWeekday(day)}</span>
+          <strong>{shortDate(day)}</strong>
+        </button>
       {/each}
     </div>
-  {/if}
+
+    {#if selectedDay}
+      <div class="selected-day-label">{selectedDay.weekday}, {selectedDay.dateLabel}</div>
+    {/if}
+
+    {#if selectedSlots.length === 0}
+      <div class="empty-state">
+        <CalendarDays size="32" aria-hidden="true" />
+        <p>Nenhuma atividade neste dia.</p>
+      </div>
+    {:else}
+      <div class="timeline" aria-label="Atividades do dia selecionado">
+        {#each selectedSlots as slot (slot.startTime)}
+          <section class="timeline-slot" aria-label="Atividades às {slot.startTime}">
+            <div class="time-marker">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <time>{slot.startTime}</time>
+            </div>
+
+            <div class="event-stack">
+              {#each slot.events as event (event.id)}
+                <EventSummaryCard {event} {onClickEvent} variant="mobile" showLecturers shortLocation={false} />
+              {/each}
+            </div>
+          </section>
+        {/each}
+      </div>
+    {/if}
+  </div>
 </section>
 
 <style lang="postcss">
