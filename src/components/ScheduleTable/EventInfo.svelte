@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ScheduleEvent } from '@lib/shared/ScheduleEvent';
+  import Markdown from '../Markdown.svelte';
 
   export let event: ScheduleEvent;
 </script>
@@ -17,9 +18,9 @@
   {/if} -->
   {#if event.fullDescription !== ''}
     <br />
-    <div class="pre-wrap">{event.fullDescription}</div>
+    <Markdown content={event.fullDescription} />
   {:else if event.shortDescription !== ''}
     <br />
-    {event.shortDescription}
+    <Markdown content={event.shortDescription} />
   {/if}
 </div>
