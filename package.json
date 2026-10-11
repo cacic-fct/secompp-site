@@ -9,8 +9,12 @@
     "build": "bun run build:analytics && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky",
-    "lint": "prettier --check . && eslint 'src/**/*.{js,astro,ts,svelte}'"
+    "prepare": "node .husky/install.mjs",
+    "format:staged": "lint-staged",
+    "lint": "prettier --check . && eslint \"src/**/*.{js,astro,ts,svelte}\""
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "@astrojs/check": "0.9.10",
@@ -47,6 +51,7 @@
     "eslint-plugin-svelte": "^2.46.1",
     "globals": "^15.15.0",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
     "postcss": "^8.5.28",
     "postcss-import": "^16.2.0",
     "prettier": "3.6.2",
