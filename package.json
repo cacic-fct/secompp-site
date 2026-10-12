@@ -9,7 +9,7 @@
     "build": "bun run build:analytics && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "node .husky/install.mjs",
+    "prepare": "node -e \"if (require('node:fs').existsSync('.git')) import('./.husky/install.mjs')\"",
     "format:staged": "lint-staged",
     "lint": "prettier --check . && eslint \"src/**/*.{js,astro,ts,svelte}\""
   },
